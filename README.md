@@ -1,4 +1,4 @@
-# storylunch
+# lansolo.dev
 
 ## Build Setup
 
