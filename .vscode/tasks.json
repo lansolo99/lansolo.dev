@@ -5,7 +5,7 @@
 			"type": "npm",
 			"script": "firem",
 			"problemMatcher": [],
-			"label": "npm: fire",
+			"label": "npm: dev",
 			"detail": "",
 			"group": {
 				"kind": "build",
