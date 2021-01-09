@@ -1,5 +1,6 @@
 <template>
-  <div>
-    <Nuxt class="pt-24" />
+  <div class="">
+    <TheHeader />
+    <Nuxt class="pt-12" />
   </div>
 </template>

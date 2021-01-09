@@ -14,6 +14,12 @@ module.exports = {
         body: ['Karla', 'sans-serif'],
         heading: ['Neue Machina', 'sans-serif'],
       },
+      colors: {
+        primary: {
+          400: '#CE9DFA',
+          500: '#8138C2',
+        },
+      },
       spacing: {
         '1/2': '50%',
         '1/3': '33.333333%',
