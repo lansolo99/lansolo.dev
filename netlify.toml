@@ -1,0 +1,10 @@
+[build]
+base = "/"
+publish = "dist"
+command = "npm run generate"
+
+
+[dev]
+port = 1234
+command = "npm run dev"
+publish = "dist"
