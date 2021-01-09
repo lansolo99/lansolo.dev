@@ -20,7 +20,18 @@ export default {
 
   components: true,
 
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', '@nuxtjs/svg'],
+  buildModules: [
+    '@nuxtjs/date-fns',
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/svg',
+  ],
+
+  dateFns: {
+    locales: ['es', 'fr'],
+    defaultLocale: 'en-US',
+    format: 'dd/MM/yyyy',
+  },
 
   modules: ['@nuxt/content', '@nuxt/image'],
 

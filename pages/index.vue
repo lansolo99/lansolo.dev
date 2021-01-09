@@ -1,23 +1,28 @@
 <template>
-  <div id="index" class="flex flex-col sm:flex-row">
+  <main id="index" class="flex flex-col sm:flex-row">
     <!-- Sidebar -->
-    <div class="bg-purple-500 sm:w-4/12 md:w-3/12">sidebar</div>
-    <!-- Grid -->
-    <div
-      id="grid"
-      class="grid grid-cols-1 gap-1 sm:w-8/12 md:w-9/12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-    >
-      <div class="bg-pink-600">item</div>
-      <div class="bg-pink-600">item</div>
-      <div class="bg-pink-600">item</div>
-      <div class="bg-pink-600">item</div>
-      <div class="bg-pink-600">item</div>
+    <div class="px-6 py-6 space-y-8 sm:w-4/12 md:w-2/12">
+      <h2 class="text-lg font-medium leading-snug">
+        Designs and front-end journal.
+      </h2>
+      <div>Filters</div>
     </div>
-  </div>
+
+    <HpGridPosts :posts="posts" />
+  </main>
 </template>
 
 <script>
 export default {
   name: 'Index',
+
+  async asyncData({ $content }) {
+    const posts = await $content('posts')
+      .sortBy('createdAt', 'desc')
+      .limit(16)
+      .fetch()
+
+    return { posts }
+  },
 }
 </script>
