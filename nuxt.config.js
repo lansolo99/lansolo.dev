@@ -28,9 +28,9 @@ export default {
   ],
 
   dateFns: {
-    locales: ['es', 'fr'],
+    locales: ['en'],
     defaultLocale: 'en-US',
-    format: 'dd/MM/yyyy',
+    format: 'MM/dd/yyyy',
   },
 
   modules: ['@nuxt/content', '@nuxt/image'],

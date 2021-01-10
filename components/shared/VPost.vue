@@ -21,7 +21,7 @@
 
       <img
         class="absolute w-full h-full transform scale-60"
-        src="~/assets/img/post_type_icon_design.svg"
+        :src="require(`~/assets/img/post_type_icon_${post.type}.svg`)"
         alt=""
       />
     </div>
@@ -54,7 +54,7 @@ export default {
   },
   computed: {
     postFormattedDate() {
-      return this.$dateFns.format(new Date())
+      return this.$dateFns.format(new Date(this.post.createdAt), 'MM/dd/yyyy')
     },
   },
 }

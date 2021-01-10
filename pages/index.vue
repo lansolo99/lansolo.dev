@@ -8,7 +8,6 @@
       <div>Filters</div>
     </div>
 
-    <!-- <div class="bg-blue-400">grid</div> -->
     <HpGridPosts :posts="posts" />
   </main>
 </template>
@@ -19,7 +18,7 @@ export default {
 
   async asyncData({ $content }) {
     const posts = await $content('posts')
-      .sortBy('createdAt', 'desc')
+      .sortBy('created', 'desc')
       .limit(16)
       .fetch()
 
