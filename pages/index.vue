@@ -1,5 +1,5 @@
 <template>
-  <main id="index" class="flex flex-col sm:flex-row">
+  <main id="index" class="flex flex-col items-start sm:flex-row">
     <HpSidebar />
 
     <HpGridPosts :key="hpGridPostsKey" :posts="posts" />
@@ -11,8 +11,8 @@ import { mapState } from 'vuex'
 export default {
   name: 'Index',
   async fetch() {
-    console.log(this.setFilter())
     this.posts = await this.$content('posts')
+      .only(['title', 'type', 'imgCover', 'tags', 'createdAt'])
       .where(this.setFilter())
       .sortBy('created', 'desc')
       .limit(16)
@@ -38,7 +38,8 @@ export default {
   methods: {
     setFilter() {
       if (this.selectedTags.length === 0) return null
-      return { type: { $in: this.selectedTags } }
+
+      return { tags: { $containsAny: this.selectedTags } }
     },
   },
 }

@@ -28,12 +28,19 @@ export default {
   ],
 
   dateFns: {
-    // locales: ['en'],
     defaultLocale: 'en-US',
     format: 'MM/dd/yyyy',
   },
 
   modules: ['@nuxt/content', '@nuxt/image'],
+
+  hooks: {
+    'content:file:beforeInsert': (document) => {
+      if (document.extension === '.md') {
+        document.tags = [...document.tags, document.type]
+      }
+    },
+  },
 
   image: {
     sizes: [320, 420, 768, 1024, 1200],
@@ -44,6 +51,7 @@ export default {
   },
 
   content: {
+    nestedProperties: ['posts.tags'],
     markdown: {
       remarkExternalLinks: {
         content: {
