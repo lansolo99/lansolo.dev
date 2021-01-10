@@ -28,7 +28,7 @@ export default {
   ],
 
   dateFns: {
-    locales: ['en'],
+    // locales: ['en'],
     defaultLocale: 'en-US',
     format: 'MM/dd/yyyy',
   },
