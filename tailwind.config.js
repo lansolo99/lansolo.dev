@@ -7,6 +7,12 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      screens: {
+        '2xl': '1536px',
+      },
+      scale: {
+        60: '.6',
+      },
       inset: {
         '1/2': '50%',
       },
