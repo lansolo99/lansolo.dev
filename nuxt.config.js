@@ -43,7 +43,19 @@ export default {
     exposeConfig: false,
   },
 
-  content: {},
+  content: {
+    markdown: {
+      remarkExternalLinks: {
+        content: {
+          type: 'element',
+          tagName: 'icon-external-link',
+        },
+        contentProperties: {
+          className: ['iconExternalLink'],
+        },
+      },
+    },
+  },
 
   build: {
     postcss: {

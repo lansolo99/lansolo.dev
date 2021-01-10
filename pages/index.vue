@@ -8,6 +8,7 @@
       <div>Filters</div>
     </div>
 
+    <!-- <div class="bg-blue-400">grid</div> -->
     <HpGridPosts :posts="posts" />
   </main>
 </template>

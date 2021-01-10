@@ -1,12 +1,14 @@
 <template>
-  <article class="relative bg-pink-600">
+  <article class="relative overflow-hidden bg-pink-600 pb-2/3">
     <!-- Image -->
     <nuxt-image
-      :src="post.imgFeatured"
+      class="absolute inset-0 object-cover"
+      :src="post.imgCover"
       :alt="post.title"
       width="2000"
       height="1000"
       :placeholder="true"
+      sizes="640,640:500,768:530,1280:420,1536:500"
     />
 
     <!-- Post type -->

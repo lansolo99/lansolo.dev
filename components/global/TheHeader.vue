@@ -1,5 +1,7 @@
 <template>
-  <div class="fixed flex text-black bg-white border-b-4 border-black header">
+  <div
+    class="fixed flex h-12 text-black bg-white border-b-4 border-black header"
+  >
     <!-- Logo -->
     <div class="flex-grow px-4 py-2 bg-red">
       <img src="logo.svg" alt="lansolo.dev" />
