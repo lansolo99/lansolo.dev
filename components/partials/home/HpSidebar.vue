@@ -1,8 +1,11 @@
 <template>
-  <div id="sidebar" class="px-6 py-6 space-y-8 sm:w-4/12 md:w-2/12">
+  <div
+    id="sidebar"
+    class="px-6 py-6 space-y-8 sm:w-5/12 md:w-4/12 lg:w-3/12 2xl:w-2/12"
+  >
     <HpIntro />
 
-    <VFilters />
+    <VFilters class="hidden sm:block" />
   </div>
 </template>
 
@@ -11,5 +14,3 @@ export default {
   name: 'HpSidebar',
 }
 </script>
-
-<style lang="scss" scoped></style>
