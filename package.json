@@ -12,10 +12,14 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.9.0",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
     "@tailwindcss/typography": "^0.3.1",
+    "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
     "cors": "^2.8.5",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   },
   "devDependencies": {
     "@nuxt/image": "0.0.4",
@@ -35,9 +39,9 @@
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.5.0",
-    "postcss": "^8.2.4",
-    "postcss-nested": "^5.0.3",
     "prettier": "^2.1.2",
+    "postcss": "^8.1.4",
+    "postcss-nested": "^4.2.3",
     "vue-jest": "^3.0.4"
   }
 }
