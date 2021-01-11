@@ -50,3 +50,4 @@ I will split the series in multiple small articles, that I will post on a regula
 ## Coming-up
 
 In the next post, I will cover the official [@nuxt/firebase](https://firebase.nuxtjs.org/) module setup.
+

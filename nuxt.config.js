@@ -52,17 +52,17 @@ export default {
 
   content: {
     nestedProperties: ['posts.tags'],
-    markdown: {
-      remarkExternalLinks: {
-        content: {
-          type: 'element',
-          tagName: 'icon-external-link',
-        },
-        contentProperties: {
-          className: ['iconExternalLink'],
-        },
-      },
-    },
+    // markdown: {
+    //   remarkExternalLinks: {
+    //     content: {
+    //       type: 'element',
+    //       tagName: 'icon-external-link',
+    //     },
+    //     contentProperties: {
+    //       className: ['iconExternalLink'],
+    //     },
+    //   },
+    // },
   },
 
   build: {
