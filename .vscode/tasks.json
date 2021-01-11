@@ -3,7 +3,7 @@
 	"tasks": [
 		{
 			"type": "npm",
-			"script": "firem",
+			"script": "dev",
 			"problemMatcher": [],
 			"label": "npm: dev",
 			"detail": "",
