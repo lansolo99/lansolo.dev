@@ -67,7 +67,9 @@ export default {
 
   build: {
     postcss: {
-      plugins: {},
+      plugins: {
+        'postcss-nested': {},
+      },
     },
   },
 

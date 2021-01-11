@@ -1,5 +1,8 @@
 <template>
-  <div class="inline-block px-2 text-sm bg-primary-500">
+  <div
+    class="inline-block px-2 bg-primary-500"
+    :class="context === 'post' ? 'text-xs' : 'text-sm'"
+  >
     {{ postFormattedDate }}
   </div>
 </template>
@@ -13,6 +16,10 @@ export default {
     date: {
       type: String,
       required: true,
+    },
+    context: {
+      type: String,
+      default: 'home',
     },
   },
 }

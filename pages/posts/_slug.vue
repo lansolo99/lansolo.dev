@@ -1,6 +1,6 @@
 <template>
   <div>
-    <article class="container relative max-w-screen-md mx-auto text-white">
+    <article class="container relative mx-auto text-white max-w-680 md:mt-8">
       <!-- Image -->
       <div class="relative w-full overflow-hidden bg-red-700 pb-6/12">
         <nuxt-image
@@ -13,9 +13,9 @@
       </div>
 
       <!-- Content -->
-      <div class="p-4">
+      <div class="p-4 md:mt-5">
         <!-- Title -->
-        <h1 class="text-xl font-heading">
+        <h1 class="text-2xl leading-snug md:text-3xl font-heading">
           Nuxt + Firebase – part 0 – serie introduction
         </h1>
 
@@ -35,10 +35,13 @@
         </div>
 
         <!-- Date -->
-        <VPostDate :date="post.createdAt" class="py-1 mt-4" />
+        <VPostDate context="post" :date="post.createdAt" class="py-1 mt-4" />
 
         <!-- Body -->
-        <nuxt-content :document="post" class="mt-10" />
+        <nuxt-content
+          :document="post"
+          class="mt-10 prose text-white max-w-none"
+        />
       </div>
     </article>
   </div>
@@ -58,8 +61,18 @@ export default {
 <style lang="postcss">
 .nuxt-content-container {
   h2 {
-    color: red;
-    @apply font-bold text-2xl;
+    @apply text-white;
+  }
+
+  a {
+    @apply text-primary-400;
+  }
+
+  ul,
+  ol {
+    li {
+      @apply leading-tight;
+    }
   }
 }
 </style>
