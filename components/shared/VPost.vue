@@ -1,60 +1,56 @@
 <template>
   <article class="relative overflow-hidden bg-pink-600 pb-2/3">
-    <!-- Image -->
-    <nuxt-image
-      class="absolute inset-0 object-cover"
-      :src="post.imgCover"
-      :alt="post.title"
-      width="2000"
-      height="1000"
-      :placeholder="true"
-      sizes="640,640:500,768:530,1280:420,1536:500"
-    />
-
-    <!-- Post type -->
-    <div class="absolute top-0 right-0 w-8 h-8 mt-2 mr-2">
-      <img
-        class="absolute w-full h-full"
-        src="~/assets/img/post_type_shape.svg"
-        alt=""
+    <nuxt-link :to="post.path">
+      <!-- Image -->
+      <nuxt-image
+        class="absolute inset-0 object-cover"
+        :src="post.imgCover"
+        :alt="post.title"
+        width="2000"
+        height="1000"
+        :placeholder="true"
+        sizes="640,640:500,768:530,1280:420,1536:500"
       />
 
-      <img
-        class="absolute w-full h-full transform scale-60"
-        :src="require(`~/assets/img/post_type_icon_${post.type}.svg`)"
-        alt=""
-      />
-    </div>
+      <!-- Post type -->
+      <div class="absolute top-0 right-0 w-8 h-8 mt-2 mr-2">
+        <img
+          class="absolute w-full h-full"
+          src="~/assets/img/post_type_shape.svg"
+          alt=""
+        />
 
-    <!-- Date + title -->
-    <div class="absolute bottom-0 left-0 mb-2 ml-2">
-      <!-- Date -->
-      <div class="inline-block px-2 text-sm bg-primary-500">
-        {{ postFormattedDate }}
+        <img
+          class="absolute w-full h-full transform scale-60"
+          :src="require(`~/assets/img/post_type_icon_${post.type}.svg`)"
+          alt=""
+        />
       </div>
 
-      <!-- Title -->
-      <h1 class="py-1 leading-6 padded-multiline">
-        <span class="inline p-2 text-xl text-white bg-black font-heading">{{
-          post.title
-        }}</span>
-      </h1>
-    </div>
+      <!-- Date + title -->
+      <div class="absolute bottom-0 left-0 mb-2 ml-2">
+        <!-- Date -->
+        <VPostDate :date="post.createdAt" />
+
+        <!-- Title -->
+        <h1 class="py-1 leading-6 padded-multiline">
+          <span class="inline p-2 text-xl text-white bg-black font-heading">{{
+            post.title
+          }}</span>
+        </h1>
+      </div>
+    </nuxt-link>
   </article>
 </template>
 
 <script>
 export default {
   name: 'VPost',
+
   props: {
     post: {
       type: Object,
       required: true,
-    },
-  },
-  computed: {
-    postFormattedDate() {
-      return this.$dateFns.format(new Date(this.post.createdAt), 'MM/dd/yyyy')
     },
   },
 }

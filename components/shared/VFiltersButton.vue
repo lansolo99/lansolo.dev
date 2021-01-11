@@ -1,13 +1,13 @@
 <template>
   <button
-    class="flex text-sm border border-gray-600 outline-none"
-    :class="{ 'cursor-default': isDisabled }"
+    class="flex items-stretch text-xs border border-gray-600 outline-none"
+    :class="{ 'cursor-default': isDisabled || context === 'post' }"
     :disabled="isDisabled"
     @click="setTag()"
   >
     <!-- Label -->
     <div
-      class="flex items-end justify-center px-3 py-1 capitalize"
+      class="flex px-3 py-1 text-left capitalize"
       :class="{ 'bg-primary-500': selected }"
     >
       {{ label }}
@@ -15,7 +15,8 @@
 
     <!-- Counter -->
     <div
-      class="flex items-end justify-center px-3 py-1 border-l border-gray-600"
+      v-if="context === 'home'"
+      class="flex px-3 py-1 border-l border-gray-600"
     >
       90
     </div>
@@ -33,6 +34,10 @@ export default {
     selected: {
       type: Boolean,
       required: true,
+    },
+    context: {
+      type: String,
+      default: 'home',
     },
   },
   computed: {
