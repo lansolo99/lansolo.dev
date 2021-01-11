@@ -1,19 +1,21 @@
 <template>
   <div>
-    <article class="container relative mx-auto text-white max-w-680 md:mt-8">
+    <article class="container relative mx-auto text-white md:mt-8">
       <!-- Image -->
-      <div class="relative w-full overflow-hidden bg-red-700 pb-6/12">
-        <nuxt-image
-          class="absolute inset-0 object-cover"
-          :src="post.imgCover"
-          :alt="post.title"
-          :placeholder="true"
-          sizes="640,768:768"
-        />
+      <div class="mx-auto" :class="{ 'max-w-680': post.type === 'article' }">
+        <div class="relative w-full mx-auto overflow-hidden bg-red-700 pb-6/12">
+          <nuxt-image
+            class="absolute inset-0 object-cover"
+            :src="post.imgCover"
+            :alt="post.title"
+            :placeholder="true"
+            sizes="640,768:768"
+          />
+        </div>
       </div>
 
       <!-- Content -->
-      <div class="p-4 md:mt-5">
+      <div class="p-4 mx-auto md:mt-5 max-w-680">
         <!-- Title -->
         <h1 class="text-2xl leading-snug md:text-3xl font-heading">
           Nuxt + Firebase – part 0 – serie introduction
