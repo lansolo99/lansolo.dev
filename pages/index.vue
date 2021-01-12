@@ -2,7 +2,7 @@
   <main id="index" class="flex flex-col items-start sm:flex-row">
     <HpSidebar />
 
-    <HpGridPosts :key="hpGridPostsKey" :posts="posts" />
+    <HpGridPosts :key="hpGridPostsKey" :context="context" :posts="posts" />
   </main>
 </template>
 
@@ -23,6 +23,7 @@ export default {
   fetchOnServer: false,
   data() {
     return {
+      context: 'home',
       hpGridPostsKey: 0,
       posts: [],
     }

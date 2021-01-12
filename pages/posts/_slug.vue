@@ -36,7 +36,7 @@
               <VFiltersButton
                 :label="tag"
                 :selected="false"
-                context="post"
+                :context="context"
                 @setTag="setTag"
               />
             </div>
@@ -44,13 +44,24 @@
         </div>
 
         <!-- Date -->
-        <VPostDate context="post" :date="post.createdAt" class="py-1 mt-4" />
+        <VPostDate
+          :context="context"
+          :date="post.createdAt"
+          class="py-1 mt-4"
+        />
 
         <!-- Body -->
         <nuxt-content
           :document="post"
           class="mt-10 prose text-white max-w-none"
         />
+
+        <!-- Related -->
+        <div class="mt-10">
+          <h2 class="text-2xl font-bold">Related posts</h2>
+
+          <HpGridPosts :context="context" :posts="relatedPosts" class="mt-5" />
+        </div>
       </div>
     </article>
   </div>
@@ -64,9 +75,20 @@ export default {
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch()
 
-    return { post }
-  },
+    const relatedPosts = await $content('posts')
+      .only(['title', 'type', 'imgCover', 'tags', 'createdAt'])
+      .where({ tags: { $containsAny: post.tags } })
+      .sortBy('created', 'desc')
+      .limit(4)
+      .fetch()
 
+    return { post, relatedPosts }
+  },
+  data() {
+    return {
+      context: 'post',
+    }
+  },
   computed: {
     setCoverImagesSrc() {
       switch (this.post.type) {
