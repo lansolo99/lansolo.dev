@@ -7,6 +7,12 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      screens: {
+        '2xl': '1536px',
+      },
+      scale: {
+        60: '.6',
+      },
       inset: {
         '1/2': '50%',
       },
@@ -24,10 +30,15 @@ module.exports = {
         '1/2': '50%',
         '1/3': '33.333333%',
         '2/3': '66.666667%',
+        '5/12': '41.666667%',
+        '6/12': '50%',
         full: '100%',
+      },
+      maxWidth: {
+        680: '680px',
       },
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }

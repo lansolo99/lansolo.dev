@@ -28,22 +28,48 @@ export default {
   ],
 
   dateFns: {
-    locales: ['es', 'fr'],
     defaultLocale: 'en-US',
-    format: 'dd/MM/yyyy',
+    format: 'MM/dd/yyyy',
   },
 
   modules: ['@nuxt/content', '@nuxt/image'],
+
+  hooks: {
+    'content:file:beforeInsert': (document) => {
+      if (document.extension === '.md') {
+        document.tags = [...document.tags, document.type]
+      }
+    },
+  },
+
+  image: {
+    sizes: [320, 420, 768, 1024, 1200],
+  },
 
   tailwindcss: {
     exposeConfig: false,
   },
 
-  content: {},
+  content: {
+    nestedProperties: ['posts.tags'],
+    // markdown: {
+    //   remarkExternalLinks: {
+    //     content: {
+    //       type: 'element',
+    //       tagName: 'icon-external-link',
+    //     },
+    //     contentProperties: {
+    //       className: ['iconExternalLink'],
+    //     },
+    //   },
+    // },
+  },
 
   build: {
     postcss: {
-      plugins: {},
+      plugins: {
+        'postcss-nested': {},
+      },
     },
   },
 

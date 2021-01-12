@@ -1,23 +1,29 @@
 <template>
-  <div class="fixed flex text-black bg-white border-b-4 border-black header">
+  <div
+    class="fixed z-50 flex text-black bg-white border-t-4 border-b-4 border-black header"
+    style="height: 49px"
+  >
     <!-- Logo -->
-    <div class="flex-grow px-4 py-2 bg-red">
-      <img src="logo.svg" alt="lansolo.dev" />
-    </div>
+    <nuxt-link to="/" class="flex-grow px-4 py-2 bg-red">
+      <img src="/logo.svg" alt="lansolo.dev" />
+    </nuxt-link>
 
     <!-- Nav -->
-    <nav>
-      <ul class="flex h-full">
-        <TheHeaderNavItem
-          v-for="(link, i) in navLinks"
-          :key="i"
-          :link-data="link"
-        />
-      </ul>
+    <!-- <div class="bg-red-800">test</div> -->
+    <nav class="hidden h-full md:flex">
+      <TheHeaderNavItem
+        v-for="(link, i) in navLinks"
+        :key="i"
+        :link-data="link"
+      />
     </nav>
 
-    <!-- Desktop Nav -->
     <!-- Hamburger -->
+    <div
+      class="flex items-center justify-center px-3 m-2 font-medium border-4 border-black md:hidden"
+    >
+      Menu
+    </div>
   </div>
 </template>
 
