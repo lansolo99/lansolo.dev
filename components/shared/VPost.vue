@@ -1,5 +1,5 @@
 <template>
-  <article class="relative overflow-hidden bg-pink-600 pb-2/3">
+  <article class="relative overflow-hidden pb-2/3">
     <nuxt-link :to="post.path">
       <!-- Image -->
       <nuxt-image

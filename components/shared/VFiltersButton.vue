@@ -1,7 +1,7 @@
 <template>
   <button
     class="flex items-stretch text-xs border border-gray-600 outline-none"
-    :class="{ 'cursor-default': isDisabled || context === 'post' }"
+    :class="{ 'cursor-default': isDisabled }"
     :disabled="isDisabled"
     @click="setTag()"
   >
@@ -42,7 +42,7 @@ export default {
   },
   computed: {
     isDisabled() {
-      return this.label === 'all' && this.selected
+      return this.label === 'all' && this.selected && this.context === 'home'
     },
   },
   methods: {

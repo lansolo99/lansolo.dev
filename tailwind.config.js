@@ -34,8 +34,11 @@ module.exports = {
         '6/12': '50%',
         full: '100%',
       },
+      maxWidth: {
+        680: '680px',
+      },
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }

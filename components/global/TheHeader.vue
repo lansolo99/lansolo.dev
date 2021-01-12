@@ -1,6 +1,7 @@
 <template>
   <div
-    class="fixed z-50 flex h-12 text-black bg-white border-b-4 border-black header"
+    class="fixed z-50 flex text-black bg-white border-t-4 border-b-4 border-black header"
+    style="height: 49px"
   >
     <!-- Logo -->
     <nuxt-link to="/" class="flex-grow px-4 py-2 bg-red">
@@ -8,14 +9,13 @@
     </nuxt-link>
 
     <!-- Nav -->
-    <nav>
-      <ul class="hidden h-full md:flex">
-        <TheHeaderNavItem
-          v-for="(link, i) in navLinks"
-          :key="i"
-          :link-data="link"
-        />
-      </ul>
+    <!-- <div class="bg-red-800">test</div> -->
+    <nav class="hidden h-full md:flex">
+      <TheHeaderNavItem
+        v-for="(link, i) in navLinks"
+        :key="i"
+        :link-data="link"
+      />
     </nav>
 
     <!-- Hamburger -->

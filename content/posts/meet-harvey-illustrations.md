@@ -4,7 +4,7 @@ type: 'design'
 imgCover: '/img/posts/meetharvey_illustrations.jpg'
 imgList:
   [
-    { title: 'Meet Harvey illustrations', img: '/img/posts/meetharvey_illustrations_1.jpg' },
+    { title: 'Meet Harvey illustrations', src: '/img/posts/meetharvey_illustrations_1.jpg' },
   ]
 tags: [Cinema 4D, low poly]
 createdAt: 2020-10-07
