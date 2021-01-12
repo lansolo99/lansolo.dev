@@ -69,9 +69,11 @@
 
 <script>
 import { mapMutations } from 'vuex'
+import dpr from '@/mixins/dpr.js'
 
 export default {
   name: 'Post',
+  mixins: [dpr],
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch()
 
@@ -91,25 +93,29 @@ export default {
   },
   computed: {
     setCoverImagesSrc() {
+      const regularCoverImg = [
+        {
+          title: this.post.title,
+          src: this.post.imgCover,
+        },
+      ]
+
       switch (this.post.type) {
         case 'article':
-          return [
-            {
-              title: this.post.title,
-              src: this.post.imgCover,
-            },
-          ]
+          return regularCoverImg
         case 'design':
-          return this.post.imgList
+          return this.post.imgList || regularCoverImg
       }
       return ''
     },
     setCoverImageSizes() {
       switch (this.post.type) {
         case 'article':
-          return '640,640:768'
+          return `${640 * dpr},640:${768 * dpr}`
         case 'design':
-          return '640,640:768,768:1024,1024:1280,1280:1536'
+          return `640:${768 * dpr},768:${1024 * dpr},1024:${1280 * dpr},1280:${
+            1536 * dpr
+          }`
       }
       return ''
     },
@@ -137,22 +143,3 @@ export default {
   },
 }
 </script>
-
-<style lang="postcss">
-/* .nuxt-content-container {
-  h2 {
-    @apply text-white;
-  }
-
-  a {
-    @apply text-primary-400;
-  }
-
-  ul,
-  ol {
-    li {
-      @apply leading-tight;
-    }
-  }
-} */
-</style>

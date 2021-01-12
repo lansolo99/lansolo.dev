@@ -9,7 +9,9 @@
         width="2000"
         height="1000"
         :placeholder="true"
-        sizes="640,640:500,768:530,1280:420,1536:500"
+        :sizes="`${640 * dpr},640:${500 * dpr},768:${530 * dpr},1280:${
+          420 * dpr
+        },1536:${500 * dpr}`"
       />
 
       <!-- Post type -->
@@ -44,9 +46,10 @@
 </template>
 
 <script>
+import dpr from '@/mixins/dpr.js'
 export default {
   name: 'VPost',
-
+  mixins: [dpr],
   props: {
     post: {
       type: Object,
