@@ -139,7 +139,7 @@ export default {
 </script>
 
 <style lang="postcss">
-.nuxt-content-container {
+/* .nuxt-content-container {
   h2 {
     @apply text-white;
   }
@@ -154,5 +154,5 @@ export default {
       @apply leading-tight;
     }
   }
-}
+} */
 </style>

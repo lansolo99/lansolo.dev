@@ -23,5 +23,6 @@ module.exports = {
     'no-unused-vars': 'off',
     'no-throw-literal': 'off',
     'no-useless-catch': 'off',
+    'vue/no-v-html': 'off',
   },
 }
