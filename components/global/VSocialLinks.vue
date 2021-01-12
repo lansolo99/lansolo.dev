@@ -7,13 +7,13 @@
       <div
         v-for="(link, i) in sociallinks"
         :key="i"
-        class="relative flex-none w-16 h-16 px-2"
+        class="relative flex-none w-12 h-12 px-2"
       >
-        <a :href="link.url">
+        <a :href="link.url" :title="link.name">
           <postTypeShape class="w-full h-full fill-current text-primary-500" />
           <img
-            class="absolute w-6 h-6 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            :src="require(`~/assets/img/social_${link.name}.svg`)"
+            class="absolute w-5 h-5 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            :src="`/img/social_${link.name}.svg`"
             :alt="link.name"
           />
         </a>

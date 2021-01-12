@@ -80,3 +80,4 @@ I invest a lot of energy to improve my work skills and knowledge. Remaining tim
 
 ## Find me on
 
+<v-social-links :sociallinks="socialLinks"></v-social-links>
