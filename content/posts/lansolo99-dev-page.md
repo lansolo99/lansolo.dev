@@ -3,7 +3,7 @@ title: lansolo99 dev page
 type: 'design'
 description: 'lansolo99 2020 dev page, built with Gridsome'
 imgCover: '/img/posts/lansolo99-dev-page.jpg'
-tags: [Gridsome]
+tags: [gridsome]
 createdAt: 2020-04-12
 ---
 

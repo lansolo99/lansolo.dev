@@ -7,7 +7,7 @@ imgList:
   [
     { title: 'Smart Prisoners in-game menu', src: '/img/posts/smart-prisoners-in-game-menu_1.jpg' },
   ]
-tags: [Nuxt, Cordova, Cinema 4D]
+tags: [nuxt, cordova,]
 createdAt: 2020-01-16
 ---
 

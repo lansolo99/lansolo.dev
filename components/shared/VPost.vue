@@ -30,7 +30,7 @@
       </div>
 
       <!-- Date + title -->
-      <div class="absolute bottom-0 left-0 mb-2 ml-2">
+      <div class="absolute bottom-0 left-0 mb-2 ml-2 mr-2">
         <!-- Date -->
         <VPostDate :date="post.createdAt" />
 

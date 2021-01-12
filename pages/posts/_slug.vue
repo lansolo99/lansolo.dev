@@ -17,14 +17,14 @@
       </div>
 
       <!-- Content -->
-      <div class="p-4 mx-auto md:mt-5 max-w-680">
+      <div class="p-4 pt-8 mx-auto md:pt-10 md:mt-5 max-w-680">
         <!-- Title -->
-        <h1 class="text-2xl leading-snug md:text-3xl font-heading">
+        <h1 class="text-2xl leading-snug md:text-4xl font-heading">
           {{ post.title }}
         </h1>
 
         <!-- Tags -->
-        <div class="px-1 mt-2">
+        <div class="px-1 mt-4 md:mt-10">
           <!-- Grid -->
           <div class="flex flex-wrap -mx-2">
             <!-- Items -->

@@ -3,7 +3,7 @@ title: Nuxt + Firebase - part 0 - serie introduction
 type: 'article'
 description: Introduction to the Nuxt + Firebase serie
 imgCover: '/img/posts/nuxt-firebase-part-0-serie-introduction.jpg'
-tags: [Nuxt, Vue, Firebase]
+tags: [nuxt, vue, firebase]
 createdAt: 2021-01-07
 ---
 

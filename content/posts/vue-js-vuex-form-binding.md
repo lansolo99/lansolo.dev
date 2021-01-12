@@ -2,7 +2,7 @@
 title: Vue.js + Vuex form binding
 type: 'article'
 imgCover: '/img/posts/vue-js-vuex-form-binding.jpg'
-tags: [Nuxt, Vue, Vuex, Form]
+tags: [nuxt, vue, vuex, form]
 createdAt: 2020-12-15
 ---
 

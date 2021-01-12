@@ -14,8 +14,8 @@ export default {
     this.posts = await this.$content('posts')
       .only(['title', 'type', 'imgCover', 'tags', 'createdAt'])
       .where(this.setFilter())
-      .sortBy('created', 'desc')
-      .limit(16)
+      .sortBy('created', 'asc')
+      // .limit(16)
       .fetch()
 
     this.hpGridPostsKey++
