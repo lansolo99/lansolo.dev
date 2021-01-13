@@ -14,7 +14,7 @@ export default {
     this.posts = await this.$content('posts')
       .only(['title', 'type', 'imgCover', 'tags', 'createdAt'])
       .where(this.setFilter())
-      .sortBy('created', 'asc')
+      .sortBy('createdAt', 'desc')
       // .limit(16)
       .fetch()
 

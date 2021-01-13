@@ -18,7 +18,7 @@
       v-if="context === 'home'"
       class="flex px-3 py-1 border-l border-gray-600"
     >
-      90
+      {{ counter }}
     </div>
   </button>
 </template>
@@ -40,7 +40,23 @@ export default {
       default: 'home',
     },
   },
+  async fetch() {
+    const postsForTag = await this.$content('posts')
+      .only(['title'])
+      .where({ tags: { $containsAny: this.label } })
+      .fetch()
+
+    this.counter = postsForTag.length
+  },
+  data() {
+    return {
+      counter: 0,
+    }
+  },
   computed: {
+    // getPostsForTag(){
+
+    // },
     isDisabled() {
       return this.label === 'all' && this.selected && this.context === 'home'
     },
