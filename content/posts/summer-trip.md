@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'Summer Trip', src: '/img/posts/summer-trip_1.jpg' },
   ]
-tags: [cinema 4D, after effects]
+tags: [cinema 4D, after effects, digital painting]
 createdAt: 2018-07-02
 ---
 

@@ -1,0 +1,14 @@
+---
+title: 'Kernel Recipes 2016 theme'
+type: 'design'
+imgCover: '/img/posts/kernel-recipes-2016-theme.jpg'
+imgList:
+  [
+    { title: 'Kernel Recipes 2016 theme', src: '/img/posts/kernel-recipes-2016-theme_1.jpg' },
+  ]
+tags: [cinema 4D, sketch & toon, low poly]
+createdAt: 2016-08-22
+---
+
+Illustration for the 2016 edition of [Kernel Recipes](https://kernel-recipes.org) tech meetup that took place in Paris.
+<!--more-->

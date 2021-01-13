@@ -35,7 +35,7 @@
         <VPostDate :date="post.createdAt" />
 
         <!-- Title -->
-        <h1 class="py-1 leading-6 padded-multiline">
+        <h1 class="py-1 pt-0 leading-6 padded-multiline">
           <span class="inline p-2 text-xl text-white bg-black font-heading">{{
             post.title
           }}</span>
