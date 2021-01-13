@@ -1,13 +1,13 @@
 <template>
   <button
-    class="flex items-stretch text-xs border border-gray-600 outline-none"
+    class="flex items-stretch text-sm border border-gray-600 outline-none"
     :class="{ 'cursor-default': isDisabled }"
     :disabled="isDisabled"
     @click="setTag()"
   >
     <!-- Label -->
     <div
-      class="flex px-3 py-1 text-left capitalize"
+      class="flex px-3 py-1 text-left"
       :class="{ 'bg-primary-500': selected }"
     >
       {{ label }}
