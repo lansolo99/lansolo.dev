@@ -10,3 +10,4 @@ tags: [cinema 4D, low poly, sketch & toon, after effects]
 createdAt: 2019-01-18
 ---
 Single shot taken from the last year big project : [2101, A space disaster](https://vimeo.com/296583932).
+<!--more-->

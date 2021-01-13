@@ -11,3 +11,4 @@ createdAt: 2019-04-30
 ---
 
 3D scenes promoting various domains for [Gandi.net blog](https://news.gandi.net).
+<!--more-->

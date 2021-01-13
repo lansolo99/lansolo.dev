@@ -11,3 +11,4 @@ createdAt: 2018-12-16
 ---
 
 New 3D iso style cities illustrations for Gandi's meeting room signages. Each illustration is centered on a simplified version of the matching Gandi's office in the regarding location (San Francisco, Paris, Taipei, Luxembourg, World).
+<!--more-->

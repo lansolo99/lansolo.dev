@@ -11,3 +11,4 @@ createdAt: 2020-10-07
 ---
 
 3D low poly scenes illustrations for the [Meet Harvey learning platform posts](https://meetharvey.co)
+<!--more-->

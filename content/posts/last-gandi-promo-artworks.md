@@ -1,7 +1,7 @@
 ---
 title: Last Gandi promo artworks
 type: 'design'
-description: A8.net Japan affiliation + .madrid domain + dev ops team shirt proposal based on Avenger's Grootcharacter
+description: A8.net Japan affiliation + .madrid domain + dev ops team shirt proposal based on Avenger's Grootcharacter.
 imgCover: '/img/posts/last-gandi-promo-artworks.jpg'
 imgList:
   [

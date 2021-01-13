@@ -11,3 +11,4 @@ createdAt: 2018-10-09
 ---
 
 Small collection of illustrations featuring Gad-e on related error pages. Traced 3D renders to SVG.
+<!--more-->

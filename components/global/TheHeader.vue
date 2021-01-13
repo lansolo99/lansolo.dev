@@ -9,7 +9,6 @@
     </nuxt-link>
 
     <!-- Nav -->
-    <!-- <div class="bg-red-800">test</div> -->
     <nav class="hidden h-full md:flex">
       <TheHeaderNavItem
         v-for="(link, i) in navLinks"

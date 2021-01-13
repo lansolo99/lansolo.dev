@@ -11,3 +11,4 @@ createdAt: 2018-07-02
 ---
 
 Background theme for the upcoming [Tictales game](https://tictales.com) Summer Trip. Tested a duotone image effect.
+<!--more-->
