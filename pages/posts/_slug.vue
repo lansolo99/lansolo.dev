@@ -2,14 +2,25 @@
   <div>
     <article class="container relative mx-auto text-white md:mt-8 md:px-8">
       <!-- Cover Image(s) -->
-      <div class="mx-auto" :class="{ 'max-w-680': post.type === 'article' }">
-        <div class="relative w-full mx-auto overflow-hidden bg-red-700 pb-6/12">
+      <div
+        class="flex flex-col justify-center mx-auto bg-yellow-500"
+        :class="[
+          { 'max-w-680': isPostTypeArticle },
+          { 'max-w-1000': isPostTypeDesignWithoutImgList },
+        ]"
+      >
+        <div
+          class="relative w-full mx-auto overflow-hidden bg-red-700"
+          :class="{ 'pb-6/12': isPostTypeArticle }"
+        >
           <nuxt-image
             v-for="(image, i) in setCoverImagesSrc"
             :key="i"
-            class="absolute inset-0 object-cover"
             :src="image.src"
             :alt="image.title"
+            :class="{
+              'absolute inset-0 object-cover': isPostTypeArticle,
+            }"
             :placeholder="true"
             :sizes="setCoverImageSizes"
           />
@@ -92,6 +103,12 @@ export default {
     }
   },
   computed: {
+    isPostTypeArticle() {
+      return this.post.type === 'article'
+    },
+    isPostTypeDesignWithoutImgList() {
+      return this.post.type === 'design' && !this.post.imgList
+    },
     setCoverImagesSrc() {
       const regularCoverImg = [
         {
