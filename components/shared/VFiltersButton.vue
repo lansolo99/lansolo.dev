@@ -43,7 +43,7 @@ export default {
   async fetch() {
     const postsForTag = await this.$content('posts')
       .only(['title'])
-      .where({ tags: { $containsAny: this.label } })
+      .where(this.getPostsForTag)
       .fetch()
 
     this.counter = postsForTag.length
@@ -54,9 +54,9 @@ export default {
     }
   },
   computed: {
-    // getPostsForTag(){
-
-    // },
+    getPostsForTag(label) {
+      return this.label !== 'all' ? { tags: { $containsAny: this.label } } : ''
+    },
     isDisabled() {
       return this.label === 'all' && this.selected && this.context === 'home'
     },
