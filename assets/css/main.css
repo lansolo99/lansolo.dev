@@ -73,7 +73,7 @@
       }
     }
 
-  h2 {
+  h2, h3 {
     @apply text-white;    
   }
 

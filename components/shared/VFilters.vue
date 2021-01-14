@@ -91,6 +91,9 @@ export default {
         const updatedTagsList = [...this.selectedTags, label]
         this.setSelectedTag(updatedTagsList)
       }
+
+      // Scroll to top
+      window.scroll(0, 0)
     },
   },
 }
