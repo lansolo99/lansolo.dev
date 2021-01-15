@@ -5,7 +5,7 @@
       :src="path"
       :alt="title"
       :placeholder="true"
-      sizes="640,768:768"
+      :sizes="`${640 * dpr},768:${768 * dpr}`"
     />
   </div>
 </template>

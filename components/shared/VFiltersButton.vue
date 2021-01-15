@@ -1,13 +1,13 @@
 <template>
   <button
-    class="flex items-stretch text-xs border border-gray-600 outline-none"
+    class="flex items-stretch text-sm border border-gray-600 outline-none"
     :class="{ 'cursor-default': isDisabled }"
     :disabled="isDisabled"
     @click="setTag()"
   >
     <!-- Label -->
     <div
-      class="flex px-3 py-1 text-left capitalize"
+      class="flex px-3 py-1 text-left"
       :class="{ 'bg-primary-500': selected }"
     >
       {{ label }}
@@ -18,7 +18,7 @@
       v-if="context === 'home'"
       class="flex px-3 py-1 border-l border-gray-600"
     >
-      90
+      {{ counter }}
     </div>
   </button>
 </template>
@@ -40,7 +40,23 @@ export default {
       default: 'home',
     },
   },
+  async fetch() {
+    const postsForTag = await this.$content('posts')
+      .only(['title'])
+      .where(this.getPostsForTag)
+      .fetch()
+
+    this.counter = postsForTag.length
+  },
+  data() {
+    return {
+      counter: 0,
+    }
+  },
   computed: {
+    getPostsForTag(label) {
+      return this.label !== 'all' ? { tags: { $containsAny: this.label } } : ''
+    },
     isDisabled() {
       return this.label === 'all' && this.selected && this.context === 'home'
     },
