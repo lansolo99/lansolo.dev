@@ -14,11 +14,11 @@ We indeed finished to build all the game content + related features so far.
 
 This post is a part of a miniserie where I explain my journey and what I learned through building an Android application with Nuxt.js, and wrapped with Cordova.
 
-1. Part 1
-2. Part 2
-3. Part 3
-4. Part 4
-5. Part 5
+1. [Part 1](/posts/nuxt-js-puzzle-game-development-wip1)
+2. [Part 2](/posts/nuxt-js-puzzle-game-development-wip2)
+3. [Part 3](/posts/nuxt-js-puzzle-game-development-wip3)
+4. [Part 4](/posts/nuxt-js-puzzle-game-development-wip4)
+5. [Part 5](/posts/nuxt-js-puzzle-game-development-wip5)
 
 ## Google Play Console
 

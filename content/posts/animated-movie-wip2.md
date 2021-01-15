@@ -8,6 +8,14 @@ createdAt: 2018-04-06
 
 This post is a complete part of a complete walkthrough on building a 4mn animated 3D film with cinema 4D.
 <!--more-->
+
+0. [Part 0](/posts/animated-movie-wip0)
+1. [Part 1](/posts/animated-movie-wip1)
+2. [Part 2](/posts/animated-movie-wip2)
+3. [Part 3](/posts/animated-movie-wip3-x-particles-xpresso-enter-game)
+4. [Part 4](/posts/animated-movie-wip4-low-poly-space-scene)
+5. [Part 5](/posts/animated-movie-wip5-editing-final-release)
+
 April 2018 is already here and it's time to take stock on what's been achieved and what's ongoing regarding our animated film from the previous point. I had a couple of breaks that slowed down the progression (parallel dev jobs to do) but we're still on tracks ! Here are the main points :
 
 * The initial set (an invented medieval village) is nearly completed, laying the context of what this civilisation looks like. Camera paths have been grossly defined and what remains is mostly to animate the whole thing.

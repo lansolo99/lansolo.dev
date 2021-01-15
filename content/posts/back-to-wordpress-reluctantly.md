@@ -6,7 +6,7 @@ tags: [wordpress]
 createdAt: 2020-08-28
 ---
 
-This post is about my last experience using Wordpress with Tailwind css and how much I think the developer experience is lower than the one offered working with modern front-end framworks.
+This post is about my first experience using Wordpress with Tailwind css and how much I think the developer experience is lower than the one offered working with modern front-end framworks.
 <!--more-->
 
 ## Tailwind + Wordpress ? Meet Laravel Mix

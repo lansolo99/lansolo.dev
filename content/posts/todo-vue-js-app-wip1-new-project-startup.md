@@ -10,6 +10,10 @@ createdAt: 2019-01-31
 This post is part of a full walkthrough of building todo app using vue.js
 <!--more-->
 
+1. [Part 1](/posts/todo-vue-js-app-wip1-new-project-startup)
+1. [Part 2](/posts/todo-vue-js-app-wip2-vuex-modules-firebase)
+1. [Part 3](/posts/todo-vue-js-app-wip3-turning-spa-pwa)
+1. [Part 4](/posts/todo-vue-js-app-wip4-alpha-launch-weekx)
 
 ## Diving into vue.js
 

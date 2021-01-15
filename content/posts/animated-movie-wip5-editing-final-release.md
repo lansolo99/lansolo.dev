@@ -9,6 +9,13 @@ createdAt: 2018-10-15
 This post is a complete part of a complete walkthrough on building a 4mn animated 3D film with cinema 4D.
 <!--more-->
 
+0. [Part 0](/posts/animated-movie-wip0)
+1. [Part 1](/posts/animated-movie-wip1)
+2. [Part 2](/posts/animated-movie-wip2)
+3. [Part 3](/posts/animated-movie-wip3-x-particles-xpresso-enter-game)
+4. [Part 4](/posts/animated-movie-wip4-low-poly-space-scene)
+5. [Part 5](/posts/animated-movie-wip5-editing-final-release)
+
 The last shot has finally been finished 2 weeks ago, so we're about to release the movie a bit sooner than expected. This post will be the final report before the official release (see previous reports : wip#1, wip#2, wip#3, wip#4).
 
 * I mostly worked on an alien planet environment, took the inspiration pretty much everywhere, a lot of inspiring stuffs on artstation

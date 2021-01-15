@@ -10,6 +10,11 @@ createdAt: 2019-03-03
 This post is part of a full walkthrough of building todo app using vue.js
 <!--more-->
 
+1. [Part 1](/posts/todo-vue-js-app-wip1-new-project-startup)
+1. [Part 2](/posts/todo-vue-js-app-wip2-vuex-modules-firebase)
+1. [Part 3](/posts/todo-vue-js-app-wip3-turning-spa-pwa)
+1. [Part 4](/posts/todo-vue-js-app-wip4-alpha-launch-weekx)
+
 I’ve been continuously working on my first vue.js app so far (read first post for more infos about this), and might deliver a first alpha by the end of the month. I picked a name (subject to change later : “Weekx”).
 Obviously, I had to overcome different kind of obstacles, starting with handling time management and periodicity.
 

@@ -9,6 +9,11 @@ createdAt: 2019-05-08
 This post is part of a full walkthrough of building todo app using vue.js
 <!--more-->
 
+1. [Part 1](/posts/todo-vue-js-app-wip1-new-project-startup)
+1. [Part 2](/posts/todo-vue-js-app-wip2-vuex-modules-firebase)
+1. [Part 3](/posts/todo-vue-js-app-wip3-turning-spa-pwa)
+1. [Part 4](/posts/todo-vue-js-app-wip4-alpha-launch-weekx)
+
 Here we are, after almost 5 month of persistent work (check previous dev phases #1, #2, #3), I can show a usable prototype of my first vue.js single page application. I kept the "weekx" name for the time being, and associated the domain name “weekx.xyz”. I found the “x.xyz” letter serie funny, plus the "xyz" top level domain is one of the cheapest (I care about the promo on gandi.net 🙂).
 
 ## Current stack
@@ -39,7 +44,7 @@ It doesn’t work on Apple devices so far (shame on them), but I think it’s an
 
 ## How to use the app now ?
 
-I built a landing page to showcase the application : weekx.xyz. The app is available on the same domain : app.weekx.xyz. Surely, there’s a lot of bugs remaining and missing use-cases, don’t hesitate to send me feedback on feedback@weekx.xyz
+I built a landing page to showcase the application : [weekx.xyz](https://weekx.xyz). The app is available on the same domain : [app.weekx.xyz](https://app.weekx.xyz). Surely, there’s a lot of bugs remaining and missing use-cases, don’t hesitate to send me feedback on feedback@weekx.xyz
 
 ## Next
 

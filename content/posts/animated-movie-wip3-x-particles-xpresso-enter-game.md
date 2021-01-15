@@ -9,6 +9,13 @@ createdAt: 2018-07-06
 This post is a complete part of a complete walkthrough on building a 4mn animated 3D film with cinema 4D.
 <!--more-->
 
+0. [Part 0](/posts/animated-movie-wip0)
+1. [Part 1](/posts/animated-movie-wip1)
+2. [Part 2](/posts/animated-movie-wip2)
+3. [Part 3](/posts/animated-movie-wip3-x-particles-xpresso-enter-game)
+4. [Part 4](/posts/animated-movie-wip4-low-poly-space-scene)
+5. [Part 5](/posts/animated-movie-wip5-editing-final-release)
+
 We're reaching half of the year and it's time for a 3rd report of what's been released for our short animated film so far (see wip#1 and #wip2 for previous reports):
 
 * The 1st part of the movie is achieved. It represents roughly 1/3 of the movie. There still HD renders remaining in queue. It takes a lot of time to compute as there's only one single Macbook pro to render the full movie, I take advantage of nights to do so.

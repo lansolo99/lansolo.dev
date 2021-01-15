@@ -12,11 +12,11 @@ This post is part of a full walkthrough of building an android app using Nuxt + 
 6 months have passed since I’ve started working on what is so far my biggest Vue.js project : a Nuxt.js based Android puzzle game and it’s time to take stock on what has been achieved. I link here the articles on previous steps about the development : #WIP1 and #WIP2.
 This post is a part of a miniserie where I explain my journey and what I learned through building an Android application with Nuxt.js, and wrapped with Cordova.
 
-1. Part 1
-2. Part 2
-3. Part 3
-4. Part 4
-5. Part 5
+1. [Part 1](/posts/nuxt-js-puzzle-game-development-wip1)
+2. [Part 2](/posts/nuxt-js-puzzle-game-development-wip2)
+3. [Part 3](/posts/nuxt-js-puzzle-game-development-wip3)
+4. [Part 4](/posts/nuxt-js-puzzle-game-development-wip4)
+5. [Part 5](/posts/nuxt-js-puzzle-game-development-wip5)
 
 ## Content
 

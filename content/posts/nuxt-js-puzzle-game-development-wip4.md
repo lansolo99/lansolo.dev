@@ -11,11 +11,11 @@ This post is part of a full walkthrough of building an android app using Nuxt + 
 
 The end of the year is here and the puzzle game development is still ongoing. I worked for about 7 month now on the game. I guess the completion is around 75%.
 
-1. Part 1
-2. Part 2
-3. Part 3
-4. Part 4
-5. Part 5
+1. [Part 1](/posts/nuxt-js-puzzle-game-development-wip1)
+2. [Part 2](/posts/nuxt-js-puzzle-game-development-wip2)
+3. [Part 3](/posts/nuxt-js-puzzle-game-development-wip3)
+4. [Part 4](/posts/nuxt-js-puzzle-game-development-wip4)
+5. [Part 5](/posts/nuxt-js-puzzle-game-development-wip5)
 
 ## Follow-up
 
