@@ -6,7 +6,14 @@
       id="gridWrapper"
       class="w-full sm:w-8/12 md:w-9/12 lg:w-10/12 2xl:w-10/12"
     >
-      <HpGridPosts :key="hpGridPostsKey" :context="context" :posts="posts" />
+      <!-- <nuxt-image
+        class="absolute inset-0 object-cover"
+        :lazy="false"
+        src="/animated-movie-wip4-low-poly-space-scene.jpg"
+        width="2000"
+        height="1000"
+      /> -->
+      <!-- <HpGridPosts :key="hpGridPostsKey" :context="context" :posts="posts" /> -->
 
       <client-only>
         <infinite-loading :identifier="infiniteId" @infinite="infiniteHandler">
@@ -34,6 +41,7 @@ export default {
   },
   async fetch() {
     this.posts = await this.fetchData()
+    console.log(this.posts.length)
   },
   fetchOnServer: false,
   data() {
@@ -58,7 +66,7 @@ export default {
   methods: {
     fetchData() {
       return this.$content('posts')
-        .only(['title', 'type', 'imgCover', 'tags', 'createdAt'])
+        .only(['title', 'type', 'imgCover', 'tags', 'createdAt', 'path'])
         .where(this.setFilter())
         .limit(this.limit)
         .skip(this.limit * this.page)

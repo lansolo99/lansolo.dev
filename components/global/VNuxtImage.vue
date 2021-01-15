@@ -1,12 +1,12 @@
 <template>
   <div class="relative w-full my-10 overflow-hidden bg-red-700 pb-6/12">
-    <nuxt-image
+    <!-- <nuxt-image
       class="absolute inset-0 object-cover"
       :src="path"
       :alt="title"
       :placeholder="true"
       :sizes="`${640 * dpr},768:${768 * dpr}`"
-    />
+    /> -->
   </div>
 </template>
 

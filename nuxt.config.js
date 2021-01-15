@@ -7,7 +7,12 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'robots', content: 'noindex' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Designs and front-end journal of Stéphane Changarnier | Front-end developer &amp; designer',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -56,6 +61,14 @@ export default {
       prism: {
         theme: 'prism-themes/themes/prism-duotone-dark.css',
       },
+    },
+  },
+
+  generate: {
+    async routes() {
+      const { $content } = require('@nuxt/content')
+      const files = await $content('posts').only(['path']).fetch()
+      return files.map((file) => (file.path === '/index' ? '/' : file.path))
     },
   },
 

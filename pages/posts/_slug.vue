@@ -13,7 +13,7 @@
           class="relative w-full mx-auto overflow-hidden bg-red-700"
           :class="{ 'pb-6/12': isPostTypeArticle }"
         >
-          <nuxt-image
+          <!-- <nuxt-image
             v-for="(image, i) in setCoverImagesSrc"
             :key="i"
             :src="image.src"
@@ -23,7 +23,7 @@
             }"
             :placeholder="true"
             :sizes="setCoverImageSizes"
-          />
+          /> -->
         </div>
       </div>
 

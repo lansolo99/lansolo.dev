@@ -1,18 +1,30 @@
 <template>
   <article class="relative overflow-hidden pb-2/3">
+    <!-- <nuxt-link to="/"> -->
     <nuxt-link :to="post.path">
       <!-- Image -->
-      <nuxt-image
+      <!-- <img :src="post.imgCover" alt="" /> -->
+      {{ post.imgCover }}
+      <!-- <nuxt-image
         class="absolute inset-0 object-cover"
+        :lazy="false"
         :src="post.imgCover"
-        :alt="post.title"
         width="2000"
         height="1000"
-        :placeholder="true"
-        :sizes="`${640 * dpr},640:${500 * dpr},768:${530 * dpr},1280:${
+      /> -->
+
+      <!-- <nuxt-image
+        class="absolute inset-0 object-cover"
+        :lazy="false"
+        src="/logo.svg"
+        width="2000"
+        height="1000"
+      /> -->
+      <!-- :alt="post.title" -->
+      <!-- :placeholder="true"
+      :sizes="`${640 * dpr},640:${500 * dpr},768:${530 * dpr},1280:${
           420 * dpr
-        },1536:${500 * dpr}`"
-      />
+        },1536:${500 * dpr}`" -->
 
       <!-- Post type -->
       <div class="absolute top-0 right-0 w-8 h-8 mt-2 mr-2">

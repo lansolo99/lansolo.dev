@@ -1,6 +1,10 @@
 <template>
   <div id="grid" class="grid grid-cols-1 gap-1" :class="setGridClasses">
     <VPost v-for="(post, i) in posts" :key="i" :post="post" />
+
+    <!-- <div v-for="(post, i) in posts" :key="i">
+      {{ post }}
+    </div> -->
   </div>
 </template>
 
