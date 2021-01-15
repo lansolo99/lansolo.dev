@@ -52,6 +52,12 @@ export default {
 
   content: {
     nestedProperties: ['posts.tags'],
+    markdown: {
+      prism: {
+        // theme: 'prism-themes/themes/prism-material-oceanic.css',
+        theme: 'prism-themes/themes/prism-duotone-dark.css',
+      },
+    },
   },
 
   build: {

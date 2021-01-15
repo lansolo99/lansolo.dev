@@ -4,12 +4,11 @@
     style="height: 49px"
   >
     <!-- Logo -->
-    <nuxt-link to="/" class="flex-grow px-4 py-2 bg-red">
-      <img src="/logo.svg" alt="lansolo.dev" />
-    </nuxt-link>
+    <button class="flex-grow px-4 py-2 outline-none bg-red" @click="setTag">
+      <img src="/logo.svg" alt="lansolo.dev" style="height: 28px" />
+    </button>
 
     <!-- Nav -->
-    <!-- <div class="bg-red-800">test</div> -->
     <nav class="hidden h-full md:flex">
       <TheHeaderNavItem
         v-for="(link, i) in navLinks"
@@ -28,12 +27,21 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 
 export default {
   name: 'Header',
   computed: {
     ...mapState(['navLinks']),
+  },
+  methods: {
+    ...mapMutations({
+      setSelectedTag: 'SET_SELECTED_TAGS',
+    }),
+    setTag(label) {
+      this.setSelectedTag([])
+      this.$router.push('/')
+    },
   },
 }
 </script>

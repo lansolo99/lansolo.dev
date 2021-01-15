@@ -1,7 +1,7 @@
 <template>
   <div
     class="inline-block px-2 bg-primary-500"
-    :class="context === 'post' ? 'text-xs' : 'text-sm'"
+    :class="context === 'post' ? 'text-sm' : 'text-sm'"
   >
     {{ postFormattedDate }}
   </div>

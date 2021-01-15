@@ -3,12 +3,10 @@ title: Nuxt + Firebase - part 0 - serie introduction
 type: 'article'
 description: Introduction to the Nuxt + Firebase serie
 imgCover: '/img/posts/nuxt-firebase-part-0-serie-introduction.jpg'
-tags: [Nuxt, Vue, Firebase]
+tags: [nuxt, vue, firebase]
 createdAt: 2021-01-07
 ---
 
-
-<!--more-->
 This post is a first of serie I intend to write on setting up Firebase with Nuxt. The aim of this serie is to act as a learning journal, and eventually help others on specific topics.
 
 ## The project

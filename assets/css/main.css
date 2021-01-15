@@ -62,20 +62,27 @@
   }
 
   .nuxt-content-container {
-  h2 {
-    @apply text-white;    
-    &:not(:first-child){
-
-      &:before{
-        content: '';
-        @apply block w-16 h-2 bg-primary-500 mb-10;
+    .about{
+      h2{
+        &:not(:first-child){
+          &:before{
+            content: '';
+            @apply block w-16 h-2 bg-primary-500 mb-10;
+          }
+        }
       }
     }
-  }
 
+  h2, h3 {
+    @apply text-white;    
+  }
 
   a {
     @apply text-primary-400;
+  }
+
+  strong{
+    @apply font-bold text-white text-lg;
   }
 
   ul,

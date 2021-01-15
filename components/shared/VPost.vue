@@ -9,7 +9,9 @@
         width="2000"
         height="1000"
         :placeholder="true"
-        sizes="640,640:500,768:530,1280:420,1536:500"
+        :sizes="`${640 * dpr},640:${500 * dpr},768:${530 * dpr},1280:${
+          420 * dpr
+        },1536:${500 * dpr}`"
       />
 
       <!-- Post type -->
@@ -28,12 +30,15 @@
       </div>
 
       <!-- Date + title -->
-      <div class="absolute bottom-0 left-0 mb-2 ml-2">
+      <div class="absolute bottom-0 left-0 mb-2 ml-2 mr-4">
         <!-- Date -->
-        <VPostDate :date="post.createdAt" />
+        <VPostDate
+          :date="post.createdAt"
+          style="position: relative; top: -3px"
+        />
 
         <!-- Title -->
-        <h1 class="py-1 leading-6 padded-multiline">
+        <h1 class="py-1 pt-0 leading-6 padded-multiline">
           <span class="inline p-2 text-xl text-white bg-black font-heading">{{
             post.title
           }}</span>
@@ -44,9 +49,10 @@
 </template>
 
 <script>
+import dpr from '@/mixins/dpr.js'
 export default {
   name: 'VPost',
-
+  mixins: [dpr],
   props: {
     post: {
       type: Object,
