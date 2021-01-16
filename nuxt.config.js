@@ -80,7 +80,7 @@ export default {
     ],
   },
 
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css', 'loaders.css/loaders.min.css'],
 
   publicRuntimeConfig: {},
 

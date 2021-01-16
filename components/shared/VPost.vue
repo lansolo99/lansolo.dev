@@ -1,5 +1,7 @@
 <template>
   <article class="relative overflow-hidden bg-primary-900 pb-2/3">
+    <VImageLoader />
+
     <nuxt-link :to="post.path" no-prefetch>
       <!-- Image -->
       <client-only>

@@ -32,12 +32,8 @@ export default {
   },
   mixins: [mobileDetect],
   async fetch() {
-    console.log('fetch')
-    console.time('fetch')
     this.posts = await this.fetchData()
-    console.timeEnd('fetch')
   },
-  // fetchOnServer: false,
   data() {
     return {
       context: 'home',
