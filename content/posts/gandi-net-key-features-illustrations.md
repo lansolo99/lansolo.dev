@@ -1,10 +1,10 @@
 ---
 title: 'Gandi.net key-features illustrations'
 type: 'design'
-imgCover: '/img/posts/gandi-net-key-features-illustrations.jpg'
+imgCover: 'gandi-net-key-features-illustrations.jpg'
 imgList:
   [
-    { title: 'Gandi.net key-features illustrations', src: '/img/posts/gandi-net-key-features-illustrations_1.jpg' },
+    { title: 'Gandi.net key-features illustrations', src: 'gandi-net-key-features-illustrations_1.jpg' },
   ]
 tags: [cinema 4D, low poly, sketch & toon]
 createdAt: 2018-06-14

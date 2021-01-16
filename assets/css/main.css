@@ -61,7 +61,8 @@
     font-family: 'Karla', Helvetica, sans-serif;
   }
 
-  .nuxt-content-container {
+  
+.markdown-container {
     .about{
       h2{
         &:not(:first-child){
@@ -92,4 +93,3 @@
     }
   }
 }
-

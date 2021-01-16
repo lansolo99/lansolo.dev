@@ -1,7 +1,7 @@
 ---
 title: 'Transitioning from graphic design to front-end development'
 type: 'article'
-imgCover: '/img/posts/transitioning-graphic-design-front-end-development.jpg'
+imgCover: 'transitioning-graphic-design-front-end-development.jpg'
 tags: []
 createdAt: 2019-01-07
 ---

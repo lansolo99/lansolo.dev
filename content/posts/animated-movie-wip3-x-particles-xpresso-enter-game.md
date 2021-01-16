@@ -1,7 +1,7 @@
 ---
 title: 'Animated movie WIP#3 (X-particles and Xpresso enter in the game)'
 type: 'article'
-imgCover: '/img/posts/animated-movie-wip3-x-particles-xpresso-enter-game.jpg'
+imgCover: 'animated-movie-wip3-x-particles-xpresso-enter-game.jpg'
 tags: [cinema 4D]
 createdAt: 2018-07-06
 ---

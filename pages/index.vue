@@ -34,6 +34,7 @@ export default {
   },
   async fetch() {
     this.posts = await this.fetchData()
+    console.log(this.posts.length)
   },
   fetchOnServer: false,
   data() {
@@ -58,7 +59,7 @@ export default {
   methods: {
     fetchData() {
       return this.$content('posts')
-        .only(['title', 'type', 'imgCover', 'tags', 'createdAt'])
+        .only(['title', 'type', 'imgCover', 'tags', 'createdAt', 'path'])
         .where(this.setFilter())
         .limit(this.limit)
         .skip(this.limit * this.page)

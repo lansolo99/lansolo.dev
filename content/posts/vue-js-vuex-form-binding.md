@@ -1,7 +1,7 @@
 ---
 title: Vue.js + Vuex form binding
 type: 'article'
-imgCover: '/img/posts/vue-js-vuex-form-binding.jpg'
+imgCover: 'vue-js-vuex-form-binding.jpg'
 tags: [nuxt, vue, vuex, form]
 createdAt: 2020-12-15
 ---
@@ -30,7 +30,7 @@ After a lot of research, studying different proposed developer approachs, I’ve
 As a picture is worth a thousands words, I made an illustrated mindmap of the full circuit to get things as clear as possible (I always found the stackoverflow or medium solutions not very readable as the codeblocks are spreaded across the page).
 
 <a href="/img/posts/vue-js-vuex-form-binding_1.png" target="_blank" rel="noopener noreferer">
-    <v-nuxt-image title="vuex form update circuit mindmap" path="/img/posts/vue-js-vuex-form-binding_1.png"></v-nuxt-image>
+    <v-nuxt-image title="vuex form update circuit mindmap" path="vue-js-vuex-form-binding_1.png"></v-nuxt-image>
 </a>
 
 Note: I’m using the fetch hook as the entry point (I always work with Nuxt), but this can be replaced with the created/mounted hook.

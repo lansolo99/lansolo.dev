@@ -1,7 +1,7 @@
 ---
 title: 'Animated movie WIP#2'
 type: 'article'
-imgCover: '/img/posts/animated-movie-wip2.jpg'
+imgCover: 'animated-movie-wip2.jpg'
 tags: [cinema 4D]
 createdAt: 2018-04-06
 ---

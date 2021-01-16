@@ -1,7 +1,7 @@
 ---
 title: 'Quick review of Maizzle: the Tailwindcss email framework'
 type: 'article'
-imgCover: '/img/posts/quick-review-of-maizzle-the-tailwindcss-email-framework.jpg'
+imgCover: 'quick-review-of-maizzle-the-tailwindcss-email-framework.jpg'
 tags: [email]
 createdAt: 2020-09-20
 ---
