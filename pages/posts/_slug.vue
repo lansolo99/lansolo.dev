@@ -10,20 +10,30 @@
         ]"
       >
         <div
-          class="relative w-full mx-auto overflow-hidden bg-red-700"
+          class="relative w-full mx-auto overflow-hidden bg-gray-900"
           :class="{ 'pb-6/12': isPostTypeArticle }"
         >
-          <!-- <nuxt-image
-            v-for="(image, i) in setCoverImagesSrc"
-            :key="i"
-            :src="image.src"
-            :alt="image.title"
-            :class="{
-              'absolute inset-0 object-cover': isPostTypeArticle,
-            }"
-            :placeholder="true"
-            :sizes="setCoverImageSizes"
-          /> -->
+          <client-only>
+            <cld-image
+              v-for="(image, i) in setCoverImagesSrc"
+              :key="i"
+              :public-id="`lansolo.dev/posts/${image.src}`"
+              dpr="auto"
+              responsive="width"
+              crop="fit"
+              fetch-format="auto"
+              width="auto"
+              quality="auto"
+              loading="lazy"
+              :alt="image.title"
+              class="z-10 cdy-wrapper"
+              :class="{
+                'article absolute inset-0 object-cover': isPostTypeArticle,
+              }"
+            >
+              <cld-placeholder type="blur"> </cld-placeholder>
+            </cld-image>
+          </client-only>
         </div>
       </div>
 
@@ -160,3 +170,15 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss">
+.cdy-wrapper {
+  &.article {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+</style>

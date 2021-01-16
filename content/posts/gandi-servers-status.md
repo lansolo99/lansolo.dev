@@ -1,10 +1,10 @@
 ---
 title: 'Gandi servers status'
 type: 'design'
-imgCover: '/img/posts/gandi-servers-status.jpg'
+imgCover: 'gandi-servers-status.jpg'
 imgList:
   [
-    { title: 'Gandi servers status', src: '/img/posts/gandi-servers-status_1.jpg' },
+    { title: 'Gandi servers status', src: 'gandi-servers-status_1.jpg' },
   ]
 tags: [cinema 4D, sketch & toon, low poly]
 createdAt: 2017-01-23

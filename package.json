@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.9.0",
+    "@nuxtjs/cloudinary": "^1.0.3-beta-2",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^9.8.6",
@@ -27,7 +28,6 @@
     "vue-infinite-loading": "^2.4.5"
   },
   "devDependencies": {
-    "@nuxt/image": "0.0.4",
     "@nuxt/types": "^2.14.7",
     "@nuxtjs/date-fns": "^1.4.3",
     "@nuxtjs/eslint-config": "^3.1.0",

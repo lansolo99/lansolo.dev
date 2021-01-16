@@ -1,7 +1,7 @@
 ---
 title: 'Gandi.net - 2018 wishes card'
 type: 'design'
-imgCover: '/img/posts/gandi-2018-wishescard.jpg'
+imgCover: 'gandi-2018-wishescard.jpg'
 tags: [cinema 4D, low poly, sketch & toon, after effects]
 createdAt: 2017-12-23
 ---

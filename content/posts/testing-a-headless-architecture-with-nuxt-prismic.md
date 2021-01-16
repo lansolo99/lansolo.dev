@@ -1,7 +1,7 @@
 ---
 title: 'Testing a headless architecture with Nuxt + Prismic'
 type: 'article'
-imgCover: '/img/posts/testing-a-headless-architecture-with-nuxt-prismic.jpg'
+imgCover: 'testing-a-headless-architecture-with-nuxt-prismic.jpg'
 tags: [netlify, prismic, nuxt]
 createdAt: 2020-04-02
 ---

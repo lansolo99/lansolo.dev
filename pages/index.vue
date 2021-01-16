@@ -6,14 +6,7 @@
       id="gridWrapper"
       class="w-full sm:w-8/12 md:w-9/12 lg:w-10/12 2xl:w-10/12"
     >
-      <!-- <nuxt-image
-        class="absolute inset-0 object-cover"
-        :lazy="false"
-        src="/animated-movie-wip4-low-poly-space-scene.jpg"
-        width="2000"
-        height="1000"
-      /> -->
-      <!-- <HpGridPosts :key="hpGridPostsKey" :context="context" :posts="posts" /> -->
+      <HpGridPosts :key="hpGridPostsKey" :context="context" :posts="posts" />
 
       <client-only>
         <infinite-loading :identifier="infiniteId" @infinite="infiniteHandler">

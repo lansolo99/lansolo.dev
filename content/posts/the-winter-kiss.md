@@ -1,10 +1,10 @@
 ---
 title: "The Winter Kiss"
 type: 'design'
-imgCover: '/img/posts/the-winter-kiss.jpg'
+imgCover: 'the-winter-kiss.jpg'
 imgList:
   [
-    { title: 'The Winter Kiss', src: '/img/posts/the-winter-kiss_1.jpg' },
+    { title: 'The Winter Kiss', src: 'the-winter-kiss_1.jpg' },
   ]
 tags: [cinema 4D, low poly, after effects, digital painting]
 createdAt: 2017-08-26
