@@ -1,7 +1,7 @@
 ---
 title: 'Groupama - 2017 wishescard'
 type: 'design'
-imgCover: 'groupama-from-japan-to-bermudas.jpg'
+imgCover: 'groupama-from-japan-to-bermudas'
 tags: [cinema 4D, sketch & toon, low poly, after effects]
 createdAt: 2017-01-03
 ---

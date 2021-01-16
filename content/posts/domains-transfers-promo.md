@@ -1,7 +1,7 @@
 ---
 title: 'Domains transfers promo'
 type: 'design'
-imgCover: 'domains-transfers-promo.jpg'
+imgCover: 'domains-transfers-promo'
 tags: [cinema 4D, sketch & toon, low poly]
 createdAt: 2016-08-10
 ---

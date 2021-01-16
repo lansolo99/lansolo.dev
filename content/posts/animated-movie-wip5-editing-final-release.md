@@ -1,7 +1,7 @@
 ---
 title: 'Animated movie WIP#5 (editing and final release)'
 type: 'article'
-imgCover: 'animated-movie-wip5-editing-final-release.jpg'
+imgCover: 'animated-movie-wip5-editing-final-release'
 tags: [cinema 4D, after effects]
 createdAt: 2018-10-15
 ---

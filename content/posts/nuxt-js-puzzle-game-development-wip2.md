@@ -1,7 +1,7 @@
 ---
 title: 'Nuxt.js puzzle game development - WIP#2'
 type: 'article'
-imgCover: 'nuxt-js-puzzle-game-development-wip2.jpg'
+imgCover: 'nuxt-js-puzzle-game-development-wip2'
 tags: [nuxt, cordova]
 createdAt: 2019-07-24
 ---

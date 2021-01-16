@@ -1,7 +1,7 @@
 ---
 title: "Gandi's kitchen"
 type: 'design'
-imgCover: 'gandis-kitchen.jpg'
+imgCover: 'gandis-kitchen'
 tags: [cinema 4D, low poly, sketch & toon]
 createdAt: 2017-11-13
 ---

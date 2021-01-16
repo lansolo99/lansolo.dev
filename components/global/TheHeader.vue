@@ -4,9 +4,20 @@
     style="height: 49px"
   >
     <!-- Logo -->
-    <button class="flex-grow px-4 py-2 outline-none bg-red" @click="setTag">
-      <img src="/logo.svg" alt="lansolo.dev" style="height: 28px" />
-    </button>
+    <div class="flex-grow px-4 py-2">
+      <button
+        class="focus:outline-none focus-visible:outline-black"
+        @click="setTag"
+      >
+        <img
+          src="/logo.svg"
+          alt="lansolo.dev"
+          style="height: 28px"
+          width="139"
+          height="30"
+        />
+      </button>
+    </div>
 
     <!-- Nav -->
     <nav class="hidden h-full md:flex">

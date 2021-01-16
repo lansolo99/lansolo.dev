@@ -1,7 +1,7 @@
 ---
 title: Gandi.net - 2019 wishes card
 type: 'design'
-imgCover: 'gandi-net-2019-wishescard.jpg'
+imgCover: 'gandi-net-2019-wishescard'
 tags: [cinema 4D, sketch & toon, low poly]
 createdAt: 2018-12-31
 ---

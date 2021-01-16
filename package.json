@@ -19,6 +19,8 @@
     "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
     "cors": "^2.8.5",
+    "focus-visible": "^5.2.0",
+    "focus-within-polyfill": "^5.1.0",
     "javascript-retina-detect": "^0.1.4",
     "nuxt": "^2.14.12",
     "postcss": "^7.0.35",

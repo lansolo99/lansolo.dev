@@ -1,6 +1,6 @@
 ---
 title: Front-end developer &  polyvalent designer
-imgCover: '/img/about/avatar.png'
+imgCover: '/img/about/avatar'
 tags: []
 socialLinks: [
   {

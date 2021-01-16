@@ -1,27 +1,26 @@
 <template>
-  <article class="relative overflow-hidden pb-2/3">
-    <!-- {{ post }} -->
-    <nuxt-link :to="post.path">
+  <article class="relative overflow-hidden bg-primary-900 pb-2/3">
+    <nuxt-link :to="post.path" no-prefetch>
       <!-- Image -->
       <client-only>
         <cld-image
           :public-id="`lansolo.dev/posts/${post.imgCover}`"
           crop="fill"
-          :dpr="cloudinaryDpr"
           responsive="width"
           fetch-format="auto"
-          loading="lazy"
           width="500"
+          :dpr="cloudinaryDpr"
           height="333"
+          aspect_ratio="2:3"
+          client_hints="true"
           quality="auto"
+          sizes="100vw"
           :alt="post.title"
           class="absolute inset-0 object-cover cdy-wrapper"
         >
-          <!-- aspect-ratio="2:3" -->
           <cld-placeholder type="blur"> </cld-placeholder>
         </cld-image>
       </client-only>
-      <!-- crop="fit" -->
 
       <!-- Post type -->
       <div class="absolute top-0 right-0 w-8 h-8 mt-2 mr-2">

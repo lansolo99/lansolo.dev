@@ -1,7 +1,7 @@
 ---
 title: '.asia domain promo'
 type: 'design'
-imgCover: 'asia-domain-promo.jpg'
+imgCover: 'asia-domain-promo'
 tags: [cinema 4D, sketch & toon, low poly]
 createdAt: 2017-04-06
 ---

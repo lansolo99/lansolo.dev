@@ -1,10 +1,10 @@
 ---
 title: 'Summer Trip'
 type: 'design'
-imgCover: 'summer-trip.jpg'
+imgCover: 'summer-trip'
 imgList:
   [
-    { title: 'Summer Trip', src: 'summer-trip_1.jpg' },
+    { title: 'Summer Trip', src: 'summer-trip_1' },
   ]
 tags: [cinema 4D, after effects, digital painting]
 createdAt: 2018-07-02

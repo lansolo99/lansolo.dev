@@ -1,7 +1,7 @@
 ---
 title: 'Todo vue.js app WIP#2 : vuex modules + Firebase'
 type: 'article'
-imgCover: 'todo-vue-js-app-wip2-vuex-modules-firebase.jpg'
+imgCover: 'todo-vue-js-app-wip2-vuex-modules-firebase'
 tags: [vue, sketch
 ]
 createdAt: 2019-03-03

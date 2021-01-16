@@ -10,13 +10,9 @@
 
       <client-only>
         <infinite-loading :identifier="infiniteId" @infinite="infiniteHandler">
-          <template slot="spinner" class="text-muted small-text"
-            >Loading...</template
-          >
-          <div slot="no-more" class="text-muted small-text">--- End ---</div>
-          <div slot="no-results" class="text-muted small-text">
-            No results message
-          </div>
+          <template slot="spinner" class="text-muted small-text"></template>
+          <div slot="no-more" class="text-muted small-text"></div>
+          <div slot="no-results" class="text-muted small-text"></div>
         </infinite-loading>
       </client-only>
     </div>
@@ -24,7 +20,9 @@
 </template>
 
 <script>
+/* eslint-disable vue/no-unused-components */
 import { mapState } from 'vuex'
+import mobileDetect from '@/mixins/mobileDetect.js'
 import InfiniteLoading from 'vue-infinite-loading'
 
 export default {
@@ -32,10 +30,14 @@ export default {
   components: {
     InfiniteLoading,
   },
+  mixins: [mobileDetect],
   async fetch() {
+    console.log('fetch')
+    console.time('fetch')
     this.posts = await this.fetchData()
+    console.timeEnd('fetch')
   },
-  fetchOnServer: false,
+  // fetchOnServer: false,
   data() {
     return {
       context: 'home',
@@ -70,20 +72,18 @@ export default {
 
       return { tags: { $containsAny: this.selectedTags } }
     },
-    infiniteHandler($state) {
-      setTimeout(async () => {
-        this.page += 1
-        const additionalItems = await this.fetchData()
+    async infiniteHandler($state) {
+      console.log('infiniteHandler')
+      this.page += 1
+      const additionalItems = await this.fetchData()
 
-        if (additionalItems.length > 0) {
-          this.posts.push(...additionalItems)
-          $state.loaded()
-        } else {
-          $state.complete()
-        }
-      }, 500)
+      if (additionalItems.length > 0) {
+        this.posts.push(...additionalItems)
+        $state.loaded()
+      } else {
+        $state.complete()
+      }
     },
-
     async resetInfinite() {
       this.page = 0
       this.posts = await this.fetchData()

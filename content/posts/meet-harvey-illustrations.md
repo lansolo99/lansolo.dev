@@ -1,10 +1,10 @@
 ---
 title: Meet Harvey illustrations
 type: 'design'
-imgCover: 'meetharvey_illustrations.jpg'
+imgCover: 'meetharvey_illustrations'
 imgList:
   [
-    { title: 'Meet Harvey illustrations', src: 'meetharvey_illustrations_1.jpg' },
+    { title: 'Meet Harvey illustrations', src: 'meetharvey_illustrations_1' },
   ]
 tags: [cinema 4D, low poly]
 createdAt: 2020-10-07

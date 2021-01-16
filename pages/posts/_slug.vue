@@ -11,7 +11,7 @@
         ]"
       >
         <div
-          class="relative w-full mx-auto overflow-hidden bg-gray-900"
+          class="relative w-full mx-auto overflow-hidden bg-primary-900"
           :class="[
             { 'pb-6/12': isPostTypeArticle },
             { 'pb-full': isPostTypeDesignWithoutImgList },
