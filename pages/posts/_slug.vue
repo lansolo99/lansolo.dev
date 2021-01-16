@@ -3,15 +3,20 @@
     <article class="container relative mx-auto text-white md:mt-8 md:px-8">
       <!-- Cover Image(s) -->
       <div
-        class="flex flex-col justify-center mx-auto bg-yellow-500"
+        class="flex flex-col justify-center mx-auto"
         :class="[
           { 'max-w-680': isPostTypeArticle },
           { 'max-w-1000': isPostTypeDesignWithoutImgList },
+          { 'max-w-1920': isPostTypeDesignWithImgList },
         ]"
       >
         <div
           class="relative w-full mx-auto overflow-hidden bg-gray-900"
-          :class="{ 'pb-6/12': isPostTypeArticle }"
+          :class="[
+            { 'pb-6/12': isPostTypeArticle },
+            { 'pb-full': isPostTypeDesignWithoutImgList },
+            { 'pb-c56%': isPostTypeDesignWithImgList },
+          ]"
         >
           <client-only>
             <cld-image
@@ -26,10 +31,7 @@
               quality="auto"
               loading="lazy"
               :alt="image.title"
-              class="z-10 cdy-wrapper"
-              :class="{
-                'article absolute inset-0 object-cover': isPostTypeArticle,
-              }"
+              class="absolute inset-0 z-10 object-cover cdy-wrapper"
             >
               <cld-placeholder type="blur"> </cld-placeholder>
             </cld-image>
@@ -119,6 +121,9 @@ export default {
     isPostTypeDesignWithoutImgList() {
       return this.post.type === 'design' && !this.post.imgList
     },
+    isPostTypeDesignWithImgList() {
+      return this.post.type === 'design' && this.post.imgList
+    },
     setCoverImagesSrc() {
       const regularCoverImg = [
         {
@@ -173,12 +178,10 @@ export default {
 
 <style lang="postcss">
 .cdy-wrapper {
-  &.article {
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 </style>

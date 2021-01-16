@@ -1,12 +1,21 @@
 <template>
   <div class="relative w-full my-10 overflow-hidden bg-red-700 pb-6/12">
-    <!-- <nuxt-image
-      class="absolute inset-0 object-cover"
-      :src="path"
-      :alt="title"
-      :placeholder="true"
-      :sizes="`${640 * dpr},768:${768 * dpr}`"
-    /> -->
+    <client-only>
+      <cld-image
+        :public-id="`lansolo.dev/posts/${path}`"
+        dpr="auto"
+        responsive="width"
+        crop="fit"
+        fetch-format="auto"
+        width="auto"
+        quality="auto"
+        loading="lazy"
+        :alt="title"
+        class="absolute inset-0 z-10 object-cover cdy-wrapper"
+      >
+        <cld-placeholder type="blur"> </cld-placeholder>
+      </cld-image>
+    </client-only>
   </div>
 </template>
 
@@ -25,3 +34,14 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss">
+.cdy-wrapper {
+  img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+  }
+}
+</style>
