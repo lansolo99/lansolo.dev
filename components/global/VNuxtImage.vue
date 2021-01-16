@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full my-10 overflow-hidden bg-red-700 pb-6/12">
+  <div class="relative w-full my-10 overflow-hidden bg-gray-900 pb-6/12">
     <client-only>
       <cld-image
         :public-id="`lansolo.dev/posts/${path}`"

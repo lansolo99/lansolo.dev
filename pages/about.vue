@@ -28,10 +28,12 @@
         </h1>
 
         <!-- Body -->
-        <nuxt-content
-          :document="page"
-          class="mt-10 prose text-white max-w-none about"
-        />
+        <div class="markdown-container">
+          <nuxt-content
+            :document="page"
+            class="mt-10 prose text-white max-w-none about"
+          />
+        </div>
       </div>
     </article>
   </div>
@@ -48,7 +50,7 @@ export default {
 </script>
 
 <style lang="postcss">
-.nuxt-content-container {
+.markdown-container {
   .prose {
     &.about {
       img {

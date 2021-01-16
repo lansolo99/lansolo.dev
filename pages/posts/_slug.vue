@@ -74,10 +74,12 @@
         />
 
         <!-- Body -->
-        <nuxt-content
-          :document="post"
-          class="mt-10 prose text-white max-w-none"
-        />
+        <div class="markdown-container">
+          <nuxt-content
+            :document="post"
+            class="mt-10 prose text-white max-w-none"
+          />
+        </div>
 
         <!-- Related -->
         <div class="mt-10">
@@ -101,7 +103,7 @@ export default {
     const post = await $content('posts', params.slug).fetch()
 
     const relatedPosts = await $content('posts')
-      .only(['title', 'type', 'imgCover', 'tags', 'createdAt'])
+      .only(['title', 'type', 'imgCover', 'tags', 'createdAt', 'path'])
       .where({ tags: { $containsAny: post.tags } })
       .sortBy('created', 'desc')
       .limit(4)

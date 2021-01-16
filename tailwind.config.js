@@ -4,9 +4,20 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   important: true,
-  purge: [],
+  purge: {
+    options: {
+      safelist: ['nuxt-content-container'],
+    },
+  },
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#ffffff',
+          },
+        },
+      },
       screens: {
         '2xl': '1536px',
       },

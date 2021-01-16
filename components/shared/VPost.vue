@@ -1,5 +1,6 @@
 <template>
   <article class="relative overflow-hidden pb-2/3">
+    <!-- {{ post }} -->
     <nuxt-link :to="post.path">
       <!-- Image -->
       <client-only>
