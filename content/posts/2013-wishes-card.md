@@ -1,7 +1,7 @@
 ---
 title: '2013 wishes card'
 type: 'design'
-imgCover: '/img/posts/2013-wishes-card.jpg'
+imgCover: '2013-wishes-card.jpg'
 tags: [cinema 4D, sketch & toon, low poly]
 createdAt: 2013-12-25
 ---

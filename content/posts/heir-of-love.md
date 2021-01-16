@@ -1,10 +1,10 @@
 ---
 title: 'Heir of love'
 type: 'design'
-imgCover: '/img/posts/heir-of-love.jpg'
+imgCover: 'heir-of-love.jpg'
 imgList:
   [
-    { title: 'Heir of love', src: '/img/posts/heir-of-love_1.jpg' },
+    { title: 'Heir of love', src: 'heir-of-love_1.jpg' },
   ]
 tags: [vector design]
 createdAt: 2018-08-20

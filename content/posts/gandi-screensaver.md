@@ -1,7 +1,7 @@
 ---
 title: 'Gandi screensaver'
 type: 'design'
-imgCover: '/img/posts/gandi-screensaver.jpg'
+imgCover: 'gandi-screensaver.jpg'
 tags: [cinema 4D, sketch & toon, low poly, after effects, x-particles]
 createdAt: 2016-10-13
 ---

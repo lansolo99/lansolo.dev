@@ -1,10 +1,10 @@
 ---
 title: 'Pari(s) sur le Local'
 type: 'design'
-imgCover: '/img/posts/paris-sur-le-local.jpg'
+imgCover: 'paris-sur-le-local.jpg'
 imgList:
   [
-    { title: 'Pari(s) sur le Local', src: '/img/posts/paris-sur-le-local_1.jpg' },
+    { title: 'Pari(s) sur le Local', src: 'paris-sur-le-local_1.jpg' },
   ]
 tags: [cinema 4D, sketch & toon, low poly, vector design]
 createdAt: 2017-04-26

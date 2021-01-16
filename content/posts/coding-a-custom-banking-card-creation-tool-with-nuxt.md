@@ -1,7 +1,7 @@
 ---
 title: 'Coding a custom banking card creation tool with Nuxt'
 type: 'article'
-imgCover: '/img/posts/coding-a-custom-banking-card-creation-tool-with-nuxt.jpg'
+imgCover: 'coding-a-custom-banking-card-creation-tool-with-nuxt.jpg'
 tags: [nuxt, testing, node]
 createdAt: 2020-06-05
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'Gridsome.js quick review'
 type: 'article'
-imgCover: '/img/posts/gridsome-js-quick-review.jpg'
+imgCover: 'gridsome-js-quick-review.jpg'
 tags: [vue, gridsome]
 createdAt: 2019-06-07
 ---

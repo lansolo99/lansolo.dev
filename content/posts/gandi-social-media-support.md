@@ -1,7 +1,7 @@
 ---
 title: 'Gandi social media support'
 type: 'design'
-imgCover: '/img/posts/gandi-social-media-support.jpg'
+imgCover: 'gandi-social-media-support.jpg'
 tags: [cinema 4D, sketch & toon, low poly]
 createdAt: 2017-09-20
 ---

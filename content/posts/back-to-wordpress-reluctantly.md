@@ -1,7 +1,7 @@
 ---
 title: 'Back to Wordpress (Reluctantly)'
 type: 'article'
-imgCover: '/img/posts/back-to-wordpress-reluctantly.jpg'
+imgCover: 'back-to-wordpress-reluctantly.jpg'
 tags: [wordpress]
 createdAt: 2020-08-28
 ---

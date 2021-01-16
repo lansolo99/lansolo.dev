@@ -1,10 +1,10 @@
 ---
 title: '2101 : a space disaster - artwork'
 type: 'design'
-imgCover: '/img/posts/2101-space-disaster-artwork.jpg'
+imgCover: '2101-space-disaster-artwork.jpg'
 imgList:
   [
-    { title: '2101 : a space disaster - artwork', src: '/img/posts/2101-space-disaster-artwork_1.jpg' },
+    { title: '2101 : a space disaster - artwork', src: '2101-space-disaster-artwork_1.jpg' },
   ]
 tags: [cinema 4D, low poly, sketch & toon, after effects]
 createdAt: 2019-01-18

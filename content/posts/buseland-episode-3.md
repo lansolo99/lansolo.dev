@@ -1,7 +1,7 @@
 ---
 title: "Buseland #3 - The new home delivery"
 type: 'design'
-imgCover: '/img/posts/buseland-episode-3.jpg'
+imgCover: 'buseland-episode-3.jpg'
 tags: [cinema 4D, low poly, sketch & toon, after effects]
 createdAt: 2016-05-26
 ---

@@ -3,12 +3,21 @@
     <article class="container relative mx-auto text-white">
       <!-- Avatar -->
       <div class="relative w-40 h-40 p-8 mx-auto mt-8">
-        <nuxt-image
-          class="absolute inset-0 object-cover"
-          :src="page.imgCover"
-          alt="avatar"
-          sizes="320,"
-        />
+        <client-only>
+          <cld-image
+            public-id="lansolo.dev/about/avatar.png"
+            crop="fit"
+            dpr="auto"
+            responsive="width"
+            fetch-format="auto"
+            width="auto"
+            quality="auto"
+            alt="Theme"
+            class="absolute inset-0 object-cover"
+          >
+            <cld-placeholder type="blur"></cld-placeholder>
+          </cld-image>
+        </client-only>
       </div>
 
       <!-- Content -->
@@ -19,10 +28,12 @@
         </h1>
 
         <!-- Body -->
-        <nuxt-content
-          :document="page"
-          class="mt-10 prose text-white max-w-none about"
-        />
+        <div class="markdown-container">
+          <nuxt-content
+            :document="page"
+            class="mt-10 prose text-white max-w-none about"
+          />
+        </div>
       </div>
     </article>
   </div>
@@ -39,7 +50,7 @@ export default {
 </script>
 
 <style lang="postcss">
-.nuxt-content-container {
+.markdown-container {
   .prose {
     &.about {
       img {

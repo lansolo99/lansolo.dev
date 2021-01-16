@@ -1,7 +1,7 @@
 ---
 title: 'Todo vue.js app WIP#3 : turning SPA into a PWA'
 type: 'article'
-imgCover: '/img/posts/todo-vue-js-app-wip3-turning-spa-pwa.jpg'
+imgCover: 'todo-vue-js-app-wip3-turning-spa-pwa.jpg'
 tags: [vue, sketch]
 createdAt: 2019-03-26
 ---

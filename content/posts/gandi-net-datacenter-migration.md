@@ -1,7 +1,7 @@
 ---
 title: 'Gandi.net datacenter migration'
 type: 'design'
-imgCover: '/img/posts/gandi-net-datacenter-migration.jpg'
+imgCover: 'gandi-net-datacenter-migration.jpg'
 tags: [cinema 4D, low poly, sketch & toon, after effects]
 createdAt: 2018-04-10
 ---

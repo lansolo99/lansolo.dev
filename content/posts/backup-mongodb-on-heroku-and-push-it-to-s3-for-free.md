@@ -1,7 +1,7 @@
 ---
 title: Backup MongoDB on Heroku and push it to S3 for free
 type: 'article'
-imgCover: '/img/posts/backup-mongodb-on-heroku-and-push-it-to-s3-for-free.jpg'
+imgCover: 'backup-mongodb-on-heroku-and-push-it-to-s3-for-free.jpg'
 tags: [node, express, S3]
 createdAt: 2020-11-08
 ---

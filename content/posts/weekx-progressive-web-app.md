@@ -1,10 +1,10 @@
 ---
 title: Weekx progressive web app
 type: 'design'
-imgCover: '/img/posts/weekx-progressive-web-app.jpg'
+imgCover: 'weekx-progressive-web-app.jpg'
 imgList:
   [
-    { title: 'Weekx progressive web app', src: '/img/posts/weekx-progressive-web-app_1.jpg' },
+    { title: 'Weekx progressive web app', src: 'weekx-progressive-web-app_1.jpg' },
   ]
 tags: [vue, vuex, pwa]
 createdAt: 2019-03-19

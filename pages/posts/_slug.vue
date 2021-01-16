@@ -3,27 +3,39 @@
     <article class="container relative mx-auto text-white md:mt-8 md:px-8">
       <!-- Cover Image(s) -->
       <div
-        class="flex flex-col justify-center mx-auto bg-yellow-500"
+        class="flex flex-col justify-center mx-auto"
         :class="[
           { 'max-w-680': isPostTypeArticle },
           { 'max-w-1000': isPostTypeDesignWithoutImgList },
+          { 'max-w-1920': isPostTypeDesignWithImgList },
         ]"
       >
         <div
-          class="relative w-full mx-auto overflow-hidden bg-red-700"
-          :class="{ 'pb-6/12': isPostTypeArticle }"
+          class="relative w-full mx-auto overflow-hidden bg-gray-900"
+          :class="[
+            { 'pb-6/12': isPostTypeArticle },
+            { 'pb-full': isPostTypeDesignWithoutImgList },
+            { 'pb-c56%': isPostTypeDesignWithImgList },
+          ]"
         >
-          <nuxt-image
-            v-for="(image, i) in setCoverImagesSrc"
-            :key="i"
-            :src="image.src"
-            :alt="image.title"
-            :class="{
-              'absolute inset-0 object-cover': isPostTypeArticle,
-            }"
-            :placeholder="true"
-            :sizes="setCoverImageSizes"
-          />
+          <client-only>
+            <cld-image
+              v-for="(image, i) in setCoverImagesSrc"
+              :key="i"
+              :public-id="`lansolo.dev/posts/${image.src}`"
+              dpr="auto"
+              responsive="width"
+              crop="fit"
+              fetch-format="auto"
+              width="auto"
+              quality="auto"
+              loading="lazy"
+              :alt="image.title"
+              class="absolute inset-0 z-10 object-cover cdy-wrapper"
+            >
+              <cld-placeholder type="blur"> </cld-placeholder>
+            </cld-image>
+          </client-only>
         </div>
       </div>
 
@@ -62,10 +74,12 @@
         />
 
         <!-- Body -->
-        <nuxt-content
-          :document="post"
-          class="mt-10 prose text-white max-w-none"
-        />
+        <div class="markdown-container">
+          <nuxt-content
+            :document="post"
+            class="mt-10 prose text-white max-w-none"
+          />
+        </div>
 
         <!-- Related -->
         <div class="mt-10">
@@ -89,7 +103,7 @@ export default {
     const post = await $content('posts', params.slug).fetch()
 
     const relatedPosts = await $content('posts')
-      .only(['title', 'type', 'imgCover', 'tags', 'createdAt'])
+      .only(['title', 'type', 'imgCover', 'tags', 'createdAt', 'path'])
       .where({ tags: { $containsAny: post.tags } })
       .sortBy('created', 'desc')
       .limit(4)
@@ -108,6 +122,9 @@ export default {
     },
     isPostTypeDesignWithoutImgList() {
       return this.post.type === 'design' && !this.post.imgList
+    },
+    isPostTypeDesignWithImgList() {
+      return this.post.type === 'design' && this.post.imgList
     },
     setCoverImagesSrc() {
       const regularCoverImg = [
@@ -160,3 +177,13 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss">
+.cdy-wrapper {
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+</style>
