@@ -6,18 +6,22 @@
       <client-only>
         <cld-image
           :public-id="`lansolo.dev/posts/${post.imgCover}`"
-          crop="fit"
-          dpr="auto"
+          crop="fill"
+          :dpr="cloudinaryDpr"
           responsive="width"
           fetch-format="auto"
-          width="auto"
+          loading="lazy"
+          width="500"
+          height="333"
           quality="auto"
           :alt="post.title"
           class="absolute inset-0 object-cover cdy-wrapper"
         >
+          <!-- aspect-ratio="2:3" -->
           <cld-placeholder type="blur"> </cld-placeholder>
         </cld-image>
       </client-only>
+      <!-- crop="fit" -->
 
       <!-- Post type -->
       <div class="absolute top-0 right-0 w-8 h-8 mt-2 mr-2">

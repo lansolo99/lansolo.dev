@@ -34,7 +34,6 @@ export default {
   },
   async fetch() {
     this.posts = await this.fetchData()
-    console.log(this.posts.length)
   },
   fetchOnServer: false,
   data() {
