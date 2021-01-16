@@ -1,7 +1,7 @@
 ---
 title: "Gandi news tutorial theme"
 type: 'design'
-imgCover: 'gandi-news-tutorial-theme.jpg'
+imgCover: 'gandi-news-tutorial-theme'
 tags: [cinema 4D, low poly, sketch & toon]
 createdAt: 2017-06-20
 ---

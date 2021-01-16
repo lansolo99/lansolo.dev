@@ -1,7 +1,7 @@
 ---
 title: Vue Formulate quick review
 type: 'article'
-imgCover: 'vue-formulate-quick-review.jpg'
+imgCover: 'vue-formulate-quick-review'
 tags: [vue, vuex, form]
 createdAt: 2020-11-19
 ---

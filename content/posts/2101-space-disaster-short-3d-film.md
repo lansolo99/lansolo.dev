@@ -1,7 +1,7 @@
 ---
 title: '2101 : A Space Disaster - short 3D film'
 type: 'design'
-imgCover: '2101-space-disaster-short-3d-film.jpg'
+imgCover: '2101-space-disaster-short-3d-film'
 tags: [cinema 4D, sketch & toon, low poly, after effects, x-particles]
 createdAt: 2018-10-23
 ---

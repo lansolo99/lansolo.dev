@@ -35,6 +35,7 @@ module.exports = {
         primary: {
           400: '#CE9DFA',
           500: '#8138C2',
+          900: '#170f2b',
         },
       },
       spacing: {
@@ -53,6 +54,17 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    backgroundColor: [
+      'responsive',
+      'dark',
+      'group-hover',
+      'focus-within',
+      'hover',
+      'focus',
+      'focus-visible',
+    ],
+    outline: ['responsive', 'focus-within', 'focus', 'focus-visible'],
+  },
   plugins: [require('@tailwindcss/typography')],
 }

@@ -1,7 +1,7 @@
 ---
 title: "The Root Zone meetup theme"
 type: 'design'
-imgCover: 'the-root-zone-meetup-theme.jpg'
+imgCover: 'the-root-zone-meetup-theme'
 tags: [cinema 4D, low poly, sketch & toon, digital painting]
 createdAt: 2017-01-18
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'Animated movie WIP#4 (low-poly space scenes)'
 type: 'article'
-imgCover: 'animated-movie-wip4-low-poly-space-scene.jpg'
+imgCover: 'animated-movie-wip4-low-poly-space-scene'
 tags: [cinema 4D]
 createdAt: 2018-09-04
 ---

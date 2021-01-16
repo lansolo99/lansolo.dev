@@ -3,12 +3,16 @@
     <nuxt-link
       v-if="linkData.type === 'internal'"
       :to="linkData.to"
-      class="link"
+      class="link focus:outline-none focus-visible:bg-primary-400"
     >
       {{ linkData.label }}
     </nuxt-link>
 
-    <a v-else class="link" :href="linkData.to">
+    <a
+      v-else
+      class="link focus:outline-none focus-visible:bg-primary-400"
+      :href="linkData.to"
+    >
       {{ linkData.label }}
     </a>
   </div>

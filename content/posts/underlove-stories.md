@@ -1,10 +1,10 @@
 ---
 title: 'Underlove stories'
 type: 'design'
-imgCover: 'underlove-stories.jpg'
+imgCover: 'underlove-stories'
 imgList:
   [
-    { title: 'Underlove stories', src: 'underlove-stories_1.jpg' },
+    { title: 'Underlove stories', src: 'underlove-stories_1' },
   ]
 tags: [cinema 4D, sketch & toon, low poly, digital painting]
 createdAt: 2016-10-31

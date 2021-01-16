@@ -9,7 +9,11 @@
         :key="i"
         class="relative flex-none w-12 h-12 px-2"
       >
-        <a :href="link.url" :title="link.name">
+        <a
+          :href="link.url"
+          :title="link.name"
+          class="flex w-full h-full focus:outline-none focus-visible:outline-white"
+        >
           <postTypeShape class="w-full h-full fill-current text-primary-500" />
           <img
             class="absolute w-5 h-5 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
