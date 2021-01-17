@@ -7,7 +7,7 @@
       <div
         v-for="(link, i) in sociallinks"
         :key="i"
-        class="relative flex-none w-12 h-12 px-2"
+        class="relative flex-none w-12 h-12 px-2 transition duration-150 ease-out transform lg:hover:scale-125"
       >
         <a
           :href="link.url"

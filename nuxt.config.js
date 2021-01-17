@@ -95,7 +95,12 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
+    '@nuxtjs/google-analytics',
   ],
+
+  googleAnalytics: {
+    id: 'G-9NTJCGKW7X',
+  },
 
   dateFns: {
     defaultLocale: 'en-US',

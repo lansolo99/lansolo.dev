@@ -20,9 +20,7 @@
 </template>
 
 <script>
-/* eslint-disable vue/no-unused-components */
 import { mapState } from 'vuex'
-import mobileDetect from '@/mixins/mobileDetect.js'
 import InfiniteLoading from 'vue-infinite-loading'
 
 export default {
@@ -30,7 +28,6 @@ export default {
   components: {
     InfiniteLoading,
   },
-  mixins: [mobileDetect],
   async fetch() {
     this.posts = await this.fetchData()
   },

@@ -1,5 +1,5 @@
 <template>
-  <div ref="cursor" class="fixed w-20 h-20 pointer-events-none z-999 cursor">
+  <div ref="cursor" class="fixed w-24 h-24 pointer-events-none z-999 cursor">
     <transition name="scale">
       <div v-if="mount" class="relative w-full h-full">
         <img
@@ -10,7 +10,7 @@
 
         <img
           class="absolute z-10 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-          style="width: 55%; height: 55%"
+          style="width: 50%; height: 50%"
           src="/hand.svg"
           alt=""
         />
@@ -25,19 +25,27 @@ export default {
   data() {
     return {
       mount: false,
+      cursor: null,
     }
   },
   mounted() {
-    const cursor = this.$refs.cursor
-    document.addEventListener('mousemove', (e) => {
-      cursor.setAttribute(
-        'style',
-        `top: ${e.pageY - 32}px; left: ${e.pageX - 32}px; `
-      )
-    })
+    this.cursor = this.$refs.cursor
+    document.addEventListener('mousemove', this.setCursorPosition, false)
+  },
+  beforeDestroy() {
+    document.removeEventListener('mousemove', this.setCursorPosition)
+  },
+  methods: {
+    setCursorPosition(e) {
+      console.log('setCursorPosition')
 
-    this.mount = true
-    setTimeout(() => {}, 20)
+      this.cursor.setAttribute(
+        'style',
+        `top: ${e.clientY - 32}px; left: ${e.clientX - 32}px; `
+      )
+
+      this.mount = true
+    },
   },
 }
 </script>
@@ -49,7 +57,7 @@ export default {
 }
 
 .animate-clock {
-  animation: 3.5s linear infinite clock;
+  animation: 5s linear infinite clock;
 }
 
 @keyframes clock {

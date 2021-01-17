@@ -6,9 +6,8 @@
       :to="post.path"
       no-prefetch
       class="absolute w-full h-full focus:outline-none focus-visible:border-2 border-primary-500 postLink"
-      style="cursor: none"
-      @mouseover.native="setHoverEffect('show')"
-      @mouseleave.native="setHoverEffect('hide')"
+      @mouseover.native="setCustomCursorState(true)"
+      @mouseleave.native="setCustomCursorState(false)"
     >
       <!-- Image -->
       <client-only>
@@ -30,6 +29,11 @@
           <cld-placeholder type="blur"> </cld-placeholder>
         </cld-image>
       </client-only>
+
+      <!-- Overlay -->
+      <div
+        class="absolute inset-0 transition duration-200 ease-out pointer-events-none bg-primary-500 overlay"
+      ></div>
 
       <!-- Post type -->
       <div class="absolute top-0 right-0 w-8 h-8 mt-2 mr-2">
@@ -62,13 +66,13 @@
         </h1>
       </div>
     </nuxt-link>
-
-    <VCursor v-if="isCustomCursorVisible" />
   </article>
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 import dpr from '@/mixins/dpr.js'
+
 export default {
   name: 'VPost',
   mixins: [dpr],
@@ -78,16 +82,10 @@ export default {
       required: true,
     },
   },
-  data() {
-    return {
-      isCustomCursorVisible: false,
-    }
-  },
-
   methods: {
-    setHoverEffect(status) {
-      this.isCustomCursorVisible = status === 'show'
-    },
+    ...mapMutations({
+      setCustomCursorState: 'SET_CUSTOM_CURSOR_STATE',
+    }),
   },
 }
 </script>
@@ -100,18 +98,28 @@ export default {
 .cdy-wrapper {
   img {
     @apply w-full h-full object-cover;
-    transition: all;
-    transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.43, 0.56, 0, 1.02);
+    transition: transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
   }
 }
 
-.postLink {
-  &:hover {
-    .cdy-wrapper {
-      img {
-        filter: grayscale(100%);
-        transform: scale(1.04);
+.overlay {
+  opacity: 0;
+}
+
+@screen lg {
+  .postLink {
+    cursor: none;
+
+    &:hover {
+      .overlay {
+        opacity: 0.8;
+      }
+      .cdy-wrapper {
+        img {
+          transform: scale(1.02);
+        }
       }
     }
   }
