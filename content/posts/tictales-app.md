@@ -1,10 +1,10 @@
 ---
 title: 'Tictales app'
 type: 'design'
-imgCover: 'tictales-app.jpg'
+imgCover: 'tictales-app'
 imgList:
   [
-    { title: 'Tictales app - sketch screens', src: 'tictales-app_1.jpg' },
+    { title: 'Tictales app - sketch screens', src: 'tictales-app_1' },
   ]
 tags: [sketch, UX]
 createdAt: 2017-12-04

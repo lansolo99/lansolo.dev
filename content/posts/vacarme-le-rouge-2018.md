@@ -1,10 +1,10 @@
 ---
 title: 'Vacarme le rouge 2018'
 type: 'design'
-imgCover: 'vacarme-le-rouge-2018.jpg'
+imgCover: 'vacarme-le-rouge-2018'
 imgList:
   [
-    { title: 'Vacarme le rouge 2018 - artwork', src: 'vacarme-le-rouge-2018_1.jpg' },
+    { title: 'Vacarme le rouge 2018 - artwork', src: 'vacarme-le-rouge-2018_1' },
   ]
 tags: [cinema 4D, low poly, sketch & toon, after effects]
 createdAt: 2018-04-28

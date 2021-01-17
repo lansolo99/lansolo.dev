@@ -1,10 +1,10 @@
 ---
 title: 'Memory Hunter game'
 type: 'design'
-imgCover: 'memory-hunter.jpg'
+imgCover: 'memory-hunter'
 imgList:
   [
-    { title: 'Memory Hunter game', src: 'memory-hunter_1.jpg' },
+    { title: 'Memory Hunter game', src: 'memory-hunter_1' },
   ]
 tags: [cinema 4D, sketch & toon, low poly, digital painting]
 createdAt: 2017-11-03

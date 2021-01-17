@@ -11,6 +11,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      zIndex: {
+        999: 999,
+      },
       typography: {
         DEFAULT: {
           css: {
@@ -27,6 +30,9 @@ module.exports = {
       inset: {
         '1/2': '50%',
       },
+      boxShadow: {
+        cInnerTab: 'inset 0px 0px 0px 5px rgba(255,0,0,1);',
+      },
       fontFamily: {
         body: ['Karla', 'sans-serif'],
         heading: ['Neue Machina', 'sans-serif'],
@@ -35,6 +41,7 @@ module.exports = {
         primary: {
           400: '#CE9DFA',
           500: '#8138C2',
+          900: '#170f2b',
         },
       },
       spacing: {
@@ -53,6 +60,23 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      transform: ['group-hover'],
+    },
+    boxShadow: ['active', 'focus-visible'],
+    borderWidth: ['responsive', 'focus-visible'],
+
+    backgroundColor: [
+      'responsive',
+      'dark',
+      'group-hover',
+      'focus-within',
+      'hover',
+      'focus',
+      'focus-visible',
+    ],
+    outline: ['responsive', 'focus-within', 'focus', 'focus-visible'],
+  },
   plugins: [require('@tailwindcss/typography')],
 }

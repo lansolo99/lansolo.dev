@@ -1,6 +1,7 @@
 <template>
   <button
-    class="flex items-stretch text-sm border border-gray-600 outline-none"
+    tabindex="-1"
+    class="flex items-stretch text-sm transition duration-150 ease-out border border-gray-600 outline-none group lg:hover:border-gray-400"
     :class="{ 'cursor-default': isDisabled }"
     :disabled="isDisabled"
     @click="setTag()"
@@ -16,7 +17,7 @@
     <!-- Counter -->
     <div
       v-if="context === 'home'"
-      class="flex px-3 py-1 border-l border-gray-600"
+      class="flex px-3 py-1 transition duration-200 ease-out border-l border-gray-600 group-hover:border-gray-400"
     >
       {{ counter }}
     </div>

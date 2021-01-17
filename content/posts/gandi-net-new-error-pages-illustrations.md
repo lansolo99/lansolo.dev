@@ -1,10 +1,10 @@
 ---
 title: 'Gandi.net new error pages illustrations'
 type: 'design'
-imgCover: 'gandi-net-new-error-pages-illustrations.jpg'
+imgCover: 'gandi-net-new-error-pages-illustrations'
 imgList:
   [
-    { title: 'Gandi.net new error pages illustrations', src: 'gandi-net-new-error-pages-illustrations_1.jpg' },
+    { title: 'Gandi.net new error pages illustrations', src: 'gandi-net-new-error-pages-illustrations_1' },
   ]
 tags: [cinema 4D, sketch & toon, low poly, vector design]
 createdAt: 2018-10-09

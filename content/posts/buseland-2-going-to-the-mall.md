@@ -1,7 +1,7 @@
 ---
 title: "Buseland #3 - The new home delivery"
 type: 'design'
-imgCover: 'buseland-2-going-to-the-mall.jpg'
+imgCover: 'buseland-2-going-to-the-mall'
 tags: [cinema 4D, low poly, sketch & toon, after effects]
 createdAt: 2014-11-04
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'Gandi News launch promo'
 type: 'design'
-imgCover: 'gandi-news-launch-promo.jpg'
+imgCover: 'gandi-news-launch-promo'
 tags: [cinema 4D, sketch & toon, low poly]
 createdAt: 2017-06-02
 ---

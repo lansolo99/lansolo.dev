@@ -1,7 +1,7 @@
 ---
 title: 'Todo vue.js app WIP#1 : new project startup'
 type: 'article'
-imgCover: 'todo-vue-js-app-wip1-new-project-startup.jpg'
+imgCover: 'todo-vue-js-app-wip1-new-project-startup'
 tags: [vue, sketch
 ]
 createdAt: 2019-01-31

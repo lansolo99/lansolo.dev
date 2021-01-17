@@ -1,12 +1,23 @@
 <template>
   <div
-    class="fixed z-50 flex text-black bg-white border-t-4 border-b-4 border-black header"
+    class="fixed z-50 flex w-full text-black bg-white border-4 border-black"
     style="height: 49px"
   >
     <!-- Logo -->
-    <button class="flex-grow px-4 py-2 outline-none bg-red" @click="setTag">
-      <img src="/logo.svg" alt="lansolo.dev" style="height: 28px" />
-    </button>
+    <div class="flex-grow px-4 py-2">
+      <button
+        class="focus:outline-none focus-visible:outline-black"
+        @click="setTag"
+      >
+        <img
+          src="/logo.svg"
+          alt="lansolo.dev"
+          style="height: 28px"
+          width="139"
+          height="30"
+        />
+      </button>
+    </div>
 
     <!-- Nav -->
     <nav class="hidden h-full md:flex">
@@ -45,9 +56,3 @@ export default {
   },
 }
 </script>
-
-<style lang="postcss" scoped>
-.header {
-  width: calc(100% - 8px);
-}
-</style>

@@ -1,7 +1,7 @@
 ---
 title: 'Todo vue.js app - WIP#4 : Alpha launch of Weekx'
 type: 'article'
-imgCover: 'todo-vue-js-app-wip4-alpha-launch-weekx.jpg'
+imgCover: 'todo-vue-js-app-wip4-alpha-launch-weekx'
 tags: [vue, pwa]
 createdAt: 2019-05-08
 ---

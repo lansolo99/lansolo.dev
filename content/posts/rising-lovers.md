@@ -1,7 +1,7 @@
 ---
 title: 'Rising Lovers'
 type: 'design'
-imgCover: 'rising-lovers.jpg'
+imgCover: 'rising-lovers'
 tags: [vector design]
 createdAt: 2016-08-17
 ---

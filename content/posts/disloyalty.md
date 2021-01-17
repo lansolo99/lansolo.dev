@@ -1,10 +1,10 @@
 ---
 title: 'Disloyalty game'
 type: 'design'
-imgCover: 'disloyalty.jpg'
+imgCover: 'disloyalty'
 imgList:
   [
-    { title: 'Disloyalty game', src: 'disloyalty_1.jpg' },
+    { title: 'Disloyalty game', src: 'disloyalty_1' },
   ]
 tags: [cinema 4D, low poly, sketch & toon, digital painting]
 createdAt: 2018-01-11

@@ -6,10 +6,12 @@ export default {
 
   head: {
     title: 'lansolo.dev',
+    htmlAttrs: {
+      lang: 'en',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'robots', content: 'noindex' },
       {
         hid: 'description',
         name: 'description',
@@ -17,14 +19,74 @@ export default {
           'Designs and front-end journal of Stéphane Changarnier | Front-end developer &amp; designer',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'preload',
+        as: 'font',
+        crossorigin: 'crossorigin',
+        type: 'font/woff',
+        href: 'fonts/karla-v14-latin-500.woff',
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        crossorigin: 'crossorigin',
+        type: 'font/woff',
+        href: 'fonts/karla-v14-latin-500.woff2',
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        crossorigin: 'crossorigin',
+        type: 'font/woff',
+        href: 'fonts/karla-v14-latin-700.woff',
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        crossorigin: 'crossorigin',
+        type: 'font/woff',
+        href: 'fonts/karla-v14-latin-700.woff2',
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        crossorigin: 'crossorigin',
+        type: 'font/woff',
+        href: 'fonts/karla-v14-latin-regular.woff',
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        crossorigin: 'crossorigin',
+        type: 'font/woff',
+        href: 'fonts/karla-v14-latin-regular.woff2',
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        crossorigin: 'crossorigin',
+        type: 'font/woff',
+        href: 'fonts/NeueMachina-Ultrabold.woff',
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        crossorigin: 'crossorigin',
+        type: 'font/woff',
+        href: 'fonts/NeueMachina-Ultrabold.woff2',
+      },
+    ],
   },
 
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css', 'loaders.css/loaders.min.css'],
+
+  pageTransition: 'page',
 
   publicRuntimeConfig: {},
 
-  plugins: [],
+  plugins: ['@/plugins/focus-visible'],
 
   components: true,
 
@@ -33,7 +95,12 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
+    '@nuxtjs/google-analytics',
   ],
+
+  googleAnalytics: {
+    id: 'G-9NTJCGKW7X',
+  },
 
   dateFns: {
     defaultLocale: 'en-US',
@@ -98,12 +165,16 @@ export default {
       const files = await $content('posts').only(['path']).fetch()
       return files.map((file) => (file.path === '/index' ? '/' : file.path))
     },
+    ignore: [
+      'static', // dir.static
+    ],
   },
 
   build: {
     postcss: {
       plugins: {
         'postcss-nested': {},
+        'postcss-css-variables': {},
       },
     },
   },

@@ -17,10 +17,14 @@ export const state = () => ({
     },
   ],
   selectedTags: [],
+  isCustomCursorVisible: false,
 })
 
 export const mutations = {
   SET_SELECTED_TAGS(state, payload) {
     state.selectedTags = payload
+  },
+  SET_CUSTOM_CURSOR_STATE(state, payload) {
+    state.isCustomCursorVisible = payload
   },
 }
