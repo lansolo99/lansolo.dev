@@ -89,3 +89,90 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss">
+:root {
+  --tduration: 300ms;
+  --tdelay: 100ms;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition-duration: calc(var(--tduration) * 2);
+
+  &:before,
+  &:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: 20;
+    display: block;
+    width: 100%;
+    height: 50%;
+    transition-property: opacity, transform;
+    transition-timing-function: cubic-bezier(1, -0.12, 0, 1.04);
+  }
+
+  &:before {
+    @apply bg-primary-500;
+  }
+
+  &:after {
+    top: 50%;
+    @apply bg-primary-500;
+  }
+}
+
+.page-leave {
+  &:before,
+  &:after {
+    transform: scaleX(0);
+  }
+}
+
+.page-leave-active {
+  &:before {
+    transition-duration: var(--tduration);
+  }
+
+  &:after {
+    transition-duration: calc(var(--tduration) - var(--tdelay));
+    transition-delay: var(--tdelay);
+  }
+}
+
+.page-leave-to {
+  &:before,
+  &:after {
+    transform: scale(1);
+    transform-origin: left;
+  }
+}
+
+.page-enter {
+  &:before,
+  &:after {
+    transform: scaleX(1);
+  }
+}
+
+.page-enter-active {
+  &:before {
+    transition-duration: var(--tduration);
+  }
+
+  &:after {
+    transition-duration: calc(var(--tduration) - var(--tdelay));
+    transition-delay: var(--tdelay);
+  }
+}
+
+.page-enter-to {
+  &:before,
+  &:after {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
+</style>

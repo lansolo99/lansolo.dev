@@ -82,6 +82,8 @@ export default {
 
   css: ['~/assets/css/main.css', 'loaders.css/loaders.min.css'],
 
+  pageTransition: 'page',
+
   publicRuntimeConfig: {},
 
   plugins: ['@/plugins/focus-visible'],
@@ -167,6 +169,7 @@ export default {
     postcss: {
       plugins: {
         'postcss-nested': {},
+        'postcss-css-variables': {},
       },
     },
   },
