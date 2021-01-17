@@ -11,6 +11,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      zIndex: {
+        999: 999,
+      },
       typography: {
         DEFAULT: {
           css: {
@@ -58,8 +61,12 @@ module.exports = {
     },
   },
   variants: {
+    extend: {
+      transform: ['group-hover'],
+    },
     boxShadow: ['active', 'focus-visible'],
     borderWidth: ['responsive', 'focus-visible'],
+
     backgroundColor: [
       'responsive',
       'dark',

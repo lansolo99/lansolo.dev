@@ -5,7 +5,7 @@
     <nuxt-link
       :to="post.path"
       no-prefetch
-      class="absolute w-full h-full focus:outline-none focus-visible:border-2 border-primary-500"
+      class="absolute w-full h-full focus:outline-none focus-visible:border-2 border-primary-500 postLink"
       style="cursor: none"
       @mouseover.native="setHoverEffect('show')"
       @mouseleave.native="setHoverEffect('hide')"
@@ -25,7 +25,7 @@
           quality="auto"
           sizes="100vw"
           :alt="post.title"
-          class="absolute inset-0 object-cover cdy-wrapper"
+          class="absolute inset-0 object-cover transition duration-150 transform cdy-wrapper"
         >
           <cld-placeholder type="blur"> </cld-placeholder>
         </cld-image>
@@ -83,6 +83,7 @@ export default {
       isCustomCursorVisible: false,
     }
   },
+
   methods: {
     setHoverEffect(status) {
       this.isCustomCursorVisible = status === 'show'
@@ -98,9 +99,21 @@ export default {
 
 .cdy-wrapper {
   img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    @apply w-full h-full object-cover;
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.43, 0.56, 0, 1.02);
+  }
+}
+
+.postLink {
+  &:hover {
+    .cdy-wrapper {
+      img {
+        filter: grayscale(100%);
+        transform: scale(1.04);
+      }
+    }
   }
 }
 </style>
