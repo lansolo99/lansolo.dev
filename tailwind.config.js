@@ -27,6 +27,9 @@ module.exports = {
       inset: {
         '1/2': '50%',
       },
+      boxShadow: {
+        cInnerTab: 'inset 0px 0px 0px 5px rgba(255,0,0,1);',
+      },
       fontFamily: {
         body: ['Karla', 'sans-serif'],
         heading: ['Neue Machina', 'sans-serif'],
@@ -55,6 +58,8 @@ module.exports = {
     },
   },
   variants: {
+    boxShadow: ['active', 'focus-visible'],
+    borderWidth: ['responsive', 'focus-visible'],
     backgroundColor: [
       'responsive',
       'dark',

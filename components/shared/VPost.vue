@@ -2,7 +2,11 @@
   <article class="relative overflow-hidden bg-primary-900 pb-2/3">
     <VImageLoader />
 
-    <nuxt-link :to="post.path" no-prefetch>
+    <nuxt-link
+      :to="post.path"
+      no-prefetch
+      class="absolute w-full h-full focus:outline-none focus-visible:border-2 border-primary-500"
+    >
       <!-- Image -->
       <client-only>
         <cld-image

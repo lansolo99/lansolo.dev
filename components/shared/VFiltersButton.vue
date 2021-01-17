@@ -1,5 +1,6 @@
 <template>
   <button
+    tabindex="-1"
     class="flex items-stretch text-sm border border-gray-600 outline-none"
     :class="{ 'cursor-default': isDisabled }"
     :disabled="isDisabled"
