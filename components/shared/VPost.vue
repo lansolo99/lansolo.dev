@@ -6,6 +6,9 @@
       :to="post.path"
       no-prefetch
       class="absolute w-full h-full focus:outline-none focus-visible:border-2 border-primary-500"
+      style="cursor: none"
+      @mouseover.native="setHoverEffect('show')"
+      @mouseleave.native="setHoverEffect('hide')"
     >
       <!-- Image -->
       <client-only>
@@ -59,6 +62,8 @@
         </h1>
       </div>
     </nuxt-link>
+
+    <VCursor v-if="isCustomCursorVisible" />
   </article>
 </template>
 
@@ -71,6 +76,16 @@ export default {
     post: {
       type: Object,
       required: true,
+    },
+  },
+  data() {
+    return {
+      isCustomCursorVisible: false,
+    }
+  },
+  methods: {
+    setHoverEffect(status) {
+      this.isCustomCursorVisible = status === 'show'
     },
   },
 }
