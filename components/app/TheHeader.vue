@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed z-50 flex text-black bg-white border-t-4 border-b-4 border-black header"
+    class="fixed z-50 flex w-full text-black bg-white border-4 border-black"
     style="height: 49px"
   >
     <!-- Logo -->
@@ -56,9 +56,3 @@ export default {
   },
 }
 </script>
-
-<style lang="postcss" scoped>
-.header {
-  width: calc(100% - 8px);
-}
-</style>

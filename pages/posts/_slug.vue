@@ -18,6 +18,8 @@
             { 'pb-c56%': isPostTypeDesignWithImgList },
           ]"
         >
+          <VImageLoader />
+
           <client-only>
             <cld-image
               v-for="(image, i) in setCoverImagesSrc"

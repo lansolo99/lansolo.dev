@@ -11,6 +11,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      zIndex: {
+        999: 999,
+      },
       typography: {
         DEFAULT: {
           css: {
@@ -26,6 +29,9 @@ module.exports = {
       },
       inset: {
         '1/2': '50%',
+      },
+      boxShadow: {
+        cInnerTab: 'inset 0px 0px 0px 5px rgba(255,0,0,1);',
       },
       fontFamily: {
         body: ['Karla', 'sans-serif'],
@@ -55,6 +61,12 @@ module.exports = {
     },
   },
   variants: {
+    extend: {
+      transform: ['group-hover'],
+    },
+    boxShadow: ['active', 'focus-visible'],
+    borderWidth: ['responsive', 'focus-visible'],
+
     backgroundColor: [
       'responsive',
       'dark',

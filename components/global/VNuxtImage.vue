@@ -1,5 +1,7 @@
 <template>
   <div class="relative w-full my-10 overflow-hidden bg-primary-900 pb-6/12">
+    <VImageLoader />
+
     <client-only>
       <cld-image
         :public-id="`lansolo.dev/posts/${path}`"

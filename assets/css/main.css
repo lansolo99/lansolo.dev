@@ -50,18 +50,14 @@
     font-display: swap;
 }
 
-
-
-
   body {
     position: relative;
     color: white;
-    border: 4px solid black;
-    border-top:0px;
     background: #000000;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Karla', Helvetica, sans-serif;
+    /* cursor: none; */
   }
 
   
@@ -83,6 +79,14 @@
 
   a {
     @apply text-primary-400;
+
+    &:focus{
+    @apply outline-none;
+    }
+
+    &:focus-visible{
+      @apply outline-white;
+    }
   }
 
   strong{
@@ -96,3 +100,5 @@
     }
   }
 }
+
+

@@ -80,7 +80,9 @@ export default {
     ],
   },
 
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css', 'loaders.css/loaders.min.css'],
+
+  pageTransition: 'page',
 
   publicRuntimeConfig: {},
 
@@ -93,7 +95,12 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
+    '@nuxtjs/google-analytics',
   ],
+
+  googleAnalytics: {
+    id: 'G-9NTJCGKW7X',
+  },
 
   dateFns: {
     defaultLocale: 'en-US',
@@ -167,6 +174,7 @@ export default {
     postcss: {
       plugins: {
         'postcss-nested': {},
+        'postcss-css-variables': {},
       },
     },
   },

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="137px" height="77px" viewBox="0 0 137 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        * { cursor: none; }
+    </style>
+        <style>         * { cursor: none; user-select: none; }     </style><!--Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-116.000000, -189.000000)">
+            <g id="Group-Copy-2" transform="translate(116.000000, 189.000000)">
+                <g id="Group-Copy">
+                    <polygon id="Path-33" fill="#F1CCA2" points="20.5854537 27.9210526 28 24.2177734 30.5036182 19.9868421 33 17.9529258 35.7534311 14.6973684 43.9011509 14.6973684 43.9011509 6.83891859 44.5 5 48.0029944 5 69.0022458 5 69.0022458 13.8157895 69.0022458 17.9529258 132 17.9529258 132 27.2684776 98.7511853 27.2684776 98.7511853 42.0263158 95.25131 42.0263158 95.25131 56 88 56.1315789 88 67.7105263 79.5018715 67.7105263 79.5018715 72 47 72 46.1523437 68.3342157 33 68.3342157 33 64.8023039 20.5854537 64.8023039 20.5854537 59.8989515 19 59.8989515 19 33.4175768 19 27.9210526"></polygon>
+                    <rect id="Rectangle" fill="#FFFFFF" x="5" y="28" width="9" height="33"></rect>
+                    <rect id="Rectangle" fill="#000000" x="14" y="28" width="5" height="33"></rect>
+                    <rect id="Rectangle-Copy" fill="#000000" x="0" y="28" width="5" height="33"></rect>
+                    <rect id="Rectangle" fill="#000000" x="5" y="23" width="9" height="5"></rect>
+                    <rect id="Rectangle-Copy-3" fill="#000000" x="19" y="23" width="11" height="5"></rect>
+                    <rect id="Rectangle-Copy-5" fill="#000000" x="33" y="13" width="11" height="5"></rect>
+                    <rect id="Rectangle-Copy-7" fill="#000000" x="47" y="0" width="22" height="5"></rect>
+                    <rect id="Rectangle-Copy-9" fill="#000000" x="58" y="14" width="74" height="5"></rect>
+                    <rect id="Rectangle-Copy-11" fill="#000000" x="83" y="26" width="49" height="5"></rect>
+                    <rect id="Rectangle-Copy-13" fill="#000000" x="82" y="42" width="16" height="5"></rect>
+                    <rect id="Rectangle-Copy-15" fill="#000000" x="77" y="56" width="16" height="5"></rect>
+                    <rect id="Rectangle-Copy-18" fill="#000000" x="47" y="72" width="32" height="5"></rect>
+                    <rect id="Rectangle-Copy-17" fill="#000000" x="77" y="67" width="11" height="5"></rect>
+                    <rect id="Rectangle-Copy-19" fill="#000000" x="33" y="67" width="14" height="5"></rect>
+                    <rect id="Rectangle-Copy-20" fill="#000000" x="19" y="61" width="14" height="5"></rect>
+                    <rect id="Rectangle-Copy-6" fill="#000000" x="42" y="5" width="5" height="8"></rect>
+                    <rect id="Rectangle-Copy-10" fill="#000000" x="132" y="19" width="5" height="7"></rect>
+                    <rect id="Rectangle-Copy-12" fill="#000000" x="97" y="31" width="5" height="11"></rect>
+                    <polygon id="Rectangle-Copy-16" fill="#000000" points="88 61 93 61 93 67 88 67"></polygon>
+                    <rect id="Rectangle-Copy-14" fill="#000000" x="93" y="47" width="5" height="9"></rect>
+                    <rect id="Rectangle-Copy-8" fill="#000000" x="69" y="5" width="5" height="9"></rect>
+                    <rect id="Rectangle-Copy-4" fill="#000000" x="28" y="18" width="7" height="5"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#000000" x="5" y="61" width="9" height="5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
