@@ -1,23 +1,49 @@
 <template>
-  <div class="border-l-4 border-black">
+  <div
+    class="border-b-4 border-black md:border-b-0 md:border-l-4 border-x-4 md:border-x-0 group"
+  >
     <nuxt-link
       v-if="linkData.type === 'internal'"
       :to="linkData.to"
       class="link"
+      @click="$emit('closeMobileMenu')"
     >
       {{ linkData.label }}
     </nuxt-link>
 
-    <a v-else class="link" :href="linkData.to">
-      {{ linkData.label }}
+    <a
+      v-else
+      class="link"
+      :href="linkData.to"
+      @click="$emit('closeMobileMenu')"
+    >
+      <div class="relative flex items-center">
+        <span>{{ linkData.label }}</span>
+        <IconLinkExternal
+          class="w-4 h-4 fill-current lg:group-hover:text-white"
+          :class="[
+            context === 'desktop'
+              ? 'ml-2 -mt-1 relative'
+              : 'absolute right-0  ml-10 -mr-6 top-1',
+          ]"
+        />
+      </div>
     </a>
   </div>
 </template>
 
 <script>
+import IconLinkExternal from '~/assets/img/external-link.svg?inline'
 export default {
   name: 'TheHeaderNavItem',
+  components: {
+    IconLinkExternal,
+  },
   props: {
+    context: {
+      type: String,
+      required: true,
+    },
     linkData: {
       type: Object,
       required: true,
