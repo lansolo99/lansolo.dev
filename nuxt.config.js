@@ -127,26 +127,26 @@ export default {
       }
     },
     build: {
-      // before() {
-      //   const { $cloudinary } = require('@nuxtjs/cloudinary')
-      //   const folders = ['about', 'posts']
-      //   folders.forEach((folder) => {
-      //     const assetsFolder = path.join(__dirname, `static/img/${folder}`)
-      //     fs.readdir(assetsFolder, async (err, files) => {
-      //       if (err) return
-      //       /* Upload to Cloudinary */
-      //       const uploadedAssets = await Promise.all(
-      //         files.map((file) => {
-      //           return $cloudinary.upload(path.join(assetsFolder, file), {
-      //             public_id: file.split('.')[0],
-      //             folder: `lansolo.dev/${folder}`,
-      //           })
-      //         })
-      //       )
-      //     })
-      //   })
-      //   console.log('assets upload complete')
-      // },
+      before() {
+        const { $cloudinary } = require('@nuxtjs/cloudinary')
+        const folders = ['about', 'posts']
+        folders.forEach((folder) => {
+          const assetsFolder = path.join(__dirname, `static/img/${folder}`)
+          fs.readdir(assetsFolder, async (err, files) => {
+            if (err) return
+            /* Upload to Cloudinary */
+            const uploadedAssets = await Promise.all(
+              files.map((file) => {
+                return $cloudinary.upload(path.join(assetsFolder, file), {
+                  public_id: file.split('.')[0],
+                  folder: `lansolo.dev/${folder}`,
+                })
+              })
+            )
+          })
+        })
+        console.log('assets upload complete')
+      },
     },
   },
 
