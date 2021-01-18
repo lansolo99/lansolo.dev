@@ -28,12 +28,15 @@
       />
     </nav>
 
-    <!-- Hamburger -->
-    <div
-      class="flex items-center justify-center px-3 m-2 font-medium border-4 border-black md:hidden"
+    <!-- Mobile menu -->
+    <button
+      class="flex items-center justify-center w-20 px-3 m-2 text-sm font-bold border-4 border-black focus:outline-none md:hidden"
+      aria-label="open menu"
+      @click="isMobileMenuOpen = !isMobileMenuOpen"
     >
-      Menu
-    </div>
+      <span v-if="!isMobileMenuOpen">MENU</span>
+      <span v-else>CLOSE</span>
+    </button>
   </div>
 </template>
 
@@ -42,6 +45,11 @@ import { mapState, mapMutations } from 'vuex'
 
 export default {
   name: 'Header',
+  data() {
+    return {
+      isMobileMenuOpen: false,
+    }
+  },
   computed: {
     ...mapState(['navLinks']),
   },

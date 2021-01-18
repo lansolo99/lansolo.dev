@@ -19,6 +19,7 @@
           width="500"
           :dpr="cloudinaryDpr"
           height="333"
+          loading="lazy"
           aspect_ratio="2:3"
           client_hints="true"
           quality="auto"
