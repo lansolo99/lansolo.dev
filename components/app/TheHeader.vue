@@ -32,6 +32,7 @@
 
       <!-- Mobile menu -->
       <button
+        v-click-outside="hideMobileNav"
         class="flex items-center justify-center w-20 px-3 m-2 text-sm font-bold border-4 border-black focus:outline-none md:hidden"
         :class="{ 'bg-primary-500 text-white': isMobileMenuOpen }"
         @click="isMobileMenuOpen = !isMobileMenuOpen"
@@ -44,9 +45,9 @@
     <transition name="slideDown">
       <nav
         v-if="isMobileMenuOpen"
-        class="absolute top-0 left-0 z-10 block mt-12 ml-1 text-xl font-medium text-black bg-white md:hidden"
-        style="width: calc(100% - 8px)"
+        class="fixed top-0 left-0 z-40 block w-full mt-12 text-xl font-medium text-black bg-white border-l-4 border-r-4 border-black md:hidden"
       >
+        <!-- style="width: calc(100% - 8px)" -->
         <TheHeaderNavItem
           v-for="(link, i) in navLinks"
           :key="i"
@@ -61,9 +62,13 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex'
+import vClickOutside from 'v-click-outside'
 
 export default {
   name: 'Header',
+  directives: {
+    clickOutside: vClickOutside.directive,
+  },
   data() {
     return {
       isMobileMenuOpen: false,
@@ -79,6 +84,9 @@ export default {
     setTag(label) {
       this.setSelectedTag([])
       this.$router.push('/')
+    },
+    hideMobileNav() {
+      this.isMobileMenuOpen = false
     },
   },
 }

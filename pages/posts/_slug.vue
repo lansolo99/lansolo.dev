@@ -1,6 +1,8 @@
 <template>
   <div>
-    <article class="container relative mx-auto text-white md:mt-8 md:px-8">
+    <article
+      class="container relative mx-auto text-white border-t-0 border-l-4 border-r-4 border-black md:mt-8 md:px-8"
+    >
       <!-- Cover Image(s) -->
       <div
         class="flex flex-col justify-center mx-auto"

@@ -86,7 +86,13 @@ export default {
 
   publicRuntimeConfig: {},
 
-  plugins: ['@/plugins/focus-visible'],
+  plugins: [
+    '@/plugins/focus-visible',
+    {
+      src: '@/plugins/v-click-outside.js',
+      ssr: false,
+    },
+  ],
 
   components: true,
 
