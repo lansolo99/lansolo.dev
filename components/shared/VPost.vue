@@ -8,6 +8,7 @@
       class="absolute w-full h-full focus:outline-none focus-visible:border-2 border-primary-500 postLink"
       @mouseover.native="setCustomCursorState(true)"
       @mouseleave.native="setCustomCursorState(false)"
+      @click.native="setCustomCursorState(false)"
     >
       <!-- Image -->
       <client-only>

@@ -34,7 +34,6 @@
       <button
         class="flex items-center justify-center w-20 px-3 m-2 text-sm font-bold border-4 border-black focus:outline-none md:hidden"
         :class="{ 'bg-primary-500 text-white': isMobileMenuOpen }"
-        aria-label="open menu"
         @click="isMobileMenuOpen = !isMobileMenuOpen"
       >
         <span v-if="!isMobileMenuOpen">MENU</span>
