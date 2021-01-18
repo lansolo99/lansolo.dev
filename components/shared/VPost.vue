@@ -6,6 +6,7 @@
       :to="post.path"
       no-prefetch
       class="absolute w-full h-full focus:outline-none focus-visible:border-2 border-primary-500 postLink"
+      :style="[isCustomCursorVisible ? 'cursor: none' : 'cursor:default']"
       @mouseover.native="setCustomCursorState(true)"
       @mouseleave.native="setCustomCursorState(false)"
       @click.native="setCustomCursorState(false)"
@@ -72,7 +73,7 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 import dpr from '@/mixins/dpr.js'
 
 export default {
@@ -83,6 +84,9 @@ export default {
       type: Object,
       required: true,
     },
+  },
+  computed: {
+    ...mapState(['isCustomCursorVisible']),
   },
   methods: {
     ...mapMutations({
@@ -112,8 +116,6 @@ export default {
 
 @screen lg {
   .postLink {
-    cursor: none;
-
     &:hover {
       .overlay {
         opacity: 0.8;
