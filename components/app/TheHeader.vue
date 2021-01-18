@@ -86,7 +86,9 @@ export default {
       this.$router.push('/')
     },
     hideMobileNav() {
-      this.isMobileMenuOpen = false
+      setTimeout(() => {
+        this.isMobileMenuOpen = false
+      }, 100)
     },
   },
 }

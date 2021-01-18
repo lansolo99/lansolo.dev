@@ -16,7 +16,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Designs and front-end journal of Stéphane Changarnier | Front-end developer &amp; designer',
+          'Designs and front-end journal of Stéphane Changarnier | Front-end developer & designer',
       },
     ],
     link: [
@@ -113,7 +113,7 @@ export default {
     format: 'MM/dd/yyyy',
   },
 
-  modules: ['@nuxt/content', '@nuxtjs/cloudinary'],
+  modules: ['@nuxtjs/cloudinary', '@nuxt/content'],
 
   cloudinary: {
     cloudName: process.env.CLOUDINARY_CLOUDNAME,
@@ -177,6 +177,13 @@ export default {
   },
 
   build: {
+    terser: {
+      terserOptions: {
+        compress: {
+          drop_console: true,
+        },
+      },
+    },
     postcss: {
       plugins: {
         'postcss-nested': {},

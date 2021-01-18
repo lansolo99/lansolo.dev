@@ -6,32 +6,16 @@
       :to="post.path"
       no-prefetch
       class="absolute w-full h-full focus:outline-none focus-visible:border-2 border-primary-500 postLink"
-      :style="[isCustomCursorVisible ? 'cursor: none' : 'cursor:default']"
+      :class="{ 'postLink--waitCursor': isDefaultCursorVisible }"
       @mouseover.native="setCustomCursorState(true)"
       @mouseleave.native="setCustomCursorState(false)"
-      @click.native="setCustomCursorState(false)"
+      @click.native="navigateToPost(false)"
     >
-      <!-- Image -->
-      <client-only>
-        <cld-image
-          :public-id="`lansolo.dev/posts/${post.imgCover}`"
-          crop="fill"
-          responsive="width"
-          fetch-format="auto"
-          width="500"
-          :dpr="cloudinaryDpr"
-          height="333"
-          loading="lazy"
-          aspect_ratio="2:3"
-          client_hints="true"
-          quality="auto"
-          sizes="100vw"
-          :alt="post.title"
-          class="absolute inset-0 object-cover transition duration-150 transform cdy-wrapper"
-        >
-          <cld-placeholder type="blur"> </cld-placeholder>
-        </cld-image>
-      </client-only>
+      <img
+        :src="`https://res.cloudinary.com/lansolo99/image/upload/c_fill,dpr_${cloudinaryDpr},q_auto,w_500,h_333/v1/lansolo.dev/posts/${post.imgCover}`"
+        alt=""
+        class="absolute inset-0 object-cover transition duration-150 transform cdy-wrapper"
+      />
 
       <!-- Overlay -->
       <div
@@ -85,6 +69,11 @@ export default {
       required: true,
     },
   },
+  data() {
+    return {
+      isDefaultCursorVisible: false,
+    }
+  },
   computed: {
     ...mapState(['isCustomCursorVisible']),
   },
@@ -92,6 +81,10 @@ export default {
     ...mapMutations({
       setCustomCursorState: 'SET_CUSTOM_CURSOR_STATE',
     }),
+    navigateToPost(cursorStatus) {
+      this.setCustomCursorState(cursorStatus)
+      this.isDefaultCursorVisible = true
+    },
   },
 }
 </script>
@@ -116,6 +109,12 @@ export default {
 
 @screen lg {
   .postLink {
+    cursor: none;
+
+    &--waitCursor {
+      cursor: default;
+    }
+
     &:hover {
       .overlay {
         opacity: 0.8;

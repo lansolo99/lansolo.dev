@@ -22,24 +22,13 @@
         >
           <VImageLoader />
 
-          <client-only>
-            <cld-image
-              v-for="(image, i) in setCoverImagesSrc"
-              :key="i"
-              :public-id="`lansolo.dev/posts/${image.src}`"
-              dpr="auto"
-              responsive="width"
-              crop="fit"
-              fetch-format="auto"
-              width="auto"
-              quality="auto"
-              loading="lazy"
-              :alt="image.title"
-              class="absolute inset-0 z-10 object-cover cdy-wrapper"
-            >
-              <cld-placeholder type="blur"> </cld-placeholder>
-            </cld-image>
-          </client-only>
+          <img
+            v-for="(image, i) in setCoverImagesSrc"
+            :key="i"
+            :src="`https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/v1/lansolo.dev/posts/${image.src}`"
+            alt=""
+            class="absolute inset-0 z-10 object-cover cdy-wrapper"
+          />
         </div>
       </div>
 
