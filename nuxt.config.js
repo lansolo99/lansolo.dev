@@ -105,7 +105,7 @@ export default {
   ],
 
   googleAnalytics: {
-    id: 'UA-9NTJCGKW7X',
+    id: 'UA-187545032-1',
     dev: false,
   },
 
