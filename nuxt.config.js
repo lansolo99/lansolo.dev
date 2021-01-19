@@ -105,7 +105,8 @@ export default {
   ],
 
   googleAnalytics: {
-    id: 'G-9NTJCGKW7X',
+    id: 'UA-9NTJCGKW7X',
+    dev: false,
   },
 
   dateFns: {
