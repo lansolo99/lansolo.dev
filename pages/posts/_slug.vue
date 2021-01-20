@@ -99,10 +99,13 @@ export default {
       .only(['title', 'type', 'imgCover', 'tags', 'createdAt', 'path'])
       .where({ tags: { $containsAny: post.tags } })
       .sortBy('created', 'desc')
-      .limit(4)
       .fetch()
 
-    return { post, relatedPosts }
+    const shuffleResults = (results) => {
+      return results.sort(() => Math.random() - 0.5).slice(0, 4)
+    }
+
+    return { post, relatedPosts: shuffleResults(relatedPosts) }
   },
   data() {
     return {
