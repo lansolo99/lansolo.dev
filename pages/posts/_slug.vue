@@ -179,14 +179,14 @@ export default {
           content: this.post.description,
         },
         {
-          hid: 'twitter:image',
-          name: 'twitter:image',
-          content: `https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_1000/v1/lansolo.dev/posts/${this.post.imgCover}`,
+          hid: 'twitter:url',
+          name: 'twitter:url',
+          content: `https://lansolo.dev/posts/${this.$route.params.slug}`,
         },
         {
-          hid: 'twitter:image:alt',
-          name: 'twitter:image:alt',
-          content: this.post.title,
+          hid: 'twitter:card',
+          property: 'twitter:card',
+          content: 'summary_large_image',
         },
         {
           hid: 'og:title',
@@ -197,6 +197,16 @@ export default {
           hid: 'og:description',
           property: 'og:description',
           content: this.post.description,
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: 'lansolo.dev',
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website',
         },
         {
           hid: 'og:image',

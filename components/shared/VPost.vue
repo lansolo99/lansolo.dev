@@ -7,9 +7,9 @@
       no-prefetch
       class="absolute w-full h-full focus:outline-none focus-visible:border-2 border-primary-500 postLink"
       :class="{ 'postLink--waitCursor': isDefaultCursorVisible }"
-      @mouseover.native="setCustomCursorState(true)"
-      @mouseleave.native="setCustomCursorState(false)"
-      @click.native="navigateToPost(false)"
+      @mouseover.native="setPostHoverCursors(true)"
+      @mouseleave.native="setPostHoverCursors(false)"
+      @click.native="setPostHoverCursors(false)"
     >
       <img
         :src="`https://res.cloudinary.com/lansolo99/image/upload/c_fill,dpr_${cloudinaryDpr},q_auto,w_500,h_333/v1/lansolo.dev/posts/${post.imgCover}`"
@@ -71,7 +71,7 @@ export default {
   },
   data() {
     return {
-      isDefaultCursorVisible: false,
+      isDefaultCursorVisible: true,
     }
   },
   computed: {
@@ -81,9 +81,16 @@ export default {
     ...mapMutations({
       setCustomCursorState: 'SET_CUSTOM_CURSOR_STATE',
     }),
-    navigateToPost(cursorStatus) {
-      this.setCustomCursorState(cursorStatus)
-      this.isDefaultCursorVisible = true
+    setPostHoverCursors(customCursorStatus) {
+      switch (customCursorStatus) {
+        case true:
+          this.isDefaultCursorVisible = false
+          break
+        case false:
+          this.isDefaultCursorVisible = true
+          break
+      }
+      this.setCustomCursorState(customCursorStatus)
     },
   },
 }
@@ -112,7 +119,7 @@ export default {
     cursor: none;
 
     &--waitCursor {
-      cursor: default;
+      cursor: pointer;
     }
 
     &:hover {
