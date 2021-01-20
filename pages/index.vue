@@ -10,9 +10,9 @@
 
       <client-only>
         <infinite-loading :identifier="infiniteId" @infinite="infiniteHandler">
-          <template slot="spinner" class="text-muted small-text"></template>
-          <div slot="no-more" class="text-muted small-text"></div>
-          <div slot="no-results" class="text-muted small-text"></div>
+          <span slot="spinner"></span>
+          <span slot="no-more"></span>
+          <span slot="no-results"></span>
         </infinite-loading>
       </client-only>
     </div>

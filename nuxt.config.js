@@ -128,7 +128,11 @@ export default {
     format: 'MM/dd/yyyy',
   },
 
-  modules: ['@nuxtjs/cloudinary', '@nuxt/content'],
+  modules: ['@nuxtjs/cloudinary', '@nuxt/content', '@nuxtjs/sitemap'],
+
+  sitemap: {
+    hostname: 'https://lansolo.dev',
+  },
 
   cloudinary: {
     cloudName: process.env.CLOUDINARY_CLOUDNAME,
