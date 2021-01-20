@@ -168,6 +168,53 @@ export default {
           name: 'description',
           content: this.post.description,
         },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.post.title,
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.post.description,
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: `https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_1000/v1/lansolo.dev/posts/${this.post.imgCover}`,
+        },
+        {
+          hid: 'twitter:image:alt',
+          name: 'twitter:image:alt',
+          content: this.post.title,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.post.title,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.post.description,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: `https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_1000/v1/lansolo.dev/posts/${this.post.imgCover}`,
+        },
+        {
+          hid: 'og:image:alt',
+          property: 'og:image:alt',
+          content: this.post.title,
+        },
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://lansolo.dev/posts/${this.$route.params.slug}`,
+        },
       ],
     }
   },
