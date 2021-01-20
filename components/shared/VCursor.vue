@@ -4,14 +4,14 @@
       <div v-if="mount" class="relative w-full h-full">
         <img
           class="absolute top-0 left-0 w-full h-full transform animate-clock"
-          src="/cursor-clock.svg"
+          src="/img/global/cursor-clock.svg"
           alt=""
         />
 
         <img
           class="absolute z-10 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
           style="width: 50%; height: 50%"
-          src="/hand.svg"
+          src="/img/global/cursor-hand.svg"
           alt=""
         />
       </div>

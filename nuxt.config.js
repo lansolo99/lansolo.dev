@@ -23,6 +23,20 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'preload',
+        as: 'image',
+        crossorigin: 'crossorigin',
+        type: 'image/svg+xml',
+        href: 'img/global/cursor-clock.svg',
+      },
+      {
+        rel: 'preload',
+        as: 'image',
+        crossorigin: 'crossorigin',
+        type: 'image/svg+xml',
+        href: 'img/global/cursor-hand.svg',
+      },
+      {
+        rel: 'preload',
         as: 'font',
         crossorigin: 'crossorigin',
         type: 'font/woff',

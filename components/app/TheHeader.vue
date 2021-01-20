@@ -11,7 +11,7 @@
           @click="setTag"
         >
           <img
-            src="/logo.svg"
+            src="/img/global/logo.svg"
             alt="lansolo.dev"
             style="height: 28px"
             width="139"
