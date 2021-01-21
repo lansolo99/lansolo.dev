@@ -166,10 +166,15 @@ export default {
   buildModules: [
     '@nuxtjs/date-fns',
     '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
     '@nuxtjs/google-analytics',
   ],
+
+  // stylelint: {
+  //   files: 'assets/css/main.css',
+  // },
 
   googleAnalytics: {
     id: 'UA-187545032-1',
@@ -209,7 +214,7 @@ export default {
         const { $cloudinary } = require('@nuxtjs/cloudinary')
         const folders = ['about', 'posts']
         folders.forEach((folder) => {
-          const assetsFolder = path.join(__dirname, `static/img/${folder}`)
+          const assetsFolder = path.join(__dirname, `cloudinary/img/${folder}`)
           fs.readdir(assetsFolder, async (err, files) => {
             if (err) return
             /* Upload to Cloudinary */
