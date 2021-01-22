@@ -172,9 +172,9 @@ export default {
     '@nuxtjs/google-analytics',
   ],
 
-  // stylelint: {
-  //   files: 'assets/css/main.css',
-  // },
+  stylelint: {
+    fix: true,
+  },
 
   googleAnalytics: {
     id: 'UA-187545032-1',
@@ -251,6 +251,7 @@ export default {
     ignore: [
       'static', // dir.static
     ],
+    fallback: true,
   },
 
   build: {

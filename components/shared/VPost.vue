@@ -104,6 +104,7 @@ export default {
 .cdy-wrapper {
   img {
     @apply w-full h-full object-cover;
+
     transition: transform;
     transition-duration: 200ms;
     transition-timing-function: ease-out;

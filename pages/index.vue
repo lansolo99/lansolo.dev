@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 import InfiniteLoading from 'vue-infinite-loading'
 
 export default {
@@ -50,7 +50,13 @@ export default {
       this.resetInfinite()
     },
   },
+  beforeDestroy() {
+    this.setCustomCursorState(false)
+  },
   methods: {
+    ...mapMutations({
+      setCustomCursorState: 'SET_CUSTOM_CURSOR_STATE',
+    }),
     fetchData() {
       return this.$content('posts')
         .only(['title', 'type', 'imgCover', 'tags', 'createdAt', 'path'])
@@ -97,12 +103,12 @@ export default {
 .page-leave-active {
   transition-duration: calc(var(--tduration) * 2);
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: '';
     position: fixed;
     top: 0;
-    left: 0px;
+    left: 0;
     z-index: 20;
     display: block;
     width: 100%;
@@ -111,63 +117,63 @@ export default {
     transition-timing-function: cubic-bezier(1, -0.12, 0, 1.04);
   }
 
-  &:before {
+  &::before {
     @apply bg-primary-500;
   }
 
-  &:after {
+  &::after {
     top: 50%;
     @apply bg-primary-500;
   }
 }
 
 .page-leave {
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     transform: scaleX(0);
   }
 }
 
 .page-leave-active {
-  &:before {
+  &::before {
     transition-duration: var(--tduration);
   }
 
-  &:after {
+  &::after {
     transition-duration: calc(var(--tduration) - var(--tdelay));
     transition-delay: var(--tdelay);
   }
 }
 
 .page-leave-to {
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     transform: scale(1);
     transform-origin: left;
   }
 }
 
 .page-enter {
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     transform: scaleX(1);
   }
 }
 
 .page-enter-active {
-  &:before {
+  &::before {
     transition-duration: var(--tduration);
   }
 
-  &:after {
+  &::after {
     transition-duration: calc(var(--tduration) - var(--tdelay));
     transition-delay: var(--tdelay);
   }
 }
 
 .page-enter-to {
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     transform: scaleX(0);
     transform-origin: right;
   }
