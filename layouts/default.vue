@@ -8,6 +8,10 @@
       v-if="isCustomCursorVisible && !isMobileDevice"
       class="hidden lg:block"
     />
+
+    <!-- Cursor Preload -->
+    <img class="hidden" src="/img/global/cursor-clock.svg" />
+    <img class="hidden" src="/img/global/hand.svg" />
   </div>
 </template>
 

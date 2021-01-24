@@ -18,9 +18,76 @@ export default {
         content:
           'Designs and front-end journal of Stéphane Changarnier | Front-end developer & designer',
       },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'lansolo.dev',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'Designs and front-end journal of Stéphane Changarnier | Front-end developer & designer',
+      },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://lansolo.dev',
+      },
+      {
+        hid: 'twitter:card',
+        property: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'lansolo.dev',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Designs and front-end journal of Stéphane Changarnier | Front-end developer & designer',
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'lansolo.dev',
+      },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content:
+          'https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_1024/v1611175997/lansolo.dev/logo_og.png',
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'lansolo.dev',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'preload',
+        as: 'image',
+        crossorigin: 'crossorigin',
+        type: 'image/svg+xml',
+        href: 'img/global/cursor-clock.svg',
+      },
+      {
+        rel: 'preload',
+        as: 'image',
+        crossorigin: 'crossorigin',
+        type: 'image/svg+xml',
+        href: 'img/global/cursor-hand.svg',
+      },
       {
         rel: 'preload',
         as: 'font',
@@ -99,10 +166,15 @@ export default {
   buildModules: [
     '@nuxtjs/date-fns',
     '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
     '@nuxtjs/google-analytics',
   ],
+
+  stylelint: {
+    fix: true,
+  },
 
   googleAnalytics: {
     id: 'UA-187545032-1',
@@ -114,7 +186,11 @@ export default {
     format: 'MM/dd/yyyy',
   },
 
-  modules: ['@nuxtjs/cloudinary', '@nuxt/content'],
+  modules: ['@nuxtjs/cloudinary', '@nuxt/content', '@nuxtjs/sitemap'],
+
+  sitemap: {
+    hostname: 'https://lansolo.dev',
+  },
 
   cloudinary: {
     cloudName: process.env.CLOUDINARY_CLOUDNAME,
@@ -138,7 +214,7 @@ export default {
         const { $cloudinary } = require('@nuxtjs/cloudinary')
         const folders = ['about', 'posts']
         folders.forEach((folder) => {
-          const assetsFolder = path.join(__dirname, `static/img/${folder}`)
+          const assetsFolder = path.join(__dirname, `cloudinary/img/${folder}`)
           fs.readdir(assetsFolder, async (err, files) => {
             if (err) return
             /* Upload to Cloudinary */
@@ -175,6 +251,7 @@ export default {
     ignore: [
       'static', // dir.static
     ],
+    fallback: true,
   },
 
   build: {
