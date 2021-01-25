@@ -1,6 +1,6 @@
 <template>
   <!-- Grid wrapper -->
-  <div class="px-2 mt-5">
+  <div id="socialLinks" class="px-2 mt-5">
     <!-- Grid -->
     <div class="flex flex-wrap -mx-4 bg-orange-600">
       <!-- Items -->
@@ -13,6 +13,7 @@
           :href="link.url"
           :title="link.name"
           class="flex w-full h-full focus:outline-none focus-visible:outline-white"
+          :class="link.name"
         >
           <postTypeShape class="w-full h-full fill-current text-primary-500" />
           <img

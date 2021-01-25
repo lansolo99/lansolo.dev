@@ -14,7 +14,7 @@
       <img
         :src="`https://res.cloudinary.com/lansolo99/image/upload/c_fill,dpr_${cloudinaryDpr},q_auto,w_500,h_333/v1/lansolo.dev/posts/${post.imgCover}`"
         alt=""
-        class="absolute inset-0 object-cover transition duration-150 transform cdy-wrapper"
+        class="cdy-wrapper"
       />
 
       <!-- Overlay -->
@@ -102,13 +102,7 @@ export default {
 }
 
 .cdy-wrapper {
-  img {
-    @apply w-full h-full object-cover;
-
-    transition: transform;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
-  }
+  @apply w-full h-full transform absolute inset-0 object-cover transition duration-200 ease-out;
 }
 
 .overlay {
@@ -128,9 +122,7 @@ export default {
         opacity: 0.8;
       }
       .cdy-wrapper {
-        img {
-          transform: scale(1.02);
-        }
+        transform: scale(1.02) !important;
       }
     }
   }

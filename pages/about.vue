@@ -2,7 +2,7 @@
   <div>
     <article class="container relative mx-auto text-white">
       <!-- Avatar -->
-      <div class="relative w-40 h-40 p-8 mx-auto mt-8">
+      <div id="avatar" class="relative w-40 h-40 p-8 mx-auto mt-8">
         <client-only>
           <cld-image
             public-id="lansolo.dev/about/avatar.png"
