@@ -255,6 +255,7 @@ export default {
   },
 
   build: {
+    analyze: true,
     terser: {
       terserOptions: {
         compress: {

@@ -25,7 +25,7 @@
           <img
             v-for="(image, i) in setCoverImagesSrc"
             :key="i"
-            :src="`https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/v1/lansolo.dev/posts/${image.src}`"
+            :src="`https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/${image.src}`"
             alt=""
             class="absolute inset-0 z-10 object-cover cdy-wrapper"
           />
@@ -211,7 +211,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_1000/v1/lansolo.dev/posts/${this.post.imgCover}`,
+          content: `https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_1000/lansolo.dev/posts/${this.post.imgCover}`,
         },
         {
           hid: 'og:image:alt',
