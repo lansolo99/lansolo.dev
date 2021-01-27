@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Artboards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-/-Desktop-HD-/-Article" transform="translate(-388.000000, -105.000000)">
+            <g id="Back-btn" transform="translate(379.000000, 93.000000)">
+                <g id="Group" transform="translate(9.000000, 12.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="26" height="26"></rect>
+                    <g filter="url(#filter-1)" id="icon">
+                        <g transform="translate(2.000000, 3.000000)">
+                            <polygon id="Fill-1" fill="#000000" points="19.551516 0 9.71999949 9.72005308 19.551516 19.439999 21.8699988 17.1476944 21.8699988 17.1475872 14.357182 9.72005308 21.8699988 2.29251894 21.8699988 2.29230457"></polygon>
+                            <polygon id="Fill-2" fill="#000000" points="9.83142878 0 0 9.72005308 9.83142878 19.439999 12.1499994 17.1476944 4.63714116 9.72005308 12.1499994 2.29241176"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

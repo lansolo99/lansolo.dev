@@ -29,6 +29,8 @@
             alt=""
             class="absolute inset-0 z-10 object-cover cdy-wrapper"
           />
+
+          <VBackBtn />
         </div>
       </div>
 
