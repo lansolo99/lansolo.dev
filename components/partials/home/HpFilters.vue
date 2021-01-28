@@ -4,12 +4,15 @@
     <div>
       <p class="font-heading">Filters:</p>
       <div class="mt-1 space-y-3">
-        <p>{{ currentPostsCounter }} results</p>
+        <p>
+          <strong class="font-bold">{{ currentPostsCounter }}</strong> results
+        </p>
 
         <!-- All/reset -->
         <VFiltersButton
           :label="selectedTags.length > 0 ? 'Reset filters' : 'All posts'"
           :selected="selectedTags.length === 0"
+          :class="{ 'pointer-events-none': selectedTags.length === 0 }"
           @setTag="setTags"
         />
 
@@ -31,7 +34,7 @@
     <!-- Types -->
     <div>
       <p class="font-heading">Types:</p>
-      <div class="mt-3 space-y-3">
+      <div class="flex mt-3 space-x-2">
         <VFiltersButton
           v-for="(type, i) in types"
           :key="i"
@@ -45,14 +48,20 @@
     <!-- Tags -->
     <div>
       <p class="font-heading">Tags:</p>
-      <div class="mt-3 space-y-3">
-        <VFiltersButton
-          v-for="(tag, i) in stripedTagListFromTypes"
-          :key="i"
-          :label="tag"
-          :selected="selectedTags.includes(tag)"
-          @setTag="setTags"
-        />
+      <!-- Grid wrapper -->
+      <div class="px-1">
+        <!-- Grid -->
+        <div class="flex flex-wrap -mx-2">
+          <!-- Items -->
+          <VFiltersButton
+            v-for="(tag, i) in stripedTagListFromTypes"
+            :key="i"
+            class="px-1 mt-2"
+            :label="tag"
+            :selected="selectedTags.includes(tag)"
+            @setTag="setTags"
+          />
+        </div>
       </div>
     </div>
   </div>

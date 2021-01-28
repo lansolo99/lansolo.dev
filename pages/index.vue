@@ -1,11 +1,11 @@
 <template>
   <main id="index" class="flex flex-col items-start sm:flex-row">
-    <HpSidebar />
+    <HpSidebar
+      class="hidden px-6 py-6 space-y-8 sm:block"
+      style="width: 220px"
+    />
 
-    <div
-      id="gridWrapper"
-      class="w-full sm:w-8/12 md:w-9/12 lg:w-10/12 2xl:w-10/12"
-    >
+    <div id="gridWrapper" class="w-full">
       <HpGridPosts :key="hpGridPostsKey" :context="context" :posts="posts" />
 
       <client-only>
