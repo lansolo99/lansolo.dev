@@ -91,7 +91,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .padded-multiline span {
   box-decoration-break: clone;
 }
