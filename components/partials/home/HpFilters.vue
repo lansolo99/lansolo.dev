@@ -1,11 +1,20 @@
 <template>
   <div class="flex flex-col items-start space-y-8">
-    <!-- All -->
-    <VFiltersButton
-      label="all"
-      :selected="selectedTags.length === 0"
-      @setTag="setTags"
-    />
+    <!-- Filters -->
+    <div>
+      <p class="font-heading">Filters:</p>
+      <div class="mt-1 space-y-3">
+        <p>{{ currentPostsCounter }} results</p>
+
+        <!-- All/reset -->
+        <VFiltersButton
+          label="all"
+          :selected="selectedTags.length === 0"
+          @setTag="setTags"
+        />
+        <!-- FilterList -->
+      </div>
+    </div>
 
     <!-- Types -->
     <div>
@@ -63,7 +72,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['selectedTags']),
+    ...mapState(['selectedTags', 'currentPostsCounter']),
     stripedTagListFromTypes() {
       return this.tags.filter((tag) => {
         return !this.types.includes(tag)

@@ -18,6 +18,7 @@ export const state = () => ({
   ],
   selectedTags: [],
   isCustomCursorVisible: false,
+  currentPostsCounter: null,
 })
 
 export const mutations = {
@@ -26,5 +27,8 @@ export const mutations = {
   },
   SET_CUSTOM_CURSOR_STATE(state, payload) {
     state.isCustomCursorVisible = payload
+  },
+  SET_CURRENT_POSTS_COUNTER(state, payload) {
+    state.currentPostsCounter = payload
   },
 }

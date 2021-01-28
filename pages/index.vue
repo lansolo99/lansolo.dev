@@ -29,7 +29,12 @@ export default {
     InfiniteLoading,
   },
   async fetch() {
-    this.posts = await this.fetchData()
+    const fetchDatas = await this.fetchData()
+
+    this.posts = await fetchDatas.posts
+
+    const postsCounter = await fetchDatas.postsCounter
+    this.setCurrentPostsCounter(postsCounter)
   },
   data() {
     return {
@@ -38,6 +43,7 @@ export default {
       page: 0,
       limit: 16,
       posts: [],
+      postsCounter: null,
       infiniteId: +new Date(),
     }
   },
@@ -56,15 +62,23 @@ export default {
   methods: {
     ...mapMutations({
       setCustomCursorState: 'SET_CUSTOM_CURSOR_STATE',
+      setCurrentPostsCounter: 'SET_CURRENT_POSTS_COUNTER',
     }),
-    fetchData() {
-      return this.$content('posts')
+    async fetchData() {
+      const posts = await this.$content('posts')
         .only(['title', 'type', 'imgCover', 'tags', 'createdAt', 'path'])
         .where(this.setFilter())
         .limit(this.limit)
         .skip(this.limit * this.page)
         .sortBy('createdAt', 'desc')
         .fetch()
+
+      const postsCounter = await this.$content('posts')
+        .only(['title', 'type', 'imgCover', 'tags', 'createdAt', 'path'])
+        .where(this.setFilter())
+        .fetch()
+
+      return { posts, postsCounter: postsCounter.length }
     },
     setFilter() {
       if (this.selectedTags.length === 0) return null
@@ -85,7 +99,14 @@ export default {
     },
     async resetInfinite() {
       this.page = 0
-      this.posts = await this.fetchData()
+
+      const fetchDatas = await this.fetchData()
+
+      this.posts = await fetchDatas.posts
+
+      const postsCounter = await fetchDatas.postsCounter
+      this.setCurrentPostsCounter(postsCounter)
+
       this.hpGridPostsKey++
       this.infiniteId += 1
     },
