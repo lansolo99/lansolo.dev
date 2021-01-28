@@ -88,7 +88,9 @@ export default {
     async infiniteHandler($state) {
       console.log('infiniteHandler')
       this.page += 1
-      const additionalItems = await this.fetchData()
+
+      const fetchDatas = await this.fetchData()
+      const additionalItems = await fetchDatas.posts
 
       if (additionalItems.length > 0) {
         this.posts.push(...additionalItems)
