@@ -8,11 +8,23 @@
 
         <!-- All/reset -->
         <VFiltersButton
-          label="all"
+          :label="selectedTags.length > 0 ? 'Reset filters' : 'All posts'"
           :selected="selectedTags.length === 0"
           @setTag="setTags"
         />
-        <!-- FilterList -->
+
+        <!-- Removable filters list -->
+        <div v-if="selectedTags.length > 0" class="pt-2 space-y-2">
+          <VFiltersButton
+            v-for="(tag, i) in selectedTags"
+            :key="i"
+            :label="tag"
+            :selected="true"
+            class="w-full"
+            :is-in-removable-filters-list="true"
+            @setTag="setTags"
+          />
+        </div>
       </div>
     </div>
 
@@ -84,8 +96,8 @@ export default {
       setSelectedTag: 'SET_SELECTED_TAGS',
     }),
     setTags(label) {
-      // All
-      if (label === 'all') {
+      // All || reset
+      if (['All', 'Reset filters'].includes(label)) {
         this.setSelectedTag([])
         return
       }
