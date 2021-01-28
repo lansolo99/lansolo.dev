@@ -17,15 +17,10 @@
         class="cdy-wrapper"
       />
 
-      <!-- Overlay -->
-      <div
-        class="absolute inset-0 transition duration-200 ease-out pointer-events-none bg-primary-500 overlay"
-      ></div>
-
       <!-- Post type -->
       <div class="absolute top-0 right-0 w-8 h-8 mt-2 mr-2">
         <img
-          class="absolute w-full h-full"
+          class="absolute w-full h-full opacity-30"
           src="~/assets/img/post_type_shape.svg"
           alt=""
         />
@@ -103,10 +98,8 @@ export default {
 
 .cdy-wrapper {
   @apply w-full h-full transform absolute inset-0 object-cover transition duration-200 ease-out;
-}
 
-.overlay {
-  opacity: 0;
+  filter: sepia(100%) hue-rotate(220deg);
 }
 
 @screen lg {
@@ -118,10 +111,8 @@ export default {
     }
 
     &:hover {
-      .overlay {
-        opacity: 0.8;
-      }
       .cdy-wrapper {
+        filter: sepia(0%) hue-rotate(0deg);
         transform: scale(1.02) !important;
       }
     }
