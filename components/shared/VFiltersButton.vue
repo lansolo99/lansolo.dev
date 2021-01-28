@@ -16,7 +16,7 @@
 
     <!-- Counter -->
     <div
-      v-if="context === 'home'"
+      v-if="context === 'home' && label === 'all'"
       class="flex px-3 py-1 transition duration-200 ease-out border-l border-gray-600 group-hover:border-gray-400"
     >
       {{ counter }}
