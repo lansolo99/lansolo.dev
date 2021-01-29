@@ -1,3 +1,3 @@
-Cypress.Commands.add('visitAbout', () => {
-  cy.visit('/about')
-})
+// Cypress.Commands.add('visitAbout', () => {
+//   cy.visit('/about')
+// })

@@ -50,6 +50,7 @@
               v-for="(tag, i) in post.tags"
               :key="i"
               class="relative px-1 mt-2"
+              data-cy="postFilters"
             >
               <VFiltersButton
                 :label="tag"
@@ -77,7 +78,7 @@
         </div>
 
         <!-- Related -->
-        <div class="mt-10">
+        <div class="mt-10" data-cy="postRelatedPosts">
           <h2 class="text-2xl font-bold">Related posts</h2>
 
           <HpGridPosts :context="context" :posts="relatedPosts" class="mt-5" />

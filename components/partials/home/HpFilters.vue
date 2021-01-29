@@ -51,7 +51,7 @@
       <!-- Grid wrapper -->
       <div class="px-1">
         <!-- Grid -->
-        <div class="flex flex-wrap -mx-2">
+        <div class="flex flex-wrap -mx-2" data-cy="tags">
           <!-- Items -->
           <VFiltersButton
             v-for="(tag, i) in stripedTagListFromTypes"

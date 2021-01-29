@@ -11,6 +11,7 @@
     >
       <!-- Label -->
       <div
+        :data-cy="label"
         class="flex px-3 py-1 text-left"
         :class="{ 'bg-primary-500': selected }"
       >

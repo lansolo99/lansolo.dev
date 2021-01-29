@@ -1,6 +1,6 @@
 describe('/about', () => {
   beforeEach(() => {
-    cy.visitAbout()
+    cy.visit('/about')
   })
 
   it('greets with avatar', () => {

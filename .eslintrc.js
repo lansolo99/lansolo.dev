@@ -25,5 +25,6 @@ module.exports = {
     'no-throw-literal': 'off',
     'no-useless-catch': 'off',
     'vue/no-v-html': 'off',
+    'cypress/no-unnecessary-waiting': 'off',
   },
 }
