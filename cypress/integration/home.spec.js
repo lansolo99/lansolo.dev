@@ -12,7 +12,7 @@ describe('The Home Page', () => {
     cy.get('#grid article').should('have.length', 32)
   })
 
-  it.('clicked post link should have corresponding filter selected in its page', () => {
+  it('clicked post link should have corresponding filter selected in its page', () => {
     cy.get('[data-cy=tags] div')
       .eq(2)
       .then((tag) => {
