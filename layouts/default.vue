@@ -11,7 +11,7 @@
 
     <!-- Cursor Preload -->
     <img class="hidden" src="/img/global/cursor-clock.svg" />
-    <img class="hidden" src="/img/global/hand.svg" />
+    <img class="hidden" src="/img/global/cursor-hand.svg" />
   </div>
 </template>
 

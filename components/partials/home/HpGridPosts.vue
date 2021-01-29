@@ -1,5 +1,10 @@
 <template>
-  <div id="grid" class="grid grid-cols-1 gap-1" :class="setGridClasses">
+  <div
+    id="grid"
+    data-cy="gridPost--home"
+    class="grid grid-cols-1 gap-1 border-l-4 border-r-4 border-black"
+    :class="setGridClasses"
+  >
     <VPost v-for="(post, i) in posts" :key="i" :post="post" />
   </div>
 </template>

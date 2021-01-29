@@ -29,7 +29,7 @@ After a lot of research, studying different proposed developer approachs, I’ve
 
 As a picture is worth a thousands words, I made an illustrated mindmap of the full circuit to get things as clear as possible (I always found the stackoverflow or medium solutions not very readable as the codeblocks are spreaded across the page).
 
-<a href="https://res.cloudinary.com/lansolo99/image/upload/f_auto,q_auto/v1/lansolo.dev/posts/vue-js-vuex-form-binding_1.png" target="_blank" rel="noopener noreferer">
+<a href="https://res.cloudinary.com/lansolo99/image/upload/f_auto,q_auto/lansolo.dev/posts/vue-js-vuex-form-binding_1.png" target="_blank" rel="noopener noreferer">
     <v-nuxt-image title="vuex form update circuit mindmap" path="vue-js-vuex-form-binding_1.png"></v-nuxt-image>
 </a>
 

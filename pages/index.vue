@@ -1,11 +1,11 @@
 <template>
   <main id="index" class="flex flex-col items-start sm:flex-row">
-    <HpSidebar />
+    <HpSidebar
+      class="hidden px-6 py-6 space-y-8 sm:block"
+      style="width: 220px"
+    />
 
-    <div
-      id="gridWrapper"
-      class="w-full sm:w-8/12 md:w-9/12 lg:w-10/12 2xl:w-10/12"
-    >
+    <div id="gridWrapper" class="w-full">
       <HpGridPosts :key="hpGridPostsKey" :context="context" :posts="posts" />
 
       <client-only>
@@ -29,7 +29,12 @@ export default {
     InfiniteLoading,
   },
   async fetch() {
-    this.posts = await this.fetchData()
+    const fetchDatas = await this.fetchData()
+
+    this.posts = await fetchDatas.posts
+
+    const postsCounter = await fetchDatas.postsCounter
+    this.setCurrentPostsCounter(postsCounter)
   },
   data() {
     return {
@@ -38,6 +43,7 @@ export default {
       page: 0,
       limit: 16,
       posts: [],
+      postsCounter: null,
       infiniteId: +new Date(),
     }
   },
@@ -56,15 +62,23 @@ export default {
   methods: {
     ...mapMutations({
       setCustomCursorState: 'SET_CUSTOM_CURSOR_STATE',
+      setCurrentPostsCounter: 'SET_CURRENT_POSTS_COUNTER',
     }),
-    fetchData() {
-      return this.$content('posts')
+    async fetchData() {
+      const posts = await this.$content('posts')
         .only(['title', 'type', 'imgCover', 'tags', 'createdAt', 'path'])
         .where(this.setFilter())
         .limit(this.limit)
         .skip(this.limit * this.page)
         .sortBy('createdAt', 'desc')
         .fetch()
+
+      const postsCounter = await this.$content('posts')
+        .only(['title', 'type', 'imgCover', 'tags', 'createdAt', 'path'])
+        .where(this.setFilter())
+        .fetch()
+
+      return { posts, postsCounter: postsCounter.length }
     },
     setFilter() {
       if (this.selectedTags.length === 0) return null
@@ -74,7 +88,9 @@ export default {
     async infiniteHandler($state) {
       console.log('infiniteHandler')
       this.page += 1
-      const additionalItems = await this.fetchData()
+
+      const fetchDatas = await this.fetchData()
+      const additionalItems = await fetchDatas.posts
 
       if (additionalItems.length > 0) {
         this.posts.push(...additionalItems)
@@ -85,7 +101,14 @@ export default {
     },
     async resetInfinite() {
       this.page = 0
-      this.posts = await this.fetchData()
+
+      const fetchDatas = await this.fetchData()
+
+      this.posts = await fetchDatas.posts
+
+      const postsCounter = await fetchDatas.postsCounter
+      this.setCurrentPostsCounter(postsCounter)
+
       this.hpGridPostsKey++
       this.infiniteId += 1
     },

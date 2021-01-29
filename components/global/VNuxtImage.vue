@@ -2,22 +2,13 @@
   <div class="relative w-full my-10 overflow-hidden bg-primary-900 pb-6/12">
     <VImageLoader />
 
-    <client-only>
-      <cld-image
-        :public-id="`lansolo.dev/posts/${path}`"
-        dpr="auto"
-        responsive="width"
-        crop="fit"
-        fetch-format="auto"
-        width="auto"
-        quality="auto"
-        loading="lazy"
-        :alt="title"
-        class="absolute inset-0 z-10 object-cover cdy-wrapper"
-      >
-        <cld-placeholder type="blur"> </cld-placeholder>
-      </cld-image>
-    </client-only>
+    <img
+      :src="`https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/${path}`"
+      :alt="title"
+      class="absolute inset-0 z-10 object-cover cdy-wrapper"
+    />
+    <!-- loading="lazy" -->
+    <!-- responsive="width" -->
   </div>
 </template>
 

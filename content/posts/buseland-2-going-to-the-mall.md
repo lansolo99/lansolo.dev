@@ -1,5 +1,5 @@
 ---
-title: "Buseland #3 - The new home delivery"
+title: "Buseland #2 - Going to the mall"
 type: 'design'
 imgCover: 'buseland-2-going-to-the-mall'
 tags: [cinema 4D, low poly, sketch & toon, after effects]

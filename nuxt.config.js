@@ -186,18 +186,18 @@ export default {
     format: 'MM/dd/yyyy',
   },
 
-  modules: ['@nuxtjs/cloudinary', '@nuxt/content', '@nuxtjs/sitemap'],
+  modules: ['@nuxt/content', '@nuxtjs/sitemap'],
 
   sitemap: {
     hostname: 'https://lansolo.dev',
   },
 
-  cloudinary: {
-    cloudName: process.env.CLOUDINARY_CLOUDNAME,
-    apiKey: process.env.CLOUDINARY_API_KEY,
-    apiSecret: process.env.CLOUDINARY_API_KEY_SECRET,
-    useComponent: true,
-  },
+  // cloudinary: {
+  //   cloudName: process.env.CLOUDINARY_CLOUDNAME,
+  //   apiKey: process.env.CLOUDINARY_API_KEY,
+  //   apiSecret: process.env.CLOUDINARY_API_KEY_SECRET,
+  //   useComponent: true,
+  // },
 
   tailwindcss: {
     exposeConfig: false,
@@ -210,26 +210,26 @@ export default {
       }
     },
     build: {
-      before() {
-        const { $cloudinary } = require('@nuxtjs/cloudinary')
-        const folders = ['about', 'posts']
-        folders.forEach((folder) => {
-          const assetsFolder = path.join(__dirname, `cloudinary/img/${folder}`)
-          fs.readdir(assetsFolder, async (err, files) => {
-            if (err) return
-            /* Upload to Cloudinary */
-            const uploadedAssets = await Promise.all(
-              files.map((file) => {
-                return $cloudinary.upload(path.join(assetsFolder, file), {
-                  public_id: file.split('.')[0],
-                  folder: `lansolo.dev/${folder}`,
-                })
-              })
-            )
-          })
-        })
-        console.log('assets upload complete')
-      },
+      // before() {
+      //   const { $cloudinary } = require('@nuxtjs/cloudinary')
+      //   const folders = ['about', 'posts']
+      //   folders.forEach((folder) => {
+      //     const assetsFolder = path.join(__dirname, `cloudinary/img/${folder}`)
+      //     fs.readdir(assetsFolder, async (err, files) => {
+      //       if (err) return
+      //       /* Upload to Cloudinary */
+      //       const uploadedAssets = await Promise.all(
+      //         files.map((file) => {
+      //           return $cloudinary.upload(path.join(assetsFolder, file), {
+      //             public_id: file.split('.')[0],
+      //             folder: `lansolo.dev/${folder}`,
+      //           })
+      //         })
+      //       )
+      //     })
+      //   })
+      //   console.log('assets upload complete')
+      // },
     },
   },
 
@@ -255,6 +255,7 @@ export default {
   },
 
   build: {
+    // analyze: true,
     terser: {
       terserOptions: {
         compress: {
