@@ -11,6 +11,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      opacity: {
+        'opacity-60': '.6',
+      },
       zIndex: {
         999: 999,
       },

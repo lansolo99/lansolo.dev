@@ -1,16 +1,40 @@
 <template>
   <div class="flex flex-col items-start space-y-8">
-    <!-- All -->
-    <VFiltersButton
-      label="all"
-      :selected="selectedTags.length === 0"
-      @setTag="setTags"
-    />
+    <!-- Filters -->
+    <div>
+      <p class="font-heading">Filters:</p>
+      <div class="mt-1 space-y-3">
+        <p>
+          <strong class="font-bold">{{ currentPostsCounter }}</strong> results
+        </p>
+
+        <!-- All/reset -->
+        <VFiltersButton
+          :label="selectedTags.length > 0 ? 'Reset filters' : 'All posts'"
+          :selected="selectedTags.length === 0"
+          :class="{ 'pointer-events-none': selectedTags.length === 0 }"
+          @setTag="setTags"
+        />
+
+        <!-- Removable filters list -->
+        <div v-if="selectedTags.length > 0" class="pt-2 space-y-2">
+          <VFiltersButton
+            v-for="(tag, i) in selectedTags"
+            :key="i"
+            :label="tag"
+            :selected="true"
+            class="w-full"
+            :is-in-removable-filters-list="true"
+            @setTag="setTags"
+          />
+        </div>
+      </div>
+    </div>
 
     <!-- Types -->
     <div>
       <p class="font-heading">Types:</p>
-      <div class="mt-3 space-y-3">
+      <div class="flex mt-3 space-x-2">
         <VFiltersButton
           v-for="(type, i) in types"
           :key="i"
@@ -24,14 +48,20 @@
     <!-- Tags -->
     <div>
       <p class="font-heading">Tags:</p>
-      <div class="mt-3 space-y-3">
-        <VFiltersButton
-          v-for="(tag, i) in stripedTagListFromTypes"
-          :key="i"
-          :label="tag"
-          :selected="selectedTags.includes(tag)"
-          @setTag="setTags"
-        />
+      <!-- Grid wrapper -->
+      <div class="px-1">
+        <!-- Grid -->
+        <div class="flex flex-wrap -mx-2" data-cy="tags">
+          <!-- Items -->
+          <VFiltersButton
+            v-for="(tag, i) in stripedTagListFromTypes"
+            :key="i"
+            class="px-1 mt-2"
+            :label="tag"
+            :selected="selectedTags.includes(tag)"
+            @setTag="setTags"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -63,7 +93,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['selectedTags']),
+    ...mapState(['selectedTags', 'currentPostsCounter']),
     stripedTagListFromTypes() {
       return this.tags.filter((tag) => {
         return !this.types.includes(tag)
@@ -75,8 +105,8 @@ export default {
       setSelectedTag: 'SET_SELECTED_TAGS',
     }),
     setTags(label) {
-      // All
-      if (label === 'all') {
+      // All || reset
+      if (['All', 'Reset filters'].includes(label)) {
         this.setSelectedTag([])
         return
       }

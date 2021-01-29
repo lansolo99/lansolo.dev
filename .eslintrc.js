@@ -3,6 +3,7 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    'cypress/globals': true,
   },
   parserOptions: {
     parser: 'babel-eslint',
@@ -13,9 +14,9 @@ module.exports = {
     'prettier/vue',
     'plugin:prettier/recommended',
     'plugin:nuxt/recommended',
+    'plugin:cypress/recommended',
   ],
-  plugins: ['prettier'],
-  // add your custom rules here
+  plugins: ['prettier', 'cypress'],
   rules: {
     'no-console': 'off',
     'nuxt/no-cjs-in-config': 'off',
@@ -24,5 +25,6 @@ module.exports = {
     'no-throw-literal': 'off',
     'no-useless-catch': 'off',
     'vue/no-v-html': 'off',
+    'cypress/no-unnecessary-waiting': 'off',
   },
 }

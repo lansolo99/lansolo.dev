@@ -5,7 +5,7 @@
       style="height: 49px"
     >
       <!-- Logo -->
-      <div class="flex-grow py-2 pl-1 md:pl-2 md:px-4">
+      <div class="flex-grow py-2 pl-1 md:pl-2 md:px-4 lg:flex-grow-0">
         <button
           class="focus:outline-none focus-visible:outline-black"
           @click="setTag"
@@ -18,6 +18,11 @@
             height="30"
           />
         </button>
+      </div>
+
+      <!-- Baseline -->
+      <div class="flex-grow hidden px-1 pb-2 lg:block" style="padding-top: 9px">
+        <HpIntro />
       </div>
 
       <!-- Desktop Nav -->

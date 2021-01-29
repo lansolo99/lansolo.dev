@@ -2,22 +2,12 @@
   <div>
     <article class="container relative mx-auto text-white">
       <!-- Avatar -->
-      <div class="relative w-40 h-40 p-8 mx-auto mt-8">
-        <client-only>
-          <cld-image
-            public-id="lansolo.dev/about/avatar.png"
-            crop="fit"
-            dpr="auto"
-            responsive="width"
-            fetch-format="auto"
-            width="auto"
-            quality="auto"
-            alt="Theme"
-            class="absolute inset-0 object-cover"
-          >
-            <cld-placeholder type="blur"></cld-placeholder>
-          </cld-image>
-        </client-only>
+      <div id="avatar" class="relative w-40 h-40 p-8 mx-auto mt-8">
+        <img
+          src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_200/lansolo.dev/about/avatar.png"
+          alt="sc"
+          class="absolute inset-0 object-cover"
+        />
       </div>
 
       <!-- Content -->

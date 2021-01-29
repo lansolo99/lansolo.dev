@@ -92,3 +92,7 @@ sw.*
 
 # Local Netlify folder
 .netlify
+
+# cypress
+cypress/videos
+cypress/screenshots
