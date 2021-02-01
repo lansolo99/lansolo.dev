@@ -151,6 +151,8 @@ export default {
 
   pageTransition: 'page',
 
+  modern: 'server',
+
   publicRuntimeConfig: {},
 
   plugins: [
