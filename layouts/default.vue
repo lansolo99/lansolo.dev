@@ -10,8 +10,8 @@
     />
 
     <!-- Cursor Preload -->
-    <img class="hidden" src="/img/global/cursor-clock.svg" />
-    <img class="hidden" src="/img/global/cursor-hand.svg" />
+    <img class="hidden w-24 h-24" src="/img/global/cursor-clock.svg" />
+    <img class="hidden w-24 h-24" src="/img/global/cursor-hand.svg" />
   </div>
 </template>
 

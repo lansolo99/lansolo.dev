@@ -15,7 +15,7 @@
       v-else
       class="link"
       target="_blank"
-      rel="nooppener noreferer"
+      rel="noopener noreferrer"
       :href="linkData.to"
       @click="$emit('closeMobileMenu')"
     >
