@@ -12,17 +12,17 @@ describe('The Home Page', () => {
     cy.get('#grid article').should('have.length', 32)
   })
 
-  it('clicked post link should have corresponding filter selected in its page', () => {
-    cy.get('[data-cy=tags] div')
-      .eq(2)
-      .then((tag) => {
-        const tagName = tag.text()
+  // it('clicked post link should have corresponding filter selected in its page', () => {
+  //   cy.get('[data-cy=tags] div')
+  //     .eq(2)
+  //     .then((tag) => {
+  //       const tagName = tag.text()
 
-        cy.get(tag).click()
+  //       cy.get(tag).click()
 
-        cy.wait(100).get('[data-cy=gridPost--home] article').first().click()
+  //       cy.wait(100).get('[data-cy=gridPost--home] article').first().click()
 
-        cy.get('[data-cy=postFilters]').find(`[data-cy="${tagName.trim()}"]`)
-      })
-  })
+  //       cy.get('[data-cy=postFilters]').find(`[data-cy="${tagName.trim()}"]`)
+  //     })
+  // })
 })
