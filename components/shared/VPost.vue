@@ -12,7 +12,7 @@
       @click.native="setPostHoverCursors(false)"
     >
       <img
-        :src="`https://res.cloudinary.com/lansolo99/image/upload/c_fill,dpr_${cloudinaryDpr},q_auto,w_500,h_333/lansolo.dev/posts/${post.imgCover}`"
+        :src="`https://res.cloudinary.com/lansolo99/image/upload/c_fill,dpr_${cloudinaryDpr},q_auto,f_auto,w_500,h_333/lansolo.dev/posts/${post.imgCover}`"
         alt=""
         class="cdy-wrapper"
       />
