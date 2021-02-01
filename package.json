@@ -32,7 +32,6 @@
     "nuxt": "^2.14.12",
     "prism-themes": "^1.5.0",
     "prismjs": "^1.23.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "v-click-outside": "^3.1.2",
     "vue-infinite-loading": "^2.4.5"
   },
@@ -57,7 +56,8 @@
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.5.0",
-    "postcss": "^8.1.4",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "postcss-css-variables": "^0.17.0",
     "postcss-nested": "^4.2.3",
     "prettier": "^2.1.2",

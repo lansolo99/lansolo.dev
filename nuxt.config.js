@@ -194,13 +194,6 @@ export default {
     hostname: 'https://lansolo.dev',
   },
 
-  // cloudinary: {
-  //   cloudName: process.env.CLOUDINARY_CLOUDNAME,
-  //   apiKey: process.env.CLOUDINARY_API_KEY,
-  //   apiSecret: process.env.CLOUDINARY_API_KEY_SECRET,
-  //   useComponent: true,
-  // },
-
   tailwindcss: {
     exposeConfig: false,
   },
