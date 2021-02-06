@@ -157,10 +157,9 @@ export default {
 
   plugins: [
     '@/plugins/focus-visible',
-    {
-      src: '@/plugins/v-click-outside.js',
-      ssr: false,
-    },
+    { src: '@/plugins/vue-js-modal', ssr: false },
+    { src: '@/plugins/vue-vimeo-player', ssr: false },
+    { src: '@/plugins/v-click-outside.js', ssr: false },
   ],
 
   components: true,
@@ -205,6 +204,7 @@ export default {
       }
     },
     build: {
+      vendor: ['vue-vimeo-player'],
       // before() {
       //   const { $cloudinary } = require('@nuxtjs/cloudinary')
       //   const folders = ['about', 'posts']
