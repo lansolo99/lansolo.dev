@@ -5,7 +5,7 @@
     >
       <!-- Cover Image(s) -->
       <div
-        class="flex flex-col justify-center mx-auto"
+        class="relative flex flex-col justify-center mx-auto"
         :class="[
           { 'max-w-680': isPostTypeArticle },
           { 'max-w-1000': isPostTypeDesignWithoutImgList },
@@ -32,6 +32,43 @@
 
           <VBackBtn />
         </div>
+
+        <VPlayVideoIcon v-if="post.embed" @click.native="modalShow" />
+
+        <!-- Embed Modal -->
+        <modal
+          v-if="post.embed"
+          name="embed"
+          classes="modalContainer"
+          width="640px"
+          :adaptive="true"
+          height="auto"
+        >
+          <div class="relative w-full">
+            <!-- Embed -->
+            <client-only>
+              <vimeo-player
+                ref="player"
+                :video-id="post.embed.vimeo"
+                player-width="600"
+                player-height="320"
+                class="vimeo-player"
+              />
+            </client-only>
+
+            <!-- Close modal -->
+            <button
+              class="outline-none closeBtn focus-visible:outline-white"
+              @click="modalHide"
+            >
+              <img
+                class="w-full h-full transition duration-150 ease-out transform hover:scale-125"
+                src="@/assets/img/icon-video-close.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </modal>
       </div>
 
       <!-- Content -->
@@ -113,6 +150,11 @@ export default {
   data() {
     return {
       context: 'post',
+      playerOptions: {
+        options: {
+          responsive: true,
+        },
+      },
     }
   },
   computed: {
@@ -160,6 +202,12 @@ export default {
     setTag(label) {
       this.setSelectedTag([label])
       this.$router.push('/')
+    },
+    modalShow() {
+      this.$modal.show('embed')
+    },
+    modalHide() {
+      this.$modal.hide('embed')
     },
   },
   head() {
@@ -241,5 +289,27 @@ export default {
     width: 100%;
     object-fit: cover;
   }
+}
+
+.modalContainer {
+  @apply bg-transparent p-4 text-center flex justify-center items-center shadow-none overflow-visible;
+
+  .closeBtn {
+    @apply absolute top-0 right-0 z-10 w-8 h-8 p-2;
+
+    transform: translateX(-0.75rem) translateY(-2rem);
+  }
+
+  .vimeo-player {
+    @apply w-full;
+  }
+
+  iframe {
+    @apply w-full;
+  }
+}
+
+.vm--overlay {
+  @apply bg-black transition duration-150 ease-out;
 }
 </style>
