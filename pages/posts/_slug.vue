@@ -33,25 +33,41 @@
           <VBackBtn />
         </div>
 
-        <!-- Embed video -->
-        <VPlayVideoIcon @click.native="modalShow" />
-        <!-- Modal -->
+        <VPlayVideoIcon v-if="post.embed" @click.native="modalShow" />
+
+        <!-- Embed Modal -->
         <modal
+          v-if="post.embed"
           name="embed"
           classes="modalContainer"
           width="640px"
           :adaptive="true"
           height="auto"
         >
-          <client-only>
-            <vimeo-player
-              ref="player"
-              video-id="501748684"
-              :autoplay="true"
-              player-width="600"
-              player-height="320"
-            />
-          </client-only>
+          <div class="relative w-full">
+            <!-- Embed -->
+            <client-only>
+              <vimeo-player
+                ref="player"
+                :video-id="post.embed.vimeo"
+                player-width="600"
+                player-height="320"
+                class="vimeo-player"
+              />
+            </client-only>
+
+            <!-- Close modal -->
+            <button
+              class="outline-none closeBtn focus-visible:outline-white"
+              @click="modalHide"
+            >
+              <img
+                class="w-full h-full transition duration-150 ease-out transform hover:scale-125"
+                src="@/assets/img/icon-video-close.svg"
+                alt=""
+              />
+            </button>
+          </div>
         </modal>
       </div>
 
@@ -134,6 +150,11 @@ export default {
   data() {
     return {
       context: 'post',
+      playerOptions: {
+        options: {
+          responsive: true,
+        },
+      },
     }
   },
   computed: {
@@ -271,9 +292,24 @@ export default {
 }
 
 .modalContainer {
-  @apply bg-black p-4 text-center flex justify-center items-center shadow-none;
+  @apply bg-transparent p-4 text-center flex justify-center items-center shadow-none overflow-visible;
+
+  .closeBtn {
+    @apply absolute top-0 right-0 z-10 w-8 h-8 p-2;
+
+    transform: translateX(-0.75rem) translateY(-2rem);
+  }
+
+  .vimeo-player {
+    @apply w-full;
+  }
+
+  iframe {
+    @apply w-full;
+  }
 }
+
 .vm--overlay {
-  @apply bg-black bg-opacity-80;
+  @apply bg-black transition duration-150 ease-out;
 }
 </style>

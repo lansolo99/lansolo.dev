@@ -1,6 +1,6 @@
 <template>
   <button
-    class="absolute z-20 w-20 h-20 duration-150 ease-out transform -translate-x-1/2 -translate-y-1/2 outline-none top-1/2 left-1/2 focus-visible:outline-white hover:scale-125"
+    class="absolute z-20 w-20 h-20 duration-150 ease-out transform -translate-x-1/2 -translate-y-1/2 outline-none top-1/2 left-1/2 focus-visible:outline-white lg:hover:scale-125"
   >
     <!-- Round -->
     <div class="w-full h-full bg-white shadow-lg bg-opacity-90"></div>
