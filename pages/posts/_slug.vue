@@ -5,7 +5,7 @@
     >
       <!-- Cover Image(s) -->
       <div
-        class="flex flex-col justify-center mx-auto"
+        class="relative flex flex-col justify-center mx-auto"
         :class="[
           { 'max-w-680': isPostTypeArticle },
           { 'max-w-1000': isPostTypeDesignWithoutImgList },
@@ -32,6 +32,27 @@
 
           <VBackBtn />
         </div>
+
+        <!-- Embed video -->
+        <VPlayVideoIcon @click.native="modalShow" />
+        <!-- Modal -->
+        <modal
+          name="embed"
+          classes="modalContainer"
+          width="640px"
+          :adaptive="true"
+          height="auto"
+        >
+          <client-only>
+            <vimeo-player
+              ref="player"
+              video-id="501748684"
+              :autoplay="true"
+              player-width="600"
+              player-height="320"
+            />
+          </client-only>
+        </modal>
       </div>
 
       <!-- Content -->
@@ -161,6 +182,12 @@ export default {
       this.setSelectedTag([label])
       this.$router.push('/')
     },
+    modalShow() {
+      this.$modal.show('embed')
+    },
+    modalHide() {
+      this.$modal.hide('embed')
+    },
   },
   head() {
     return {
@@ -241,5 +268,12 @@ export default {
     width: 100%;
     object-fit: cover;
   }
+}
+
+.modalContainer {
+  @apply bg-black p-4 text-center flex justify-center items-center shadow-none;
+}
+.vm--overlay {
+  @apply bg-black bg-opacity-80;
 }
 </style>
