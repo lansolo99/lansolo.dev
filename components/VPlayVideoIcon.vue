@@ -1,13 +1,13 @@
 <template>
   <button
-    class="absolute z-20 w-20 h-20 duration-150 ease-out transform -translate-x-1/2 -translate-y-1/2 outline-none top-1/2 left-1/2 focus-visible:outline-white lg:hover:scale-125"
+    class="absolute z-10 w-12 h-12 duration-150 ease-out transform -translate-x-1/2 -translate-y-1/2 outline-none md:w-20 md:h-20 top-1/2 left-1/2 focus-visible:outline-white lg:hover:scale-125"
   >
     <!-- Round -->
     <div class="w-full h-full bg-white shadow-lg bg-opacity-90"></div>
 
     <!-- Triangle -->
     <IconVideoPlayTriangle
-      class="absolute w-8 h-8 ml-1 transform -translate-x-1/2 -translate-y-1/2 fill-current top-1/2 left-1/2 text-primary-500"
+      class="absolute w-4 h-4 transform -translate-x-1/2 -translate-y-1/2 fill-current md:ml-1 md:w-8 md:h-8 top-1/2 left-1/2 text-primary-500"
     />
   </button>
 </template>
