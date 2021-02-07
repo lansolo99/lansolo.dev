@@ -58,7 +58,7 @@ Obviously and first of all, someone has to initiate a Firebase project from the 
 Nuxt has its own [@nuxt/firebase](https://firebase.nuxtjs.org/) module since 2019, and it give us an organized way to implement it inside our app compared to before.
 I won’t detail all the process as it is subject to change over time, so head to the clear documentation.
 
-In short, you just define an object configuration that declare a list of Firebase services you need.
+In short, you just define an object configuration that declares a list of Firebase services you need.
 You can also define multiples environment configs using 'development' and 'production' keys credentials.
 
 
@@ -94,7 +94,7 @@ firebase: {
     },
 },
 ```
-This module inject utilities that we will use to call Firebase services from the app following this model :
+This module injects utilities that we will use to call Firebase services from the app following this model:
 
 ```js{}
 this.$fire.<SERVICE>.<SERVICE METHOD>(PAYLOAD)
