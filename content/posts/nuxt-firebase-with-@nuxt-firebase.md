@@ -102,5 +102,5 @@ this.$fire.<SERVICE>.<SERVICE METHOD>(PAYLOAD)
 
 This way we don't have to declare a custom variable to call Firebase services, this job is done for us.
 
-TO BE CONTINUED  (2/11 done)
+TO BE CONTINUED (2/11 done)
 
