@@ -8,7 +8,7 @@ createdAt: 2019-06-07
 
 This post is part of a full walkthrough of building an android app using Nuxt + Cordova
 <!--more-->
-The proof of concept of [Weekx](https:weekx.xyz) is now barely finished. As I said previously, I plan to create some tests for it but have to get a better overall comprehension of unit tests in Vue.js first.
+The proof of concept of [Weekx](https://weekx-landing-page.netlify.app/) is now barely finished. As I said previously, I plan to create some tests for it but have to get a better overall comprehension of unit tests in Vue.js first.
 
 I built this first app from my own, and it was the greatest exercice to get the big picture of Vue.js. I might push Weekx further more later but decided to put it aside for the time being.
 

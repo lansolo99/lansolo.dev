@@ -26,7 +26,7 @@ This post is a part of a miniserie where I explain my journey and what I learned
 ## Testing
 
 * We have weekly game testing session with my mate to take a stock. I compile the app with Cordova so that we can see how the app behave in real conditions. The biggest hurdle we’re currently facing at is on the performance side. The game is lagging pretty hard on my Nexus 9 tablet. I discovered there’s memory leaks by taking snapshots from the Chrome memory tab. Indeed, the Vue components seems to pile-up as time goes. I’ve started to clean a lot of things such as event listeners, setTime outs. Some component doesn’t destroy themselves so that I have to take care of it from the "beforeDestroy” lifecycle hook.
-* I’m just beginning in the performance & optimisation work as I never have to take care of it with my previous Vue app ([Weekx](https://weekx.xyz)). In this case, the challenge is bigger, due to a high amount of generated child components and micro-interactions. Hopefully I can solve it.
+* I’m just beginning in the performance & optimisation work as I never have to take care of it with my previous Vue app ([Weekx](https://weekx-landing-page.netlify.app)). In this case, the challenge is bigger, due to a high amount of generated child components and micro-interactions. Hopefully I can solve it.
 * I also realized I will definitely implement tests as I often break things during refactoring some code parts which cause side effects on certain routes. I started to re-learn [Jest](https://jestjs.io/) implementation in Vue to do so.
 
 ## Next steps
