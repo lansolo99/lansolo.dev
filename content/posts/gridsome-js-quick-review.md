@@ -13,7 +13,7 @@ In this post, I'll give a quick Gridsome review after having started using it.
 
 I’ve been using Vue.js for nearly a year now and find the opportunities to use it more and more often.
 
-It all started with [WeekX](https://weekx.xyz), an advanced to-do app focused on self-improvement coded with vanilla Vue.js. Then I tried Nuxt.js as I wanted an SEO friendly landing-page to present WeekX, so it takes advantage of the "generate" mode to build a static page . The third project was another Nuxt.js based app which is a mobile puzzle game app: [Smart Prisoners](https://smartprisoners.netlify.app/).
+It all started with [WeekX](https://weekx-landing-page.netlify.app), an advanced to-do app focused on self-improvement coded with vanilla Vue.js. Then I tried Nuxt.js as I wanted an SEO friendly landing-page to present WeekX, so it takes advantage of the "generate" mode to build a static page . The third project was another Nuxt.js based app which is a mobile puzzle game app: [Smart Prisoners](https://smartprisoners.netlify.app/).
 
 This time it’s just use the "SPA" mode but I decided to use Nuxt because of the abstract layer that ease the vue development in general. Aside from personal projects, I’ve come to realize I also could use Vue for real life small jobs I have here and there, that are mostly static landing-pages for [Banque Populaire](https://www.banquepopulaire.fr/). This time, I decided to give a try to [Gridsome.js](https://gridsome.org/), a static site generator for Vue.
 
