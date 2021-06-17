@@ -13,10 +13,10 @@ In the [last post](/posts/switching-from-vue-to-react), I explained why I decide
 
 ## The joys of discovering the ecosystem
 
-As previously mentionned, I quickly found my marks building and organizing React components using the functional API. 
-I guess I came at the right moment, as I certainly wouldn't feel the same if I had to deal with the class component API. 
+As previously mentionned, I quickly found my marks building and organizing React components using the functional API.
+I guess I came at the right moment, as I certainly wouldn't feel the same if I had to deal with the class component API.
 
-Actually, I think a lot of React philosophy makes more sense than Vue in my head: passing every pieces of data/logic as props or children using composition, get them in the child component using destructuring or rest paramaters, grouping logic by feature, and using context API as a global store... 
+Actually, I think a lot of React philosophy makes more sense than Vue in my head: passing every pieces of data/logic as props or children using composition, get them in the child component using destructuring or rest paramaters, grouping logic by feature, and using context API as a global store...
 
 ## Annoyances
 
@@ -32,7 +32,7 @@ Building web-apps with Next.js seems to me relatively straightforward so far. As
 
 ## Material UI
 
-For my last project, I had to build a form using the Googla Material UI. So I dove into the [React Material UI library](https://material-ui.com/). I felt like a bit of [Vuetify](https://vuetifyjs.com/) reading the docs, but I quickly came up with a working interface. The big struggle was learning the myriad of ways about styling the components, it's literally overwhelming, but at the end, I chose to deal with the method that suited me the best, a.k.a styled components. 
+For my last project, I had to build a form using the Googla Material UI. So I dove into the [React Material UI library](https://material-ui.com/). I felt like a bit of [Vuetify](https://vuetifyjs.com/) reading the docs, but I quickly came up with a working interface. The big struggle was learning the myriad of ways about styling the components, it's literally overwhelming, but at the end, I chose to deal with the method that suited me the best, a.k.a styled components.
 
 ## Formik as the Vue-Formulate React peer
 
@@ -40,7 +40,7 @@ As I need form validation, I decided to go with the famous [Formik library](http
 
 ## Framer-motion: animations at ease
 
-When I had to deal with sequenced animations previously with Vue, I used the [GSAP library](https://github.com/greensock/GSAP). I also simply used CSS classes coupled with the &lt;transition&gt; tag. I heard about [Framer-motion](https://www.framer.com/motion/) long time ago, and finally gave it a try. I found the API extremely friendly and really appreciated the default "spring" easing that gave a natural physic-like to all animations. 
+When I had to deal with sequenced animations previously with Vue, I used the [GSAP library](https://github.com/greensock/GSAP). I also simply used CSS classes coupled with the &lt;transition&gt; tag. I heard about [Framer-motion](https://www.framer.com/motion/) long time ago, and finally gave it a try. I found the API extremely friendly and really appreciated the default "spring" easing that gave a natural physic-like to all animations.
 
 For the time being, I just used it for simple elements "poping out" on the page, but I read about the [magic-motion](https://www.framer.com/examples/magic-motion/) feature, which I'm eager to try on a future project as it look so impressive with it's morphing effect!
 
