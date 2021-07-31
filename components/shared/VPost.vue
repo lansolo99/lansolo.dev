@@ -98,23 +98,33 @@ export default {
 
 .cdy-wrapper {
   @apply w-full h-full transform absolute inset-0 object-cover transition duration-200 ease-out;
-
-  filter: sepia(100%) hue-rotate(220deg);
 }
 
 @screen lg {
+  #grid {
+    article {
+      .cdy-wrapper {
+        &:hover {
+          transform: scale(1.02) !important;
+        }
+      }
+      &:not(:first-child) {
+        .cdy-wrapper {
+          filter: sepia(100%) hue-rotate(220deg);
+
+          &:hover {
+            filter: sepia(0%) hue-rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+
   .postLink {
     cursor: none;
 
     &--waitCursor {
       cursor: pointer;
-    }
-
-    &:hover {
-      .cdy-wrapper {
-        filter: sepia(0%) hue-rotate(0deg);
-        transform: scale(1.02) !important;
-      }
     }
   }
 }
