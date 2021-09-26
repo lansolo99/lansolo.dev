@@ -2,34 +2,38 @@
 title: 'Strapi headless CMS quick review'
 type: 'article'
 description: Personal experience using Strapi for the first time.
-imgCover: 'manage-SVG-colors-with-nextjs'
+imgCover: 'strapi-headless-cms-quick-review.jpg'
 tags: [strapi, next, tailwindcss, heroku, vercel]
 createdAt: 2021-09-26
 ---
 
 ## Context
 
-I have been busy these last weeks designing and building an e-commerce fashion website. I only handled this kind of project once for an outdoor assets shop, back in 2011 using Prestashop.
+I have been busy these last weeks designing and building an e-commerce fashion website.
 
-A lot of time has passed, and my preferred stack has completely changed since then and I though it was a good opportunity to experiment on using a jamstack approach as the shop is quite small and won't be updated that often.
+I only handled this kind of project once for an outdoor assets shop, back in 2011 using [Prestashop](https://www.prestashop.com).
+
+A lot of time has passed, and my preferred stack has completely changed since then.
+
+I decided it was a good opportunity to experiment on using a jamstack approach as the shop is quite small and won't be updated that often. The website is still in development but I'll post the url here when it's done.
 
 ## Stack
 
 ### Front-end
 
-I use Next.js as I decided to settle with this one as it's very versatile, popular, with a very active development.
+I use [Next.js](https://nextjs.org/) as I decided to settle with React, and this one has versatile deployment options, is popular, and has a very active development.
 
 ### Back-end
 
-Strapi comes in the game. This one was on my radar since a long time. I experimented a very bugged version 2 years ago but the project has become stable enough these days.
+[Strapi](https://strapi.io/) comes in the game. This one was on my radar since a long time. I experimented a very bugged version 2 years ago but the project has become stable enough these days.
 
 ### UI
 
-I still use TailwindCSS, that had been working perfectly for all my past projects. The recently shipped [Just in time mode](https://tailwindcss.com/docs/just-in-time-mode) make it a lot easier to work with!
+I still use [TailwindCSS](https://tailwindcss.com/), it has been working perfectly for all my past projects. The recently shipped [Just in time mode](https://tailwindcss.com/docs/just-in-time-mode) make it a lot easier to work with!
 
 ### Front-end hosting
 
-This time I try [Vercel](https://vercel.com/) instead of [Netlify](https://netlify.com/) as I plan to use [next/image](https://nextjs.org/docs/api-reference/next/image) for efficient remote image optimization. I struggled a lot with next/image in the past. My conclusion is it's a breeze to handle optimized image with it, but only if deployed using Vercel, that is designed to work with.
+This time I try [Vercel](https://vercel.com/) instead of [Netlify](https://netlify.com/) as I plan to use [next/image](https://nextjs.org/docs/api-reference/next/image) for efficient remote images optimizations. I struggled a lot with next/image in the past. My conclusion is it's a breeze to handle optimized image with it, but only if deployed using Vercel, that is designed to work with.
 
 ### Back-end hosting
 
@@ -37,7 +41,7 @@ I use [Heroku](https://www.heroku.com/) as it's the easiest platform to push a N
 
 ### Payment solution
 
-[Snipcart](https://snipcart.com/) comes in the game, as I want to offload all the ecommerce development work at most, but still want an elegant integration with my front-end.
+[Snipcart](https://snipcart.com/) comes in the game, as I want to offload all the e-commerce development work at most, but still want an elegant integration with my front-end.
 
 ### Image optimization
 
@@ -56,7 +60,7 @@ I don't know how it will scale in the future and I don't want to be stuck with p
 
 - Free solution
 
-- Interface is pretty clear, as it might be a bit older, but the upcoming v4 version will bring a whole new UI. The v3 one is still pleasant to my mind. The
+- Interface is pretty clear, as it might be a bit older, but the upcoming v4 version will bring a whole new UI. The v3 one is still pleasant to my mind.
 
 - All the develpment work is handled locally using a node server with a local database, so we don't need to query an hosted API all the time. We also have a great control over the logic under the hood as all files are within a node project.
 
@@ -88,8 +92,8 @@ I tried other solutions in the past, some of them with great satisfaction:
 
 - [Forestry](https://forestry.io/): GIT based solution, also only tried in a development context. It's like Netlify CMS with a better UI. I think I will go toward this one if I ever need a GIT based CMS.
 
-- [Headless Wordpress](https://wordpress.org/): it's Wordpress but I only used it's API. Querying the API is quite easy. But we still have to handle wordpress theme development and I don't want to invest time using PHP anymore as want to focus on JS language.
+- [Headless Wordpress](https://wordpress.org/): it's Wordpress but I only used it's API. Querying the API is quite easy. But we still have to handle Wordpress theme development and I don't want to invest time using PHP anymore as want to focus on JS language.
 
 ## Next
 
-So far, I enjoyed using Strapi despite annoying bug and lacking feature, but at the end, it's the same story whatever the tool we using. The [upcoming v4 release](https://strapi.io/v4) will hopefully fix most of these drawbacks. I feel it's the most promising headless solution that fits my needs and I'm eager to stick and invest time to have a good grasp over it.
+So far, I enjoyed using Strapi despite annoying bugs and lacking features, but at the end, it's the same story whatever the tool we using. The [upcoming v4 release](https://strapi.io/v4) will hopefully fix most of these drawbacks. I feel it's the most promising headless solution that fits my needs and I'm eager to stick with it and invest time to have a good grasp.
