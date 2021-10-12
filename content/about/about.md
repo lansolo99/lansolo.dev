@@ -2,42 +2,18 @@
 title: Front-end developer &  polyvalent designer
 imgCover: '/img/about/avatar'
 tags: []
-socialLinks: [
-  {
-  name: linkedin,
-  url: http://fr.linkedin.com/in/stephanechangarnier
-  },
-  {
-  name: twitter,
-  url: https://twitter.com/lansolo191
-  },
-  {
-  name: github,
-  url: https://github.com/lansolo99
-  },
-  {
-  name: codesandbox,
-  url: https://codesandbox.io/u/lansolo99
-  },
-  {
-  name: dev.to,
-  url: https://dev.to/lansolo99
-  },
-  {
-  name: vimeo,
-  url: https://vimeo.com/user9314545
-  },
-  {
-  name: tumblr,
-  url: http://niveaumoins1.tumblr.com/
-  },
-  {
-  name: behance,
-  url: https://www.behance.net/niveaumoins1
-  },
-]
+socialLinks:
+  [
+    { name: linkedin, url: http://fr.linkedin.com/in/stephanechangarnier },
+    { name: twitter, url: https://twitter.com/lansolo191 },
+    { name: github, url: https://github.com/lansolo99 },
+    { name: codesandbox, url: https://codesandbox.io/u/lansolo99 },
+    { name: dev.to, url: https://dev.to/lansolo99 },
+    { name: vimeo, url: https://vimeo.com/user9314545 },
+    { name: tumblr, url: http://niveaumoins1.tumblr.com/ },
+    { name: behance, url: https://www.behance.net/niveaumoins1 },
+  ]
 ---
-
 
 ## Who I am
 
@@ -51,28 +27,30 @@ I'm still doing UI/UX + infographics, I also actively builds side-projects on my
 
 ## Experience
 
-* Freelance designer/developer : Sept 2015 - Current
-* Gandi.net (Paris) : Oct 2015 - Nov 2019
-* LWM Agency (Paris) : Oct 2005 - Aug 2015 
-* Freelance developer/designer : Since Oct 2015
+- Freelance designer/developer : Sept 2015 - Current
+- Gandi.net (Paris) : Oct 2015 - Nov 2019
+- LWM Agency (Paris) : Oct 2005 - Aug 2015
+- Freelance developer/designer : Since Oct 2015
 
 ## Capabilities
 
-* Front-end development SPA / PWA / SSR / static sites
-* Small Back-end development PHP / Node.js / Firebase / MongoDB
-* Web UI/UX design & interaction design
-* General graphic design
-* 2d/3d illustrations
-* Motion design
+- Front-end development SPA / PWA / SSR / static sites
+- Small Back-end development PHP / Node.js / Firebase / MongoDB
+- Web UI/UX design & interaction design
+- General graphic design
+- 2d/3d illustrations
+- Motion design
 
 ## Tools stack
 
-* Front-end: JS / Vue / Nuxt / Gridsome / Node / PHP / Cordova / Wordpress / Prestashop / MongoDB / Jest
-* Webdesign: HTML / CSS / BEM / Tailwind / Semantic UI / Vuetify / Maizzle / GSAP
-* Tooling:  Git / Webpack / Sass / Gulp / SSH
-* SAAS platforms: Netlify / Heroku / Firebase / Prismic / Storyblok / Send In Blue
-* Others : Google Analytics + Google Tag Manager tracking 
-* Design: Sketch App / Photoshop / Illlustrator / After Effects / In Design / Cinema 4D 
+- **Front-end**: React / Next / Docusaurus / Vue / Nuxt / Gridsome / Maizzle
+- **Backend-end**: Node / Cordova / MongoDB
+- **CMS/SaaS**: Firebase / Prismic / Storyblok / Send In Blue / Strapi / Wordpress / Prestashop / Snipcart
+- **Webdesign**: HTML / CSS / BEM / Tailwind / Semantic UI / Vuetify / GSAP
+- **Hosting**: Shared hosting / Netlify / Heroku / S3
+- **Tooling**: Git / Sass / Postcss / Gulp / SSH / TS / Eslint / Prettier / Cypress
+- **Others**: Google Analytics + Google Tag Manager tracking
+- **Design**: Sketch / Figma / Photoshop / Illustrator / After Effects / In Design / C4D
 
 ## Life
 
