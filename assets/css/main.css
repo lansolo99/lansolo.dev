@@ -115,3 +115,11 @@ span.singleMdCode {
   background: #2a2734;
   color: #ffcc99;
 }
+
+@screen md {
+  .markdown-container {
+    p {
+      @apply text-lg !important;
+    }
+  }
+}

@@ -110,7 +110,7 @@
         <div class="markdown-container">
           <nuxt-content
             :document="post"
-            class="mt-10 prose text-white max-w-none"
+            class="mt-10 prose text-white md-prose-xl max-w-none"
           />
         </div>
 
