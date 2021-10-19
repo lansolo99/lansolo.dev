@@ -13,7 +13,7 @@ Note: This post is not a tutorial on how to use Docusaurus. Head to their [docum
 
 My React experience is reaching 6 months, mostly building landing pages using Next.js.
 
-Last month, I had the opportunity to build and maintain my first documentation site, which is about banking APIs (I will update details once the final version will be online by the end of 2021 summer).
+Last month, I had the opportunity to build and maintain my first documentation site, the [Xpollens banking APIs](http://docs.xpollens.com/).
 
 Obviously I reached for the most adequate solution, with a preference on React-based tool. I evaluated Vuepress, Docz, Next.js, and [Docusaurus.js](https://docusaurus.io/).
 
@@ -79,10 +79,12 @@ I reviewed some of the most used ones (Redoc, Swagger UI, Slate, Rapidoc). The l
 
 [Rapidoc](https://mrin9.github.io/RapiDoc/) is an open-source spec documentation generation solution.
 
+Following some interests I had about code implementation, I prepared a [Github Gist](https://gist.github.com/lansolo99/7ef719b4758b3d02fc710b9b3a993537) if you want to have a look at the code (Rapidoc theme component only + integration in a markdown document).
+
 ## Deployment pipeline
 
 [Netlify](https://www.netlify.com/) is officially in the game for this project (I usally deploy on Apache shared hosting for every other partners). The continuous deployment is based on a Git repo, and I'm confident this will offer a robust deployment pipeline between me and contributors.
 
 ## Next
 
-We are at dawn of putting the site live in production, and I look forward to get this stage properly done, especially as I will have to maintain and monitor its evolution along the way.
+Site is [live](http://docs.xpollens.com/), I now have the charge to help maintain it for future developments.
