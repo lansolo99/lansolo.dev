@@ -2,7 +2,7 @@
 title: 'How video games inspire front-end'
 type: 'article'
 description: A quick thought about what video games can bring us as front-end developer.
-imgCover: 'my-current-tech-stack-of-november-2021.png'
+imgCover: 'how-video-games-inspire-front-end.png'
 tags: [game, nuxt, cordova]
 createdAt: 2021-12-11
 ---
