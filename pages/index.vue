@@ -30,7 +30,6 @@ export default {
   },
   async fetch() {
     const fetchDatas = await this.fetchData()
-    
 
     this.posts = await fetchDatas.posts
 

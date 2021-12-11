@@ -7,7 +7,7 @@ tags: [next, strapi, vercel, cypress, sketch]
 createdAt: 2021-11-10
 ---
 
-This post is not focused on aother tool I just discovered, but take stock of the self taught cycle I experiment in the tech industry.
+This post is not focused on another tool I just discovered, but take stock of the self taught cycle I experiment in the tech industry.
 
 ## Context
 
