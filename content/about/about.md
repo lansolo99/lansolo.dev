@@ -17,13 +17,13 @@ socialLinks:
 
 ## Who I am
 
-I’m Stephane Changarnier, 36 y/o. front-end developer & designer based in sunny Marseille, France.
+I’m Stephane Changarnier, 37 y/o. front-end developer & designer currently living a location independent life, moving within the south of France.
 
 ## What I do
 
-I’ve been developing both visual and technical skills for over a decade in the web industry. Originally graphic designer, I switched towards front-end development for the last few years. I tend to be full-stack accepting a wide range of projects types. I mostly do small and medium sized web projects as single page apps following the Jamstack approach with Vue.js and it's ecosystem.
+I’ve been developing both visual and technical skills for over a decade in the web industry. Originally graphic designer, I switched towards front-end development for the last few years. I tend to be full-stack accepting a wide range of projects types. I mostly work on static marketing sites, for small and medium sized business. My stack of choice has moved from Vue to React, especially Next.js.
 
-I'm still doing UI/UX + infographics, I also actively builds side-projects on my free-time.
+I'm still doing UI/UX + infographics + motion design, I also actively builds side-projects on my free-time.
 
 ## Experience
 
