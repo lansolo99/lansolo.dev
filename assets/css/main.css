@@ -123,3 +123,12 @@ span.singleMdCode {
     }
   }
 }
+
+@screen lg {
+  .markdown-container {
+    p {
+      font-size: 22px !important;
+      line-height: 150% !important;
+    }
+  }
+}
