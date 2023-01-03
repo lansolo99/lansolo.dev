@@ -2,7 +2,7 @@
 title: 'First Sveltekit project with Blackout'
 type: 'article'
 description: Walkthrough of my journey learning Sveltekit by releasing a mini-game
-imgCover: '2022-a-year-in-review'
+imgCover: 'first-sveltkit-project-with-blackout'
 tags: []
 createdAt: 2023-01-03
 ---
@@ -101,6 +101,8 @@ TODO: write on the production launch once done
 
 
 ## Wrapping up
+
+I will update this post and put the public link to the final game once the first contest has passed (end of january 2023).
 
 It has been the most interesting project in 2022, bringing designs and tech learning opportunities along handling a whomle real-life product lifecycle.
 
