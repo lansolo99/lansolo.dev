@@ -2,7 +2,7 @@
 title: 'Building a video explainer with After Effects'
 type: 'article'
 description: First steps into the explainer world 
-imgCover: 'first-sveltkit-project-with-blackout'
+imgCover: 'building-an-explainer-with-after-effects'
 tags: [after effects, video]
 createdAt: 2023-02-12
 ---
