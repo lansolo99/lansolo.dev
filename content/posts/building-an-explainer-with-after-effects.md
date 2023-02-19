@@ -69,7 +69,7 @@ Here are some key points :
 
 ## Result
 
-Here is the result (french voice-over & subs): (...)[...].
+Here is the [result](https://vimeo.com/manage/videos/800250266) (french voice-over & subs).
 
 I mostly use some animated icon libraries, considering the limited time I had (10 days).
 
