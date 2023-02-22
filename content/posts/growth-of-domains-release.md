@@ -2,7 +2,7 @@
 title: 'Growth of domains release'
 type: 'design'
 imgCover: 'growth-of-domains-release'
-tags: [cinema 4D, sketch & toon, low poly, x-particles]
+tags: [cinema 4D, sketch & toon, low poly, x-particles, artworks]
 createdAt: 2016-07-08
 ---
 

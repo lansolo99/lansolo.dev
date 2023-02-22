@@ -2,7 +2,7 @@
 title: 'Building Meet Harvey:  a dive into Wordpress membership plugin'
 type: 'article'
 imgCover: 'building-meet-harvey-a-dive-into-wordpress-membership-plugin'
-tags: [wordpress]
+tags: [wordpress, devs]
 createdAt: 2019-10-11
 ---
 

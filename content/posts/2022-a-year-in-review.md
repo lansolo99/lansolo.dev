@@ -3,7 +3,7 @@ title: '2022 - A year in review'
 type: 'article'
 description: Review of the key things, stacks and projects I worked on during this year.
 imgCover: '2022-a-year-in-review'
-tags: []
+tags: ['miscs']
 createdAt: 2022-12-14
 ---
 

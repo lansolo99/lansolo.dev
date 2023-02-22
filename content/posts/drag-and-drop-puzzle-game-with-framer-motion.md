@@ -3,7 +3,7 @@ title: 'Drag and drop puzzle game with Framer-Motion'
 type: 'article'
 description: Walkthrough about building a drag and drop puzzle game using Framer-motion.
 imgCover: 'drag-and-drop-puzzle-game-with-framer-motion.png'
-tags: [game, next, framer-motion, Tailwind, Figma]
+tags: [game, next, framer-motion, Tailwind, Figma, devs]
 createdAt: 2022-01-04
 ---
 

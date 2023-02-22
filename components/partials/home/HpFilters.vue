@@ -8,27 +8,21 @@
 
     <!-- Tags -->
     <div class="w-full mt-4">
-      <p class="font-heading">Categories:</p>
+      <p class="text-lg font-heading">Categories:</p>
       <!-- Grid wrapper -->
       <div class="px-1">
         <!-- Grid -->
         <div class="flex flex-col -mx-2" data-cy="tags">
           <VFiltersButton
+            v-for="(cat, i) in categories"
+            :key="i"
             class="w-full px-1 mt-2"
-            label="All"
-            :selected="selectedTags.length === 0"
-            @setTag="setTags"
-          />
-          <VFiltersButton
-            class="w-full px-1 mt-2"
-            label="video"
-            :selected="selectedTags.includes('video')"
-            @setTag="setTags"
-          />
-          <VFiltersButton
-            class="px-1 mt-2"
-            label="node"
-            :selected="selectedTags.includes('node')"
+            :label="cat"
+            :selected="
+              cat === 'All'
+                ? selectedTags.length === 0
+                : selectedTags.includes(cat)
+            "
             @setTag="setTags"
           />
         </div>
@@ -58,17 +52,19 @@ export default {
   },
   data() {
     return {
-      types: ['article', 'design'],
+      categories: [
+        'All',
+        'devs',
+        'artworks',
+        'motion graphics',
+        'short 3D films',
+        'miscs',
+      ],
       tags: [],
     }
   },
   computed: {
     ...mapState(['selectedTags', 'currentPostsCounter']),
-    stripedTagListFromTypes() {
-      return this.tags.filter((tag) => {
-        return !this.types.includes(tag)
-      })
-    },
   },
   methods: {
     ...mapMutations({

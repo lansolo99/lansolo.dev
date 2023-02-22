@@ -3,7 +3,7 @@ title: 'Snipcart e-commerce layer quick review'
 type: 'article'
 description: Personal experience implementing Snipcart.
 imgCover: 'snipcart-ecommerce-layer-quick-review.jpg'
-tags: [snipcart, next, strapi, vercel]
+tags: [snipcart, next, strapi, vercel, miscs]
 createdAt: 2021-10-16
 ---
 

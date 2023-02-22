@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'Underlove stories', src: 'underlove-stories_1' },
   ]
-tags: [cinema 4D, sketch & toon, low poly, digital painting]
+tags: [cinema 4D, sketch & toon, low poly, digital painting, artworks]
 createdAt: 2016-10-31
 ---
 

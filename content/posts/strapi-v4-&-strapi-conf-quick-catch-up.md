@@ -3,7 +3,7 @@ title: 'Strapi v4 & Strapi conf: quick catch-up'
 type: 'article'
 description: A quick catch-up following the latest Strapi conf and keypoints I consider using the new v4.
 imgCover: 'strapi-v4-strapi-conf-quick-catch-up.jpg'
-tags: [Strapi, next]
+tags: [Strapi, next, miscs]
 createdAt: 2022-03-25
 ---
 

@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'Meet Harvey illustrations', src: 'meetharvey_illustrations_1' },
   ]
-tags: [cinema 4D, low poly]
+tags: [cinema 4D, low poly, artworks]
 createdAt: 2020-10-07
 ---
 

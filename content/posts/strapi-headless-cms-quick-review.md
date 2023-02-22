@@ -3,7 +3,7 @@ title: 'Strapi headless CMS quick review'
 type: 'article'
 description: Personal experience using Strapi for the first time.
 imgCover: 'strapi-headless-cms-quick-review.jpg'
-tags: [strapi, next, tailwindcss, heroku, vercel]
+tags: [strapi, next, tailwindcss, heroku, vercel, devs]
 createdAt: 2021-09-26
 ---
 

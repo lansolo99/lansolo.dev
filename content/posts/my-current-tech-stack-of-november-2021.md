@@ -3,7 +3,7 @@ title: 'My current tech stack of November 2021'
 type: 'article'
 description: Thoughts on stack picking and doing clever choice as time goes by.
 imgCover: 'my-current-tech-stack-of-november-2021.png'
-tags: [next, strapi, vercel, cypress, sketch]
+tags: [next, strapi, vercel, cypress, sketch, miscs]
 createdAt: 2021-11-10
 ---
 

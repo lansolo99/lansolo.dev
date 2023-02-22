@@ -3,7 +3,7 @@ title: New blog version with Nuxt
 type: 'article'
 description: Why I migrated my blog from Wordpress to Nuxt
 imgCover: 'new-blog-version-with-nuxt'
-tags: [nuxt, vue, cypress]
+tags: [nuxt, vue, cypress, devs]
 createdAt: 2021-01-30
 ---
 

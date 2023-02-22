@@ -3,7 +3,7 @@ title: Nuxt + Firebase with @nuxt/firebase
 type: 'article'
 description: My experience setting up Firebase with Nuxt in depth using @nuxt/firebase
 imgCover: 'nuxt-firebase-part-0-serie-introduction'
-tags: [nuxt, vue, firebase]
+tags: [nuxt, vue, firebase, miscs]
 createdAt: 2021-01-07
 ---
 

@@ -3,7 +3,7 @@ title: 'UI Prototypes with Protopie'
 type: 'article'
 description: Quick review of Protopie, a quite new exciting prototyping tool!
 imgCover: 'ui-prototypes-with-protopie'
-tags: [Protopie, After Effects, Sketch]
+tags: [Protopie, After Effects, Sketch, miscs]
 createdAt: 2021-05-18
 ---
 

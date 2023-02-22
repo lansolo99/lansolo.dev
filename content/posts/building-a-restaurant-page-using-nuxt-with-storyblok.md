@@ -2,7 +2,7 @@
 title: Building a restaurant page using Nuxt with Storyblok
 type: 'article'
 imgCover: 'building-a-restaurant-page-using-nuxt-with-storyblok'
-tags: [nuxt, vue, headless CMS]
+tags: [nuxt, vue, headless CMS, devs]
 createdAt: 2020-10-07
 ---
 

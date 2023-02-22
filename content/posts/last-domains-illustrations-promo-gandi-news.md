@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'Last Gandi promo artworks', src: 'last-domains-illustrations-promo-gandi-news_1' },
   ]
-tags: [cinema 4D, low poly, sketch & toon]
+tags: [cinema 4D, low poly, sketch & toon, artworks]
 createdAt: 2019-04-30
 ---
 

@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'Pari(s) sur le Local', src: 'paris-sur-le-local_1' },
   ]
-tags: [cinema 4D, sketch & toon, low poly, vector design]
+tags: [cinema 4D, sketch & toon, low poly, vector design, artworks]
 createdAt: 2017-04-26
 ---
 

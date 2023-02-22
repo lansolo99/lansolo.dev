@@ -2,7 +2,7 @@
 title: 'Rising Lovers'
 type: 'design'
 imgCover: 'rising-lovers'
-tags: [vector design]
+tags: [vector design, artworks]
 createdAt: 2016-08-17
 ---
 

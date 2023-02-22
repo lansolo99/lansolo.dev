@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'Gandi.net key-features illustrations', src: 'gandi-net-key-features-illustrations_1' },
   ]
-tags: [cinema 4D, low poly, sketch & toon]
+tags: [cinema 4D, low poly, sketch & toon, artworks]
 createdAt: 2018-06-14
 ---
 Collection of illlustrations promoting key features of [Gandi.net](https://www.gandi.net/fr/domain). 

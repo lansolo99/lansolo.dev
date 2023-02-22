@@ -2,7 +2,7 @@
 title: 'Back to Wordpress (Reluctantly)'
 type: 'article'
 imgCover: 'back-to-wordpress-reluctantly'
-tags: [wordpress]
+tags: [wordpress, devs]
 createdAt: 2020-08-28
 ---
 

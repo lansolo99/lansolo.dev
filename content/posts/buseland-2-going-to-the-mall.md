@@ -2,7 +2,7 @@
 title: "Buseland #2 - Going to the mall"
 type: 'design'
 imgCover: 'buseland-2-going-to-the-mall'
-tags: [cinema 4D, low poly, sketch & toon, after effects, video]
+tags: [cinema 4D, low poly, sketch & toon, after effects, video, short 3D films]
 embed: {vimeo: 112865169}
 createdAt: 2014-11-04
 ---

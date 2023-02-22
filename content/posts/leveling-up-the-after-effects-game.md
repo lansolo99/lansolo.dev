@@ -3,7 +3,7 @@ title: 'Leveling up the After Effects game'
 type: 'article'
 description: My latest After Effects discoveries - morphing, scripting, and master properties.
 imgCover: 'leveling-up-the-after-effects-game.jpg'
-tags: [after effects, video]
+tags: [after effects, video, motion graphics]
 createdAt: 2022-02-02
 ---
 

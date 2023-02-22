@@ -3,7 +3,7 @@ title: 'When Figma takes over Sketch'
 type: 'article'
 description: A key-features battle between the two softwares, and my thoughts on it
 imgCover: 'when-figma-takes-over-sketch.jpg'
-tags: [figma, sketch]
+tags: [figma, sketch, miscs]
 createdAt: 2022-08-31
 ---
 

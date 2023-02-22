@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'New 3D iso style room signages', src: 'new-3d-iso-style-room-signages_1' },
   ]
-tags: [cinema 4D, sketch & toon, low poly]
+tags: [cinema 4D, sketch & toon, low poly, artworks]
 createdAt: 2018-12-16
 ---
 

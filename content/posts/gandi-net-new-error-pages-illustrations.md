@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'Gandi.net new error pages illustrations', src: 'gandi-net-new-error-pages-illustrations_1' },
   ]
-tags: [cinema 4D, sketch & toon, low poly, vector design]
+tags: [cinema 4D, sketch & toon, low poly, vector design, artworks]
 createdAt: 2018-10-09
 ---
 

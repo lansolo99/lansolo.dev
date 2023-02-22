@@ -3,7 +3,7 @@ title: Halloween 2022
 type: 'design'
 imgCover: 'halloween-2022'
 imgList: [{ title: 'Halloween 2022', src: 'halloween-2022' }]
-tags: [vector design, after effects, video]
+tags: [vector design, after effects, video, 'motion graphics']
 embed: { vimeo: 772812788 }
 createdAt: 2022-11-19
 ---

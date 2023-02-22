@@ -2,7 +2,7 @@
 title: 'Building static sites with Gridsome + Netlify'
 type: 'article'
 imgCover: 'building-static-sites-with-gridsome-and-netlify'
-tags: [netlify, gridsome]
+tags: [netlify, gridsome, devs]
 createdAt: 2020-04-19
 ---
 

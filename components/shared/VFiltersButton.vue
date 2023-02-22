@@ -5,7 +5,10 @@
       v-if="!isInRemovableFiltersList"
       tabindex="-1"
       class="w-full text-sm transition duration-150 ease-out border border-gray-600 outline-none group lg:hover:border-gray-400"
-      :class="{ 'cursor-default': isDisabled }"
+      :class="[
+        { 'cursor-default lg:hover:border-gray-600': isDisabled },
+        { 'border-primary-500': selected },
+      ]"
       :disabled="isDisabled"
       @click="setTag()"
     >
@@ -15,7 +18,6 @@
         class="w-full px-3 py-1 text-center"
         :class="{ 'bg-primary-500': selected }"
       >
-        <!-- {{ label }} -->
         {{ capitalizeLabel }}
       </div>
     </button>
@@ -63,7 +65,7 @@ export default {
       return this.label !== 'all' ? { tags: { $containsAny: this.label } } : ''
     },
     isDisabled() {
-      return this.label === 'all' && this.selected && this.context === 'home'
+      return this.selected && this.context === 'home'
     },
     capitalizeLabel() {
       return capitalizeFirstLetter(this.label)

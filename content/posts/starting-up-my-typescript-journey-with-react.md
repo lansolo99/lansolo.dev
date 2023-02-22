@@ -3,7 +3,7 @@ title: 'Typescript here I am!'
 type: 'article'
 description: Starting up my Typescript journey with React
 imgCover: 'starting-up-my-typescript-journey-with-react'
-tags: [react, next, typescript]
+tags: [react, next, typescript, miscs]
 createdAt: 2021-06-17
 ---
 

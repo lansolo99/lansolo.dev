@@ -3,7 +3,7 @@ title: 'Material Tailwind quick review'
 type: 'article'
 description: A simpler solution to get Material UI components alongside TailwindCSS
 imgCover: 'material-tailwind-quick-review.jpg'
-tags: [next, tailwind, form]
+tags: [next, tailwind, form, miscs, devs]
 createdAt: 2022-07-25
 ---
 

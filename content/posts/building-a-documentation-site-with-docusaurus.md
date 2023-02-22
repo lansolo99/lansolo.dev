@@ -3,7 +3,7 @@ title: 'Building a documentation site with Docusaurus'
 type: 'article'
 description: My journey using Docusaurus, the React documentation framework
 imgCover: 'building-a-documentation-site-with-docusaurus'
-tags: [react, docusaurus, tailwind, mdx]
+tags: [react, docusaurus, tailwind, mdx, devs]
 createdAt: 2021-07-31
 ---
 

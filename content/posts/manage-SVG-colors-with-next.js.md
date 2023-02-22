@@ -3,7 +3,7 @@ title: 'Manage SVG colors with Next.js'
 type: 'article'
 description: Method I use to manage SVG colors programmatically in Next.
 imgCover: 'manage-SVG-colors-with-nextjs'
-tags: [next, svg, next-optimized-image, tailwindcss]
+tags: [next, svg, next-optimized-image, tailwindcss, miscs]
 createdAt: 2021-08-18
 ---
 

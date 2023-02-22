@@ -2,7 +2,7 @@
 title: ".blog domains promo/tshirt"
 type: 'design'
 imgCover: 'blog-domains-promotshirt'
-tags: [cinema 4D, low poly, sketch & toon]
+tags: [cinema 4D, low poly, sketch & toon, artworks]
 createdAt: 2017-09-07
 ---
 3D scene promoting the .blog domains.

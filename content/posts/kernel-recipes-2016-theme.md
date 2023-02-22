@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'Kernel Recipes 2016 theme', src: 'kernel-recipes-2016-theme_1' },
   ]
-tags: [cinema 4D, sketch & toon, low poly]
+tags: [cinema 4D, sketch & toon, low poly, artworks]
 createdAt: 2016-08-22
 ---
 

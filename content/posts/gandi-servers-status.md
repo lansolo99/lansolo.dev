@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'Gandi servers status', src: 'gandi-servers-status_1' },
   ]
-tags: [cinema 4D, sketch & toon, low poly]
+tags: [cinema 4D, sketch & toon, low poly, artworks]
 createdAt: 2017-01-23
 ---
 

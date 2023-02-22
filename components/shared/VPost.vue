@@ -17,21 +17,6 @@
         class="cdy-wrapper"
       />
 
-      <!-- Post type -->
-      <div class="absolute top-0 right-0 w-8 h-8 mt-2 mr-2">
-        <img
-          class="absolute w-full h-full opacity-30"
-          src="~/assets/img/post_type_shape.svg"
-          alt=""
-        />
-
-        <img
-          class="absolute w-full h-full transform scale-60"
-          :src="require(`~/assets/img/post_type_icon_${post.type}.svg`)"
-          alt=""
-        />
-      </div>
-
       <!-- Date + title -->
       <div class="absolute bottom-0 left-0 mb-2 ml-2 mr-4">
         <!-- Date -->
@@ -110,10 +95,10 @@ export default {
       }
       &:not(:first-child) {
         .cdy-wrapper {
-          filter: sepia(100%) hue-rotate(220deg);
+          filter: grayscale(0%);
 
           &:hover {
-            filter: sepia(0%) hue-rotate(0deg);
+            filter: grayscale(0%);
           }
         }
       }

@@ -3,7 +3,7 @@ title: 'Publishing a first NPM package'
 type: 'article'
 description: Experimenting a publishing process for the first time
 imgCover: 'publishing-a-first-npm-package.jpg'
-tags: [Yarn, node, CLI]
+tags: [Yarn, node, CLI, devs]
 createdAt: 2022-05-31
 ---
 

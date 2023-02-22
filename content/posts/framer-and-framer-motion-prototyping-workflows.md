@@ -3,7 +3,7 @@ title: 'Framer & Framer-motion: prototyping workflows'
 type: 'article'
 description: My experience on trying the Framer app and making the connexion with the React Framer-motion library.
 imgCover: 'framer-and-framer-motion-prototyping-workflows.jpg'
-tags: [framer, next, framer-motion, Tailwind, Sketch]
+tags: [framer, next, framer-motion, Tailwind, Sketch, miscs, devs]
 createdAt: 2022-02-27
 ---
 

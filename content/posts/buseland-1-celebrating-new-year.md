@@ -2,7 +2,7 @@
 title: "Buseland #1 - Celebrating new year"
 type: 'design'
 imgCover: 'buseland-1-celebrating-new-year'
-tags: [cinema 4D, low poly, sketch & toon, after effects, video]
+tags: [cinema 4D, low poly, sketch & toon, after effects, video, short 3D films]
 embed: {vimeo: 83782773}
 createdAt: 2014-01-09
 ---

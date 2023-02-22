@@ -3,7 +3,7 @@ title: 'On deciding to stick with React'
 type: 'article'
 description: My decision about sticking with React and not coming back to vue for the time being...
 imgCover: 'on-deciding-to-stick-with-react'
-tags: [react, next, formik, framer-motion]
+tags: [react, next, formik, framer-motion, miscs]
 createdAt: 2021-03-27
 ---
 

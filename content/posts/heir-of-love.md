@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'Heir of love', src: 'heir-of-love_1' },
   ]
-tags: [vector design]
+tags: [vector design, artworks]
 createdAt: 2018-08-20
 ---
 

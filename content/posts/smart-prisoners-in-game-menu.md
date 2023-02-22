@@ -7,7 +7,7 @@ imgList:
   [
     { title: 'Smart Prisoners in-game menu', src: 'smart-prisoners-in-game-menu_1' },
   ]
-tags: [nuxt, cordova,]
+tags: [nuxt, cordova, artworks]
 createdAt: 2020-01-16
 ---
 

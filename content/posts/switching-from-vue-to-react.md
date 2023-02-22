@@ -3,7 +3,7 @@ title: 'Switching from Vue to React'
 type: 'article'
 description: First weeks using React after 2 years working with Vue
 imgCover: 'switching-from-vue-to-react'
-tags: [vue, nuxt, react, next]
+tags: [vue, nuxt, react, next, devs, miscs]
 createdAt: 2021-02-28
 ---
 

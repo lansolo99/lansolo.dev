@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'Weekx progressive web app', src: 'weekx-progressive-web-app_1' },
   ]
-tags: [vue, vuex, pwa]
+tags: [vue, vuex, pwa, devs]
 createdAt: 2019-03-19
 ---
 

@@ -3,7 +3,7 @@ title: 'Storybook, a first glance'
 type: 'article'
 description: Quick dive into Storybook, the component development library
 imgCover: 'storybook-a-first-glance.jpg'
-tags: [Storybook, next]
+tags: [Storybook, next, miscs]
 createdAt: 2022-04-26
 ---
 

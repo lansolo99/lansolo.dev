@@ -6,7 +6,7 @@ imgList:
   [
     { title: 'Design Of Love', src: 'design-of-love_1' },
   ]
-tags: [vector design, after effects, video]
+tags: [vector design, after effects, video, motion graphics]
 embed: {vimeo: 501748684}
 createdAt: 2021-01-18
 ---

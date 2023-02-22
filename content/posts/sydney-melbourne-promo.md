@@ -2,7 +2,7 @@
 title: 'Domain user guide'
 type: 'design'
 imgCover: 'sydney-melbourne-promo'
-tags: [cinema 4D, sketch & toon, low poly]
+tags: [cinema 4D, sketch & toon, low poly, artworks]
 createdAt: 2017-10-11
 ---
 

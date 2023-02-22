@@ -3,7 +3,7 @@ title: 'First Sveltekit project with Blackout'
 type: 'article'
 description: Walkthrough of my journey learning Sveltekit by releasing a mini-game
 imgCover: 'first-sveltkit-project-with-blackout'
-tags: [svelte, firebase, vercel, figma]
+tags: [svelte, firebase, vercel, figma, devs]
 createdAt: 2023-01-05
 ---
 
