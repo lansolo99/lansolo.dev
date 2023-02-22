@@ -4,7 +4,7 @@ type: 'article'
 description: I take a stock on my front-end journey across JS framworks and switching from one to another.
 imgCover: 'js-frameworks-switching.jpg'
 tags: [vue, nuxt, gridsome, quasar, react, next, svelte, miscs]
-createdAt: 2022-10-19`
+createdAt: 2022-10-19
 ---
 
 ## Context
