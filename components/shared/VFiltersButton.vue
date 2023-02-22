@@ -4,7 +4,7 @@
     <button
       v-if="!isInRemovableFiltersList"
       tabindex="-1"
-      class="flex items-stretch text-sm transition duration-150 ease-out border border-gray-600 outline-none group lg:hover:border-gray-400"
+      class="w-full text-sm transition duration-150 ease-out border border-gray-600 outline-none group lg:hover:border-gray-400"
       :class="{ 'cursor-default': isDisabled }"
       :disabled="isDisabled"
       @click="setTag()"
@@ -12,46 +12,21 @@
       <!-- Label -->
       <div
         :data-cy="label"
-        class="flex px-3 py-1 text-left"
+        class="w-full px-3 py-1 text-center"
         :class="{ 'bg-primary-500': selected }"
       >
-        {{ label }}
-      </div>
-    </button>
-
-    <!-- Removable filter list item -->
-    <button
-      v-else
-      tabindex="-1"
-      class="flex items-stretch w-full text-sm text-black transition duration-150 ease-out bg-white outline-none hover:bg-primary-500 group"
-      :class="{ 'cursor-default pointer-events-none': isDisabled }"
-      :disabled="isDisabled"
-      @click="setTag()"
-    >
-      <!-- Label -->
-      <div
-        class="flex flex-grow px-3 py-1 font-bold text-left group-hover:text-white"
-      >
-        {{ label }}
-      </div>
-
-      <!-- Close -->
-      <div class="flex items-center justify-center p-2 w-7">
-        <CrossRemoveSign
-          class="w-full h-full text-black fill-current group-hover:text-white"
-        />
+        <!-- {{ label }} -->
+        {{ capitalizeLabel }}
       </div>
     </button>
   </div>
 </template>
 
 <script>
-import CrossRemoveSign from '~/assets/img/cross-remove-sign.svg?inline'
+import { capitalizeFirstLetter } from '@/utils/capitalize'
 export default {
   name: 'VFiltersButton',
-  components: {
-    CrossRemoveSign,
-  },
+  components: {},
   props: {
     label: {
       type: String,
@@ -89,6 +64,9 @@ export default {
     },
     isDisabled() {
       return this.label === 'all' && this.selected && this.context === 'home'
+    },
+    capitalizeLabel() {
+      return capitalizeFirstLetter(this.label)
     },
   },
   methods: {

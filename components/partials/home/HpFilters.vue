@@ -1,64 +1,34 @@
 <template>
-  <div class="flex flex-col items-start space-y-8">
-    <!-- Filters -->
+  <div class="flex flex-col items-start">
     <div>
-      <p class="font-heading">Filters:</p>
-      <div class="mt-1 space-y-3">
-        <p>
-          <strong class="font-bold">{{ currentPostsCounter }}</strong> results
-        </p>
-
-        <!-- All/reset -->
-        <VFiltersButton
-          :label="selectedTags.length > 0 ? 'Reset filters' : 'All posts'"
-          :selected="selectedTags.length === 0"
-          :class="{ 'pointer-events-none': selectedTags.length === 0 }"
-          @setTag="setTags"
-        />
-
-        <!-- Removable filters list -->
-        <div v-if="selectedTags.length > 0" class="pt-2 space-y-2">
-          <VFiltersButton
-            v-for="(tag, i) in selectedTags"
-            :key="i"
-            :label="tag"
-            :selected="true"
-            class="w-full"
-            :is-in-removable-filters-list="true"
-            @setTag="setTags"
-          />
-        </div>
-      </div>
-    </div>
-
-    <!-- Types -->
-    <div>
-      <p class="font-heading">Types:</p>
-      <div class="flex mt-3 space-x-2">
-        <VFiltersButton
-          v-for="(type, i) in types"
-          :key="i"
-          :label="type"
-          :selected="selectedTags.includes(type)"
-          @setTag="setTags"
-        />
-      </div>
+      <p>
+        <strong class="font-bold">{{ currentPostsCounter }}</strong> posts
+      </p>
     </div>
 
     <!-- Tags -->
-    <div>
-      <p class="font-heading">Tags:</p>
+    <div class="w-full mt-4">
+      <p class="font-heading">Categories:</p>
       <!-- Grid wrapper -->
       <div class="px-1">
         <!-- Grid -->
-        <div class="flex flex-wrap -mx-2" data-cy="tags">
-          <!-- Items -->
+        <div class="flex flex-col -mx-2" data-cy="tags">
           <VFiltersButton
-            v-for="(tag, i) in stripedTagListFromTypes"
-            :key="i"
+            class="w-full px-1 mt-2"
+            label="All"
+            :selected="selectedTags.length === 0"
+            @setTag="setTags"
+          />
+          <VFiltersButton
+            class="w-full px-1 mt-2"
+            label="video"
+            :selected="selectedTags.includes('video')"
+            @setTag="setTags"
+          />
+          <VFiltersButton
             class="px-1 mt-2"
-            :label="tag"
-            :selected="selectedTags.includes(tag)"
+            label="node"
+            :selected="selectedTags.includes('node')"
             @setTag="setTags"
           />
         </div>
@@ -106,19 +76,14 @@ export default {
     }),
     setTags(label) {
       // All || reset
-      if (['All', 'Reset filters'].includes(label)) {
+      if (['All'].includes(label)) {
         this.setSelectedTag([])
         return
       }
 
       // Tags
-      if (this.selectedTags.includes(label)) {
-        const updatedTagsList = this.selectedTags.filter((tag) => {
-          return tag !== label
-        })
-        this.setSelectedTag(updatedTagsList)
-      } else {
-        const updatedTagsList = [...this.selectedTags, label]
+      if (!this.selectedTags.includes(label)) {
+        const updatedTagsList = [label]
         this.setSelectedTag(updatedTagsList)
       }
 
