@@ -47,6 +47,7 @@ export default {
       infiniteId: +new Date(),
     }
   },
+
   computed: {
     ...mapState(['selectedTags']),
   },
@@ -56,6 +57,10 @@ export default {
       this.resetInfinite()
     },
   },
+  mounted() {
+    console.log('mounted')
+    this.setSelectedTag([])
+  },
   beforeDestroy() {
     this.setCustomCursorState(false)
   },
@@ -63,6 +68,7 @@ export default {
     ...mapMutations({
       setCustomCursorState: 'SET_CUSTOM_CURSOR_STATE',
       setCurrentPostsCounter: 'SET_CURRENT_POSTS_COUNTER',
+      setSelectedTag: 'SET_SELECTED_TAGS',
     }),
     async fetchData() {
       const posts = await this.$content('posts')
@@ -99,6 +105,9 @@ export default {
         $state.complete()
       }
     },
+    // setTags() {
+    //   this.setSelectedTag([])
+    // },
     async resetInfinite() {
       this.page = 0
 
