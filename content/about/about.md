@@ -7,6 +7,7 @@ socialLinks:
     { name: linkedin, url: http://fr.linkedin.com/in/stephanechangarnier },
     { name: twitter, url: https://twitter.com/lansolo191 },
     { name: github, url: https://github.com/lansolo99 },
+    { name: dribbble, url: https://dribbble.com/lansolo19 },
     { name: codesandbox, url: https://codesandbox.io/u/lansolo99 },
     { name: dev.to, url: https://dev.to/lansolo99 },
     { name: vimeo, url: https://vimeo.com/user9314545 },
@@ -17,7 +18,7 @@ socialLinks:
 
 ## Who I am
 
-I’m Stephane Changarnier, 37 y/o. front-end developer & designer currently living a location independent life, moving within the south of France.
+I’m Stephane Changarnier, 38 y/o. front-end developer & designer currently living a location independent life, moving within the south of France.
 
 ## What I do
 
@@ -38,23 +39,19 @@ I'm still doing UI/UX + infographics + motion design, I also actively builds sid
 - Small Back-end development PHP / Node.js / Firebase / MongoDB
 - Web UI/UX design & interaction design
 - General graphic design
-- 2d/3d illustrations
+- 2d/3d illustrations & animations
 - Motion design
 
-## Tools stack
+## Stack (2023)
 
-- **Front-end**: React / Next / Docusaurus / Vue / Nuxt / Gridsome / Maizzle
-- **Backend-end**: Node / Cordova / MongoDB
-- **CMS/SaaS**: Firebase / Prismic / Storyblok / Send In Blue / Strapi / Wordpress / Prestashop / Snipcart
-- **Webdesign**: HTML / CSS / BEM / Tailwind / Semantic UI / Vuetify / GSAP
-- **Hosting**: Shared hosting / Netlify / Heroku / S3
-- **Tooling**: Git / Sass / Postcss / Gulp / SSH / TS / Eslint / Prettier / Cypress
-- **Others**: Google Analytics + Google Tag Manager tracking
-- **Design**: Sketch / Figma / Photoshop / Illustrator / After Effects / In Design / C4D
+- **Front-end**: Next / Maizzle / Svelte / TailwindCSS / Framer motion
+- **Backend-end/SaaS**: Strapi / Wordpress / Firebase / Send In Blue / some PHP
+- **Design**: Figma / Sketch / Photoshop / Illustrator / After Effects / In Design / Cinema 4D
+- **Hosting**: Vercel / Netlify
 
 ## Life
 
-I invest a lot of energy to improve my work skills and knowledge. Remaining time consists of intensive workouts sessions and travels.
+I invest a lot of energy to improve my work skills and knowledge. Remaining time consists of intensive workouts sessions, geographic explorations, life optimizations, and video games.
 
 ## Find me on
 
