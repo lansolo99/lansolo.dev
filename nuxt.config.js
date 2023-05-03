@@ -170,16 +170,10 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
-    '@nuxtjs/google-analytics',
   ],
 
   stylelint: {
     fix: true,
-  },
-
-  googleAnalytics: {
-    id: 'UA-187545032-1',
-    dev: false,
   },
 
   dateFns: {

@@ -42,7 +42,6 @@
     "@nuxtjs/date-fns": "^1.4.3",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/svg": "^0.1.12",
     "@nuxtjs/tailwindcss": "^3.4.2",
@@ -59,7 +58,6 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.5.0",
     "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "postcss-css-variables": "^0.17.0",
     "postcss-nested": "^4.2.3",
     "prettier": "^2.1.2",
@@ -67,6 +65,7 @@
     "stylelint": "^13.9.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue-jest": "^3.0.4"
   }
 }
