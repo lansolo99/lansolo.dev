@@ -2,9 +2,9 @@
 title: '2023 Pommeclic showreel'
 type: 'article'
 description: Process of making my first showreel for Pommeclic
-imgCover: '100-days-of-mograph-spring-roundup.jpg'
+imgCover: '2023-pommeclic-showreel.jpg'
 tags: [after effects, motion graphics]
-createdAt: 2023-07-18
+createdAt: 2023-07-19
 ---
 
 ## Context
