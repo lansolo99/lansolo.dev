@@ -18,7 +18,7 @@ socialLinks:
 
 ## Who I am
 
-I’m Stephane Changarnier, 38 y/o. front-end developer & designer currently living a location independent life, moving within the south of France.
+I’m Stephane Changarnier, 38 y/o. front-end developer & motion designer, currently living in Montpellier, south of France.
 
 ## What I do
 
