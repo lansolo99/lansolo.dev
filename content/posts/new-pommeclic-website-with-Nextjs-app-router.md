@@ -11,7 +11,7 @@ createdAt: 2023-08-24
 
 Following the [Pommeclic showreel](/posts/2023-pommeclic-showreel) released last month, we decided to upgrade the homepage to mirror the video content with additional shots and details regarding each work showcased.
 
-Here is the site link [pommeclic.com](https://www.pommeclic.com).
+Here is the site link (unofficial pre-release version until its done) [pommeclic.com](https://pommeclic-i49xo6vm7-lansolo99.vercel.app/).
 
 Next.js recently brought the new [App router](https://nextjs.org/docs/app) in the game (spring of 2023) and it is now considered as stable and as the recommended approach.
 
@@ -47,6 +47,8 @@ I used a new technique to handle page transitions, as the one used whith the Pag
 It'a matter of dedicating a specific transition component in the root layout, that accept a children (dynamic routes relayed).
 
 Then, the transition component is encompassed within an _AnimatePresence_ Framer Motion tag, itself taking a keyed motion.div, itself taking a FrozenRouter context component that leverage the _useLayoutRouterContext_ Next component. The workaround is a bit messy as of now, I took this working solution from [Imatteis demo repo](https://github.com/lmatteis/next-13-page-transitions).
+
+Edit: this solution doesn't work anymore since 13.5 Next.js versions and above.
 
 ## First impressions so far
 
