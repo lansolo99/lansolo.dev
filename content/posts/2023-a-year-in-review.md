@@ -11,9 +11,11 @@ Following [the past 2022](/posts/2022-a-year-in-review) post, here is the new po
 
 ## January
 
-- I started with a new motion design for Banque Populaire, an explainer on their carbon footprint (and supposed improvments 🤭)
+- I started with a new motion design for Banque Populaire, an explainer on their carbon footprint (and supposed improvments 🤭).
 
 ## February
+
+- Released a very short looping motion for Banque Populaire to be displayed in a stadium (ultra wide screens at ground level).
 
 ## March
 
@@ -21,9 +23,15 @@ Following [the past 2022](/posts/2022-a-year-in-review) post, here is the new po
 
 ## April
 
+- Banque Populaire ordered me multiple animated shots showcasing supported Athlete for the upcoming Paris 2024 Olympic Games.
+
 ## May
 
+- I coded the [Alliance Farine](https://alliance-farine.fr/) showcase website using Next + Wordpress as a headless CMS.
+
 ## June
+
+- I mostly worked on personal [Dribble shots](https://dribbble.com/lansolo19).
 
 ## July
 
@@ -36,10 +44,13 @@ Following [the past 2022](/posts/2022-a-year-in-review) post, here is the new po
 ## September
 
 - I designed and developed a whole new agency website for [Pommeclic](https://www.pommeclic.com/).
+- I designed / animated / developed an animated game prototype leveraging the Tinder swipe gesture. I decided to make it [open-source on dev.to](https://dev.to/lansolo99/a-tinder-like-card-game-with-framer-motion-35i5) after the client gave up with idea.
 
 ## October
 
 - I worked on a revamped version of the "spot the difference" mini-game for Banque Populaire. I did both artwork and [development](https://web-prod.bpce-bpri-prod-web2.nfrance.net/jeu-7-erreurs-2023-11/).
+
+- Once again, the well advertised Hacktoberfest drove me in to open-source contribution. I participated on the small [file-api](https://github.com/Xkonti/file-api) project, with 2 validated PRs. This was the opportunity to experiment a bit with Docker and Bun runtime.
 
 ## November
 
@@ -47,7 +58,9 @@ Following [the past 2022](/posts/2022-a-year-in-review) post, here is the new po
 
 ## December
 
-- I delved into the development part of "Fin de chantier". I decided to migrate the whole codebase from Svelte to Next, and heavily introduced Github Copilot in my workflow.
+- I delved into the development part of [Fin de chantier](https://jeu-pommeclic-fin-de-chantier.vercel.app/). I decided to migrate the whole codebase from Svelte to Next, and heavily introduced Github Copilot in my workflow.
+
+- Another small motion for the [Berrylaw's greeting card](https://vimeo.com/898861313) (law firm).
 
 ## Upcoming/Wanting
 
