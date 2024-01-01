@@ -2,7 +2,7 @@
 title: '2023 - A year in review'
 type: 'article'
 description: Review of the key things, stacks and projects I worked on during this year.
-imgCover: '2022-a-year-in-review'
+imgCover: '2023-a-year-in-review'
 tags: ['miscs']
 createdAt: 2023-12-31
 ---
@@ -11,11 +11,11 @@ Following [the past 2022](/posts/2022-a-year-in-review) post, here is the new po
 
 ## January
 
-- I started with a new motion design for Banque Populaire, an explainer on their carbon footprint (and supposed improvments 🤭).
+- I started with a new motion design for Banque Populaire, [an explainer](https://vimeo.com/800250266) on their carbon footprint (and supposed improvments 🤭).
 
 ## February
 
-- Released a very short looping motion for Banque Populaire to be displayed in a stadium (ultra wide screens at ground level).
+- Released a very [short looping motion](https://vimeo.com/899002880) for Banque Populaire to be displayed in a stadium (ultra wide screens at ground level).
 
 ## March
 
@@ -23,7 +23,7 @@ Following [the past 2022](/posts/2022-a-year-in-review) post, here is the new po
 
 ## April
 
-- Banque Populaire ordered me multiple animated shots showcasing supported Athlete for the upcoming Paris 2024 Olympic Games.
+- Banque Populaire ordered me multiple [animated shots](https://vimeo.com/899003063) showcasing supported Athletes for the upcoming Paris 2024 Olympic Games.
 
 ## May
 

@@ -1,6 +1,6 @@
 # lansolo.dev
 
-## Dev
+## Dev + Build
 
 ```bash
 nvm use 14
