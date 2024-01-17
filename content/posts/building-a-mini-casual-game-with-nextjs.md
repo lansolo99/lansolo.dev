@@ -11,7 +11,7 @@ As a quick reminder: this post is not a step-by-step tutorial on how I built thi
 
 ## The game
 
-First and foremost, here is the [live game](https://findechantier.pommeclic.com/) we will talk about.
+First and foremost, here is the [playable live game](https://findechantier.pommeclic.com/) this post is about.
 
 ## Goal
 
@@ -54,13 +54,25 @@ I decided to go with the same stack regarding the rest:
 
 I kept modeling using Cinema 4D to get the same low poly look & feel, this time designing a hilly countryside crossed by main roads, as well as tunnels. Those lanes will be the interactive part of the map.
 
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-mini-casual-game-c4d-env.jpg" alt="Fin de chantier c4d gameboard" class="w-full">
+
 I then adapted predesigned construction vehicles, simplified and uniformized their styles. I render them in the 4 perspectives for which they will be used.
 
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-mini-casual-game-c4d-vehicles.png" alt="Fin de chantier c4d vehicles" class="w-full">
+
 I defined the animated flags and smokes and rendered then as GIFs through After Effects.
+
+<div class="flex">
+<img src="https://res.cloudinary.com/lansolo99/image/upload/v1705480693/lansolo.dev/posts/building-a-mini-casual-game-smoke.gif" alt="Fin de chantier c4d smoke"  style="width:112px; height:112px;">
+<img src="https://res.cloudinary.com/lansolo99/image/upload/v1705480693/lansolo.dev/posts/building-a-mini-casual-game-flag.gif" alt="Fin de chantier c4d flag"  style="width:112px; height:112px;">
+</div>
 
 ### UI
 
 As usual, I started with some Figma screen, based on the previously designed Blackout ui, and replace the environments. Overall, the UI stays the same. Some light improvments have been made here and there.
+
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-mini-casual-game-with-nextjs-figma
+.jpg" alt="Figma screens" class="w-full">
 
 ## Coding
 
@@ -74,11 +86,31 @@ I intended to experiment a lot with RSC and server actions, but, I almost any ti
 
 I guess it's no big deal as this app is mostly a client side with heavy reactive UI.
 
+### Gameboard
+
+I used a single rendered image for the countryside background, and set the vehicles individually into their own components.
+
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-mini-casual-game-c4d-desktop-env.jpg" alt="Desktop c4d environment" class="w-full">
+
+The main game logic consist on generating on the fly vehicles components based on an interval increasing in speed. Each vehicle take some props that define its vehicles version to pick as well as a lane to run on.
+
+Vehicles animations are handled with Framer-Motion.
+
+I handled the vehicles masking (when entering tunnels) using a single css image-mask.
+
+For the rest, it's a matter of vehicles triggering their situation to a global game context.
+
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-mini-casual-game-context.jpg" alt="Fin de chantier React context" class="w-full">
+
+This context is in charge of rendering the whole game status ('ready', 'gameover', 'in progress'...).
+
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-mini-casual-game-gameboard-component.jpg" alt="Fin de chantier Gameboard component" class="w-full">
+
 ### Next auth and Firebase
 
 I decided to go with Next Auth and found pretty easy to set it, but I didn't make the Firestore adapter work properly (to get the user datas part of the Next Auth context).
 
-Instead, I juggled with both Next Auth and FireStore hooks to retrieve binded data given an auth when necessary, and that is Ugly and I'm well aware of it 🙁.
+Instead, I juggled with both Next Auth and FireStore hooks to retrieve binded data given a user auth, when necessary, that is ugly and I'm well aware of it 🙁.
 
 ## Github Copilot
 
@@ -90,7 +122,7 @@ Not that much to say with Vercel that do an excellent job and eases the process,
 
 ## Wrapping up
 
-To conclude, and as always, working on this kind of side project has been very fun and enriching. Seeing the ideas come to life is very satisfying, and also within a limited time frame, so that it's never boring.
+To conclude, and as always, working on this kind of side project has been very fun and enriching. Seeing the ideas come to life is very satisfying, while being able to deliver it within a limited time frame.
 
 It also help to underline which part of the process have to be improved, because I consider my codebase as pretty messy at the time, and I that gives a roadmap on what would be interesting to dig in.
 
