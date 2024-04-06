@@ -1,78 +1,53 @@
 ---
-title: 'Building a mini casual game with Next.js'
+title: 'Building a Where's Waldo game with Next.js'
 type: 'article'
-description: Process I used to build this new casual mini-game.
+description: Process I used to build this mini-game based on the Google Playground game.
 imgCover: 'building-a-mini-casual-game-with-nextjs'
 tags: [game, next, framer-motion, Tailwind, Figma, devs, cinema 4D]
-createdAt: 2024-01-13
+createdAt: 2024-03-31
 ---
 
 As a quick reminder: this post is not a step-by-step tutorial on how I built this game, but just a review of how I approached this project during this journey.
 
 ## The game
 
-First and foremost, here is the [playable live game](https://findechantier.pommeclic.com/) this post is about.
+First and foremost, here is the [playable live game](https://paques-2024.pommeclic.com/) this post is about.
 
-## Goal
+## Context
 
-I took this game as an opportunity to improve on my technical skill and some creative processes.
-We (with [Pommeclic](https://pommeclic.com/)) decided to communicate early as a way to celebrate the new year by publicly offering a game contest with prizes to win.
+Back in december 2023, Google released a mini-game base one the Where's Waldo concept. The goal was to celebrate its 25 years by giving people the challenge to find items based on the most search terms.
 
-## Previously
+I immediatly wanted to build my own version one day. 
 
-I didn't start from scratch. I previously released a pretty similar game one year ago called [Blackout](/posts/first-sveltkit-project-with-blackout).
-
-<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/first-sveltkit-project-with-blackout.jpg" alt="Blackout game" class="w-full">
-
-The theme was the deep energy concern that occurs in Europe with the Ukrainian/Russian conflict.
-
-It takes the "whac a mole" concept and adapt it to electrical units to turn off as soon as they turn on.
-
-I decided to reuse most of the layout and principles in order to save time and focus more on the design and game logic.
-
-## New Concept
-
-I kept the same isometric gameboard to support the action. After a bit, I was inspired by the story of the controversial A69 highway construction.
-
-The idea is to prevent vehicles to arrive on site, to postpone the start as much as possible, so that I can keep the "whac a mole" principle, with moving target this time.
-
-<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-mini-casual-game-with-nextjs-zone-central.jpg" alt="Fin de chantier game - zone centrale" class="w-full">
+As a coincidence, I had the opportunity to work on such a game 2 month later for Banque Populaire. They wanted something on the Easter theme for April, linked to a contest for their internal teams, as they use to do on a regular basis.
 
 ## Stack
 
-I used Sveltekit for Blackout. Though I enjoyed its light syntax, I struggled with lacking feature, especially having dynamic optimized assets. I also wanted to refocus on React through Nextjs, to avoid having overly dispersed knowledge.
-
-I decided to go with the same stack regarding the rest:
-
-- Firebase as backend (auth + user data)
-- Tailwind as UI framework
-- Vercel as hosting
+As usual, I went with the efficient couple Next/Tailwind and a spark of Framer-Motion.
 
 ## Design
 
-### Environment
+Same here too: the good old Cinema 4D helped me building a set showing an aerial fantasy and simplified version of a Paris, centered around the Eiffel Tower. Style is low poly is an almost-isometric view.
 
-I kept modeling using Cinema 4D to get the same low poly look & feel, this time designing a hilly countryside crossed by main roads, as well as tunnels. Those lanes will be the interactive part of the map.
+### Generative image
 
-<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-mini-casual-game-c4d-env.jpg" alt="Fin de chantier c4d gameboard" class="w-full">
+I used generative image tools for the first time to give me guidance on what I wanted to design. The results were too good actually, beyond of what I dreamed of. Here is some shots based on my prompts.
 
-I then adapted predesigned construction vehicles, simplified and uniformized their styles. I rendered them in the 4 perspectives for which they will be used.
+/// shots here
 
-<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-mini-casual-game-c4d-vehicles.png" alt="Fin de chantier c4d vehicles" class="w-full">
+To be honest, it was frustrating not to be able to get a 3D meshed version to directly edit those results. I learned it's a bit too early now to get it. Sure thing we'll be provided with such tools in a near future!
 
-I defined the animated flags and smokes and rendered them as GIFs through After Effects.
-
-<div class="flex">
-<img src="https://res.cloudinary.com/lansolo99/image/upload/v1705480693/lansolo.dev/posts/building-a-mini-casual-game-smoke.gif" alt="Fin de chantier c4d smoke"  style="width:112px; height:112px;">
-<img src="https://res.cloudinary.com/lansolo99/image/upload/v1705480693/lansolo.dev/posts/building-a-mini-casual-game-flag.gif" alt="Fin de chantier c4d flag"  style="width:112px; height:112px;">
-</div>
+So I used these shots as a guidance to rebuild from scratch the whole set.
+It's absolutely needed, as I have no choice than editing the result to exactly fit with my proposal. 
 
 ### UI
 
-As usual, I started with some Figma screen, based on the previously designed Blackout ui, and replace the environments. Overall, the UI stays the same. Some light improvements have been made here and there.
+Usual process here too: Figma screens, almost entirely based on the Google Playground layout as it's already perfeclty crafted.
 
-<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-mini-casual-game-with-nextjs-figma
-.jpg" alt="Figma screens" class="w-full">
+/// shots of items and UI
+
+<!-- <img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-mini-casual-game-with-nextjs-figma
+.jpg" alt="Figma screens" class="w-full"> -->
 
 ## Coding
 
