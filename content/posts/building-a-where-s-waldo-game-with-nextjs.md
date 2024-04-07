@@ -15,11 +15,11 @@ First and foremost, here is the [playable live game](https://jeu-pommeclic-paque
 
 ## Context
 
-Back in december 2023, Google released a mini-game base one the Where's Waldo concept. The goal was to celebrate its 25 years by giving people the challenge to find items based on the most search terms.
+Back in december 2023, Google released a mini-game based on the Where's Waldo concept. The goal was to celebrate its 25 years by giving people the challenge to find items based on the most search terms.
 
 I immediatly wanted to build my own version one day. 
 
-As a coincidence, I had the opportunity to work on such a game 2 month later for Banque Populaire. They wanted something on the Easter theme for April, linked to a contest for their internal teams, as they use to do on a regular basis.
+As a coincidence, I had the opportunity to work on such a game 2 month later for Banque Populaire. They wanted something on the mixed Easter + Olympic games themes for April, linked to a contest for their internal teams, as they use to do on a regular basis.
 
 ## Stack
 
@@ -27,11 +27,13 @@ As usual, I went with the efficient couple Next/Tailwind and a spark of Framer-M
 
 ## Design
 
-Same here too: the good old Cinema 4D helped me building a set showing an aerial fantasy and simplified version of a Paris, centered around the Eiffel Tower. Style is low poly is an almost-isometric view.
+Same here too: the good old Cinema 4D helped me building a set showing an aerial fantasy and simplified version of Paris, centered around the Eiffel Tower. Style is low poly is an almost-isometric view.
 
 ### Generative image
 
-I used generative image tools for the first time to give me guidance on what I wanted to design. The results were too good actually, beyond of what I dreamed of. Here is some shots based on my prompts.
+I used generative image tools for the first time to give me guidance on what I wanted to design. The results were too good actually, beyond of what I dreamed of. Here is some shots based on my prompts:
+
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-where-s-waldo-game-with-nextjs-ai.jpg" alt="initial intention draft and generated image set" class="w-full">
 
 To be honest, it was frustrating not to be able to get a 3D meshed version to directly edit those results. I learned it's a bit too early now to get it. Sure thing we'll be provided with such tools in a near future!
 
@@ -40,7 +42,7 @@ It's absolutely needed, as I have no choice than editing the result to exactly f
 
 ### UI
 
-Usual process here too: Figma screens, almost entirely based on the Google Playground layout as it's already perfeclty crafted.
+Usual process here too: Figma screens, almost entirely based on the Google Playground layout as it's already perfectly crafted.
 
 <img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-where-s-waldo-game-with-nextjs-figma.jpg" alt="Figma screens of waldo's game" class="w-full">
 
@@ -60,7 +62,9 @@ I won't repeat myself on this topic because it has been obvious now that Copilot
 
 ## Deployment
 
-Static export needed because the constraint is to work on an Apache server; nerdy stack comes with nerdy people...
+Static export needed, because the constraint is to work on an Apache server; nerdy stack comes with large companies...
+
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-a-where-s-waldo-game-with-nextjs-mobile.jpg" alt="Game on a mobile device" class="w-full">
 
 ## Wrapping up
 
