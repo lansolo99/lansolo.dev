@@ -1,9 +1,10 @@
 # lansolo.dev
 
-## Dev + Build
+## Dev/Build
 
 ```bash
 nvm use 14/16
+npm run dev
 ```
 
 ## Netlify Build Process
