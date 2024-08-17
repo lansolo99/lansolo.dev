@@ -116,7 +116,7 @@ But it allows someone, considering the Wordpress contraint from the client, to a
 
 The best stack to my opinion is still to use a headless CMS, without having to mess up with a non-conventional workflow.
 
-I already tried some solutions such as [Prismic](/posts/testing-a-headless-architecture-with-nuxt-prismic), [Storyblok](/posts/building-a-restaurant-page-using-nuxt-with-), and [Strapi](/posts/snipcart-ecommerce-layer-quick-review).
+I already tried some solutions such as [Prismic](/posts/testing-a-headless-architecture-with-nuxt-prismic), [Storyblok](/posts/building-a-restaurant-page-using-nuxt-with-storyblok), and [Strapi](/posts/snipcart-ecommerce-layer-quick-review).
 
 The one I'm willing to try is [Sanity](https://www.sanity.io/), as it seems to offer a local environment through special syncs under the hood.
 

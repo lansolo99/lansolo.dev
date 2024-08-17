@@ -19,7 +19,7 @@ This post is not a tutorial on building this module from scratch, but a recap of
 
 ## Context
 
-In the same vein of my precedent [small puzzle game](/posts/drag-and-drop-puzzle-game), I adapted the concept of Tinder-like cards swipe using [Framer-motion](https://www.framer.com/motion/), a powerful React animation library that I still explore on a regular basis.
+In the same vein of my precedent [small puzzle game](/posts/drag-and-drop-puzzle-game-with-framer-motion), I adapted the concept of Tinder-like cards swipe using [Framer-motion](https://www.framer.com/motion/), a powerful React animation library that I still explore on a regular basis.
 
 Initially, I designed an [animated prototype](https://dribbble.com/shots/22512145-Tinder-inspired-eco-quiz) and I decided to implement it, in order to customize it for client in the future.
 

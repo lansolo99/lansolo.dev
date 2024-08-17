@@ -11,23 +11,25 @@ As a quick reminder: this post is not a step-by-step tutorial on how I built thi
 
 ## The game
 
-It's been our fourth game developed with Pommeclic, and as always, here is the [playable live game](https://vendangesmaster.pommeclic.com/).
+This is the fourth game we've developed with Pommeclic, and as always, here is the [playable live game](https://vendangesmaster.pommeclic.com/).
 
-As stated in the url, we leveraged the seasonal grape harvesting to create a new game, called "Vendanges master", meaning "master of grapes harvesting" (in french).
+As the URL suggests, we leveraged the theme of seasonal grape harvesting to create a new game called "Vendanges Master," which means "Master of Grape Harvesting" (in French).
 
 ## Goal
 
 Our previous games were all built with a static 3D isometric gameboard.
 
-We decided to go here with a 2D endless runner game, better suited for grape harvesting on a row.
+This time, we opted for a 2D endless runner game, which is better suited for the concept of grape harvesting along a row.
 
-It's just a matter of picking grapes on a moving set, and harvest the most of them in a limited time.
+The objective is simple: pick grapes from a moving set and harvest as many as possible within a limited time.
 
 ## Sets
 
-As always, I built the environment using cinema 4D, rendered as a flat front projection, to avoid weird perspectives as sets are translating horizontally.
+As usual, I built the environment using Cinema 4D, rendered as a flat front projection to avoid strange perspectives as the sets move horizontally.
 
-I then rendered the planes separately, added some post-processing using After Effects, and exported them as optimized pngs.
+I then rendered the planes separately, added some post-processing using After Effects, and exported them as optimized PNGs.
+
+<img src="https://res.cloudinary.com/lansolo99/image/upload/v1723901084/lansolo.dev/posts/building-a-2d-runner-game-with-nextjs-sets.jpg" alt="Vendanges Masters exported sets" class="w-full">
 
 ## Development
 
@@ -35,33 +37,34 @@ I then rendered the planes separately, added some post-processing using After Ef
 
 It's Next.js with the app router.
 
+- Next.js with the app router
 - TailwindCSS for UI
 - ShadCn for some headless components
-- Firebase for auth and user datas
+- Firebase for authentication and user data
 - Maizzle for marketing emails
 - Vercel for hosting
 
-The whole codebase was taken back from the previous games, with some refactorings.
+The entire codebase was carried over from the previous games, with some refactoring.
 
 ### Gameboard
 
-I used repeated pieces of set to have enough matters to sustain a 60s horizontal pan.
+I used repeated pieces of the set to provide enough material to sustain a 60-second horizontal pan.
 
-I had to render a convincing parallax effect, and adjusted carrefully the speed of the sets to avoid having a choppy panning.
+I had to create a convincing parallax effect and carefully adjusted the speed of the sets to avoid choppy panning.
 
 ## Notes
 
-I used the app router, and a server side highscore page render, with the new React Suspense feature, along with a loading skeleton UI.
+I used the app router and server-side rendering for the highscore page, utilizing the new React Suspense feature along with a loading skeleton UI.
 
-This provides better UX to my opinion.
+In my opinion, this provides a better user experience.
 
 ## Wrapping up
 
-Way shorter than the [previous game post](/posts/building-a-mini-casual-game-with-nextjs), but still a lot of work.
+This post is much shorter than the [previous game post](/posts/building-a-mini-casual-game-with-nextjs), but it still involved a lot of work..
 
-The main struggle was to handle back the passwordless authentication flow, always tricky and time-consuming to simulate properly.
+The main challenge was handling the passwordless authentication flow, which is always tricky and time-consuming to simulate properly.
 
-_Would you be interested to get a public Git codebase available? If so, let me know in the comments._
+_Would you be interested in having a public Git codebase available? If so, let me know in the comments._
 
 ## Demo
 
