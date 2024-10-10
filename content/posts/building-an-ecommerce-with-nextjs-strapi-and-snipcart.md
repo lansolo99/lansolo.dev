@@ -2,7 +2,7 @@
 title: 'Building an ecommerce with Nextjs, Strapi and Snipcart'
 type: 'article'
 description: Process and stack used to build a small ecommerce shop
-imgCover: 'building-a-2d-runner-game-with-nextjs'
+imgCover: 'building-an-ecommerce-with-nextjs-strapi-and-snipcart-2'
 tags: [next, framer-motion, Tailwind, devs, strapi, snipcart, fly.io]
 createdAt: 2024-10-10
 ---
@@ -23,7 +23,7 @@ The design was originally made with Sketch.
 
 It consists of a very contrasted layout with a bright orange as the accent color.
 
-<!-- Here some shots -->
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-an-ecommerce-with-nextjs-strapi-and-snipcart-2-phones.jpg" alt="La Bourgogne ça cogne - pages" class="w-full">
 
 It's very classic, with lots of clever micro-interactions.
 
@@ -79,6 +79,6 @@ Three years later, I still find this stack pleasant to work with.
 
 I didn't migrate Next.js with the latest app router, but it works well enough like this, providing a nice browsing experience in my opinion.
 
-At the time of publishing, [La Bourgogne ça cogne] is not quite ready, leading to a maintenance page.
+At the time of publishing, [La Bourgogne ça cogne](https://labourgognecacogne.fr/) is not quite ready, leading to a maintenance page.
 
 I will update this post once it's done.
