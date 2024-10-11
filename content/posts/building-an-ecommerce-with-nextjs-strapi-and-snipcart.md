@@ -29,6 +29,8 @@ It's very classic, with lots of clever micro-interactions.
 
 The main feature that sets this site apart is the customizer module for products.
 
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/lansolo.dev/posts/building-an-ecommerce-with-nextjs-strapi-and-snipcart-2-product-customizer-2.jpg" alt="La Bourgogne ça cogne - product customizer" class="w-full">
+
 The products exist in many colors, with a custom logo color and position as well.
 
 We didn't want to involve ourselves in taking dozens of pictures for those variations.
