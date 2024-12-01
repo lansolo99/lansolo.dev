@@ -70,6 +70,12 @@ body {
 }
 
 .markdown-container {
+  .prompt {
+    p {
+      font-size: 18px !important;
+      opacity: 0.7 !important;
+    }
+  }
   .about {
     h2 {
       &:not(:first-child) {
@@ -106,10 +112,10 @@ body {
   ol {
     li {
       @apply leading-tight relative;
-       &:before {
-          content: '';
-          @apply block absolute top-1/2 transform -translate-y-1/2 rounded-full left-0 w-2 h-2  bg-primary-500;
-        }
+      &:before {
+        content: '';
+        @apply block absolute top-1/2 transform -translate-y-1/2 rounded-full left-0 w-2 h-2  bg-primary-500;
+      }
     }
   }
 }
@@ -138,5 +144,5 @@ span.singleMdCode {
 }
 
 .prose-lg h3 {
-font-weight: bold !important;
+  font-weight: bold !important;
 }
