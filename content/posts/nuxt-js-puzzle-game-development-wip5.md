@@ -7,6 +7,9 @@ createdAt: 2020-01-05
 ---
 
 This post is part of a full walkthrough of building an android app using Nuxt + Cordova
+
+**Note: this game have been published on Google Play Store in 2019, but retrieved in 2024, given the fact I didn't maintain it through evolving Android versions. You could still access the [showcase page](https://smartprisoners.netlify.app/).**
+
 <!--more-->
 
 This post might be the second to last before the release of the Smart Prisoners game.

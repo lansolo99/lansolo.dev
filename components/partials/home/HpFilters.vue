@@ -57,6 +57,7 @@ export default {
         'devs',
         'artworks',
         'motion graphics',
+        'games',
         'short 3D films',
         'miscs',
       ],

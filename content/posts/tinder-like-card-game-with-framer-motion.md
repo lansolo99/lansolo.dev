@@ -3,7 +3,7 @@ title: 'A Tinder-like card game with Framer-Motion'
 type: 'article'
 description: Walkthrough about building a Tinder-like card game using Framer-motion.
 imgCover: 'tinder-like-card-game-with-framer-motion-mockup.jpg'
-tags: [game, next, framer-motion, Tailwind, Figma, devs]
+tags: [games, next, framer-motion, Tailwind, Figma, devs]
 createdAt: 2023-09-25
 ---
 

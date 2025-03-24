@@ -2,11 +2,14 @@
 title: 'Nuxt.js puzzle game development - WIP#4'
 type: 'article'
 imgCover: 'nuxt-js-puzzle-game-development-wip4'
-tags: [nuxt, cordova]
+tags: [nuxt, cordova, games]
 createdAt: 2019-12-27
 ---
 
 This post is part of a full walkthrough of building an android app using Nuxt + Cordova
+
+**Note: this game have been published on Google Play Store in 2019, but retrieved in 2024, given the fact I didn't maintain it through evolving Android versions. You could still access the [showcase page](https://smartprisoners.netlify.app/).**
+
 <!--more-->
 
 The end of the year is here and the puzzle game development is still ongoing. I worked for about 7 month now on the game. I guess the completion is around 75%.

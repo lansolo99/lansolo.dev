@@ -3,7 +3,7 @@ title: 'Building a 2D runner game with Next.js'
 type: 'article'
 description: Process I used to build this 2D runner game.
 imgCover: 'building-a-2d-runner-game-with-nextjs'
-tags: [game, next, framer-motion, Tailwind, Figma, devs, cinema 4D]
+tags: [games, next, framer-motion, Tailwind, Figma, devs, cinema 4D]
 createdAt: 2024-08-17
 ---
 

@@ -3,7 +3,7 @@ title: 'Building a narrative game with Next.js and AI'
 type: 'article'
 description: Process I used to design this mini narrative game.
 imgCover: 'building-a-narrative-game-with-nextjs-and-ai'
-tags: [game, next, framer-motion, Tailwind, Figma, devs, dzine]
+tags: [games, next, framer-motion, Tailwind, Figma, devs, dzine]
 createdAt: 2025-03-20
 ---
 

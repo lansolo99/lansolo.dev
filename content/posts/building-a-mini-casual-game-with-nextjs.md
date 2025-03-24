@@ -3,7 +3,7 @@ title: 'Building a mini casual game with Next.js'
 type: 'article'
 description: Process I used to build this new casual mini-game.
 imgCover: 'building-a-mini-casual-game-with-nextjs'
-tags: [game, next, framer-motion, Tailwind, Figma, devs, cinema 4D]
+tags: [games, next, framer-motion, Tailwind, Figma, devs, cinema 4D]
 createdAt: 2024-01-13
 ---
 

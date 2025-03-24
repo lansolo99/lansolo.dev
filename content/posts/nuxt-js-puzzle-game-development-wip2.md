@@ -2,11 +2,14 @@
 title: 'Nuxt.js puzzle game development - WIP#2'
 type: 'article'
 imgCover: 'nuxt-js-puzzle-game-development-wip2'
-tags: [nuxt, cordova]
+tags: [nuxt, cordova, games]
 createdAt: 2019-07-24
 ---
 
 This post is part of a full walkthrough of building an android app using Nuxt + Cordova
+
+**Note: this game have been published on Google Play Store in 2019, but retrieved in 2024, given the fact I didn't maintain it through evolving Android versions. You could still access the [showcase page](https://smartprisoners.netlify.app/).**
+
 <!--more-->
 
 ## Back to work
@@ -44,27 +47,27 @@ I off course gathered a lot informations about existing solutions, and finally c
 
 ### To wrap up, here is the quick list we need before attempting something:
 
-* Install Java development kit (but version 8 only! )
-* Install Android Studio app
-* Install Gradle + set the permission needed (chmod 7777)
-* Set the right environment variable for Android in  .bash_profile (mac user)
-* Set an android device for testing purpose (unlock it for debugging)
+- Install Java development kit (but version 8 only! )
+- Install Android Studio app
+- Install Gradle + set the permission needed (chmod 7777)
+- Set the right environment variable for Android in  .bash_profile (mac user)
+- Set an android device for testing purpose (unlock it for debugging)
 
 ### Now it’s time to install Cordova from a terminal:
 
-* npm install -g cordova
-* cordova create &lt;project&gt;
-* cd &lt;project&gt;
-* cordova platform add android
-* cordova requirements (it needs to pass all the tests!)
-* cordova build
-* cordova emulate Android -> launch the emulator (that need to be setup in Android Studio)
-* cordova run Android -> launch the project on a plugged mobile device in USB (previously you would have unlock the debugging mode)
-* eventually launch Chrome to work on a debug session from the dev tools
+- npm install -g cordova
+- cordova create &lt;project&gt;
+- cd &lt;project&gt;
+- cordova platform add android
+- cordova requirements (it needs to pass all the tests!)
+- cordova build
+- cordova emulate Android -> launch the emulator (that need to be setup in Android Studio)
+- cordova run Android -> launch the project on a plugged mobile device in USB (previously you would have unlock the debugging mode)
+- eventually launch Chrome to work on a debug session from the dev tools
 
 This will execute the files found in the cordova/www folder, we still need an npm script to move an app built with Nuxt/Vue/whatever framework into this folder. Still a lot of configuration actions specific to Nuxt.js to do. I found a very useful process that worked without frictions (almost) from Hokify.
 
-Here is the [Github project]( https://github.com/hokify/cordova-nuxt-demo).
+Here is the [Github project](https://github.com/hokify/cordova-nuxt-demo).
 
 ## Next
 

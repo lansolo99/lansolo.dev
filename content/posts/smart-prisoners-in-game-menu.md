@@ -5,9 +5,12 @@ description: 'Smart Prisoners Android game, made with Nuxt'
 imgCover: 'smart-prisoners-in-game-menu'
 imgList:
   [
-    { title: 'Smart Prisoners in-game menu', src: 'smart-prisoners-in-game-menu_1' },
+    {
+      title: 'Smart Prisoners in-game menu',
+      src: 'smart-prisoners-in-game-menu_1',
+    },
   ]
-tags: [nuxt, cordova, artworks]
+tags: [nuxt, cordova, artworks, games]
 createdAt: 2020-01-16
 ---
 

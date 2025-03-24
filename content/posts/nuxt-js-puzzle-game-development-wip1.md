@@ -2,12 +2,16 @@
 title: 'Nuxt.js puzzle game development - WIP#1'
 type: 'article'
 imgCover: 'nuxt-js-puzzle-game-development-wip1'
-tags: [nuxt, cordova]
+tags: [nuxt, cordova, games]
 createdAt: 2019-06-07
 ---
 
 This post is part of a full walkthrough of building an android app using Nuxt + Cordova
+
+**Note: this game have been published on Google Play Store in 2019, but retrieved in 2024, given the fact I didn't maintain it through evolving Android versions. You could still access the [showcase page](https://smartprisoners.netlify.app/).**
+
 <!--more-->
+
 The proof of concept of [Weekx](https://weekx-landing-page.netlify.app/) is now barely finished. As I said previously, I plan to create some tests for it but have to get a better overall comprehension of unit tests in Vue.js first.
 
 I built this first app from my own, and it was the greatest exercice to get the big picture of Vue.js. I might push Weekx further more later but decided to put it aside for the time being.
@@ -28,12 +32,12 @@ A friend of mine offered me to create a puzzle game based on my recent knowledge
 
 I already started a few weeks ago and chose to use Nuxt.js as a development framework. I used it once for the Weekx landing page, and found it better regarding several things it offers out of the box :
 
-* No need to configure routes : the directory structure create the views
-* Clear nuxt.config.js file
-* Layouts
-* Can choose to serve it either as a SPA or SSR or static site in case of
-* Handy hooks in single file components (async data, fetch)
-* Middlewares to better organize code that executes before page load
+- No need to configure routes : the directory structure create the views
+- Clear nuxt.config.js file
+- Layouts
+- Can choose to serve it either as a SPA or SSR or static site in case of
+- Handy hooks in single file components (async data, fetch)
+- Middlewares to better organize code that executes before page load
 
 ## Middlewares to better organize code that executes before page load
 
