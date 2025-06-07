@@ -2,7 +2,7 @@
 title: 'Explainer Motion Design Journey'
 type: 'article'
 description: My journey navigating through corporate motion explainers.
-imgCover: 'building-a-narrative-game-with-nextjs-and-ai'
+imgCover: 'explainer-motion-design-journey'
 tags: [motion graphics, after effects, video]
 createdAt: 2025-06-07
 ---
@@ -66,6 +66,8 @@ As usual, some adjustements and frame rework were necessary, but that's part of 
 ### Wrapping up
 
 Working on these multiple motion design projects allowed me to level up my animation skill while improving my After Effect workflow.
+
+Here is one of the [spot](https://vimeo.com/1091383484?share=copy) I released:
 
 What I still lack is a stronger sense of storytelling; I tend to repeat the same pattern in my videos.
 
