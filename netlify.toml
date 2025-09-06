@@ -1,7 +1,7 @@
 [build]
 base = "/"
 publish = "dist"
-command = "npm run generate --modern"
+command = "# skip build - using pre-built files"
 
 
 [dev]

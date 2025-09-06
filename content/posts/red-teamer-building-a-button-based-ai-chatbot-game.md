@@ -38,7 +38,11 @@ I chose to represent the attacker and the bot using 3D avatars:
 
 As usual, I made them by highly customizing base models and rendered them using Redshift along with C4D. This latter has become the standard and now supports cell and toon shading. Its node-based system is not very intuitive at first, but very powerful. I really appreciated working with live-render though.
 
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/v1757161657/lansolo.dev/posts/red-teamer-building-a-button-based-ai-chatbot-game-3D.jpg" alt="Red Teamer - 3D turtle asset">
+
 I gathered the avatars on a scene, and set a bunch of animated loops to use in the game, bringing a "living" UI that I find appealing.
+
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/v1757161672/lansolo.dev/posts/red-teamer-building-a-button-based-ai-chatbot-game-gameboard.jpg" alt="Red Teamer - gameboard scene">
 
 ## Stack
 
