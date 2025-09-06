@@ -1,0 +1,30 @@
+---
+description: Apply React standards for component structure, separation of concerns, state management, and accessibility when developing with React in `apps/frontend`.
+globs: apps/frontend/**/*.tsx
+alwaysApply: false
+---
+# React Standards
+
+## Component Organization
+- Group by feature: Place related components in a folder if there are several for a feature
+- UI primitives: Place generic, reusable UI components in the `ui/` folder
+
+## Code Patterns
+- Always use early return for conditional if relevant
+- When moving logic from component to another, remove the old one
+
+## Component Structure
+- Use functional components
+- Keep components light and small
+- Strongly type `props`
+- One component per file (except tiny private components)
+
+## State Management
+- Delegate state and logic to a smart component
+- Return `null` if mandatory props are missing
+
+## Style and Accessibility
+- Think mobile-first
+- Use semantic HTML elements
+- Add appropriate ARIA attributes
+- Ensure keyboard navigation

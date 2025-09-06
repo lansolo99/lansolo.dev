@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Code Cleanup Standards
+
+## Dependency Management
+- Remove unused dependencies in current file on save
+
+## Code Refactoring
+- When moving logic from component to another, remove the old one
+- No duplicate files (like globals.css recreated)
+
+## File Organization
+- Avoid creating duplicate files
+- Ensure single source of truth for shared resources

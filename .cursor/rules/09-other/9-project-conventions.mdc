@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Project-Specific Conventions
+
+## Icon Library
+- Any Icons = lucide
+- Use lucide-react for all icon needs
+- Import icons from lucide-react package
