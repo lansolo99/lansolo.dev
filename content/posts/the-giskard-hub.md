@@ -9,14 +9,14 @@ createdAt: 2026-03-16
 
 <!--Illustration of the hub dashboard or maybe a conceptual jurassic park gate with the auth gateway screen-->
 
-This post is about [Giskard Hub saas](https://giskard.ai): the main Giskard product.
+This post is about [Giskard Hub](https://giskard.ai): the main Giskard product.
 
 ## Context
 
-As a designer and contributor on the Giskard hub, (the main Giskard product) for almost a year now, I thought it was a good moment to step back and reflect on what this platform actually is and does. The llm security domain was pretty much unknown territory before I deep dove into it. I took the time to understand
+As a designer and contributor on the Giskard hub, (the main Giskard product) for almost a year now, I thought it was a good moment to step back and reflect on what this platform actually is and does. The LLM security domain was pretty much unknown territory before I dove into it. I took the time to understand
 the ins and outs involved, and also why it has been critical to have a threat evaluation layer for any llms/agent pushed in production.
 
-I have been involved in a small and a dedicated team of developers & reseearcher, and my role is to bridge the gap between the vision, the UI, and its implementation.
+I have been involved in a small, dedicated team of developers & researchers, and my role is to bridge the gap between the vision, the UI, and its implementation.
 
 ## A comprehensive overview of what the hub is doing
 
@@ -31,7 +31,7 @@ Giskard then provides a platform for evaluating, testing, and monitoring LLM-bas
 Our tagline insists on this one thing: "find vulnerabilities in AI agents before users do".
 The Giskard SDK + the Hub provide an infrastructure that address it.
 
-The hub gather 3 main features to adversarialy test an agent:
+The hub gathers 3 main features to adversarially test an agent:
 
 ### The playground
 
@@ -39,37 +39,37 @@ This is a common chatbot interface to check how your model respond directly as t
 
 ### The evaluations
 
-This is the quality spectrum: evaluations are set to monitor the agent responses using a tailored dataset (see it as a business script), and assess its responses against some built-in, or tailored evaluation metrics. A dataset is a set of conversations (test cases) paired with those metrics.
+This is the quality spectrum: evaluations are set to monitor the agent responses using a tailored dataset (see it as a business script), and assess its responses against some built-in or tailored evaluation metrics. A dataset is a set of conversations (test cases) paired with those metrics.
 
 The user can build a dataset from multiple way:
 
-- by feeding it directly with a list of problematic conversations and checks (being from the playground of through a file import)
+- by importing it directly with a list of problematic conversations and checks (whether from the playground of through a file import)
 - by providing an internal knowledge base that will go under a synthetic generation of tailored conversations
 - by defining a scenario with a personna (user), topics and expected tone
 
-Each generated test case should be configured with their proper evaluations metrics, that will target the response quality.
+Each generated test case should be configured with their own evaluations metrics, that will target the response quality.
 
 Once this piece is set, the user run an "evaluation" by picking its dataset and its agent, and get each test cases evaluated against their own checks, giving a global and a per-test case score.
 
-If this is a failure, a quick analysis is provided by metrics and also classify the it into a category. This part is mostly driven by what we call a "LLM-as-a-judge": an internal "Giskard" agent evaluating the quality of outputs from the agent.
+If this is a failure, a quick analysis is provided by metrics and also classify it into a category. This part is mostly driven by what we call a "LLM-as-a-judge": an internal "Giskard" agent evaluating the quality of outputs from the agent.
 
 <!--illustration/schema for custom checks (list & example)-->
 
-An evaluation config can also be scheduled, this is the catch regression layer. The tool provide trend and comparison metric to monitor how the agent score over time.
+An evaluation config can also be scheduled, this is the catch regression layer. The tool provide trend and comparison metric to monitor how the agent scores over time.
 
 ### The scan
 
 This is the security spectrum: the scan is meant to identify weaknesses in the agent using common attack patterns.
 
-The user can scan its agent by picking among a set of probes categories, that will be used to target the agent.
+The user can scan its agent by picking from a set of probes categories, that will be used to target the agent.
 Those categories are mapped to the official OWASP standardized critical risks.
 
-A significant amount of probes are then sent to attack the agent using a multi turn approach. Each responses is evaluated before the probe adapts its strategy for the next turn until a failure is found or max turn amount is reach.
+A large amount of probes are then sent to attack the agent using a multi turn approach. Each responses is evaluated before the probe adapts its strategy for the next turn until a failure is found or the max turn count is reached.
 
 As for evaluations, a global score is set, with a breakdown by categories.
-The user can investigate every attacks set in details to take measure, and eventually send some relevant conversations to feed a dataset.
+The user can investigate every attacks set in details to take action, and eventually send some relevant conversations to feed a dataset.
 
-It gives an immediate feedback to user of the security level of its core logic.
+It gives an immediate feedback to user of the agent's security posture of its core logic.
 
 ## The hub stack
 
@@ -83,23 +83,21 @@ Here is a quick listing on what the cake is made of:
 - Infra: Docker Compose, Keycloak auth layer for SSO
 - LLM integration: configurable model backends
 
-It's a choice made after a proven stack....
-
-<!--(insufficent justification)-->
+It reflects pragmatic enterprise choices: Next.js and FastAPI for velocity, PostgreSQL with pgvector for semantic search over evaluation results, and Keycloak for the SSO requirements that come with enterprise deployments.
 
 ## History and evolutions done over the last year
 
-Originaly Giskard released an open source library, before extending its capacity to a fully featured SDK
+Originally Giskard released an open source library, before extending its capacity to a fully featured SDK
 
 <!--check SDK if it's worth adding a precision on it: /Users/stephane/Documents/stephane/DEV/giskard/giskard-hub-python-->
 
 that can be paired with the hub, bringing a user friendly UI. When I started, the hub was kind of a bland Shadcn stylized UI, before we gradually customized the UI to align with the [revamped branding](https://www.giskard.ai/knowledge/a-new-look-for-sophia-the-story-behind-giskards-rebranding). The hub has now a distinguable identity with its singular color palette, font, and some turtle inserts here and there 🐢.
 
-- The first significant feature introduced last year was the scan.
-- The dashboard has been revamped twice, bringing some relevant monitored metrics
-- Then came the collaboration layer with the "Tasks", assignable to users, and acting as an essential project management feature.
-- We added the scenario based dataset generation to allow user to craft them from a tailored script
-- beyond the hood, a lot improvements has been done for the developer experience, with some APIs enhancements
+- The first significant feature introduced last year was the scan
+- The dashboard has been revamped twice, surfacing some relevant monitored metrics
+- Then came the collaboration layer with the "Tasks", assignable to users, and acting as a lightweigth project management feature
+- We added the scenario based dataset generation to allow users to craft them from a tailored script
+- under the hood, a lot of improvements has been done for the developer experience, with some APIs enhancements
 
 <!--check what does https://github.com/Giskard-AI/giskard-oss first-->
 
@@ -111,13 +109,13 @@ Among them:
 
 ### Dynamic multi-turn evaluation
 
-Currently, evaluations only support single turn conversations. This limit the possibility to get an accurate assessment based on in-depth conversation with sometimes failures happening on subsequent turns. Our Giskard Checks dependency will be soon integrated in the hub to bring this deep interaction assessement.
+Currently, evaluations only support single turn conversations. This limit the possibility to get an accurate assessment based on in-depth conversation where failures can happen on subsequent turns. Our Giskard Checks module will be soon integrated in the hub to bring this deep interaction assessement.
 
 <!--recheck what does /Users/stephane/Documents/stephane/DEV/giskard/giskard-checks (but it should be that concise)-->
 
 ### API based agent
 
-So far the hub covers conversational AI agents only, so what is evaluated are agents text responses. The goal is to let users evaluate their endpoint returning a flexible schema.
+So far the hub covers conversational AI agents only, so what is evaluated are agents text responses. The goal is to let users evaluate their endpoint returning a returning structured, non-conversational schemas.
 
 <!--recheck the whole decided architecture to fine tune a bit the content (but it should be that concise) check provided pdf-->
 
@@ -127,9 +125,9 @@ We are a product evaluating LLMs, we use different internal agents to process op
 
 <!--recheck the current project, but I think it's not worth going into details: /Users/stephane/Documents/stephane/DEV/giskard/csm-assistant-->
 
-## Others giskard releases (Guardrails, OSS, Phare)
+## Others Giskard products (Guardrails, OSS, Phare)
 
-The Hub doesn't exist in isolation — it's part of a broader ecosystem for responsible AI, aligned with the reseach philosophy behind the company's core value.
+The Hub doesn't exist in isolation — it's part of a broader ecosystem for responsible AI, aligned with the research philosophy behind the company's core value.
 
 ### OSS (open-source library)
 
@@ -137,7 +135,7 @@ This is the root of Giskard, a [Python SDK](https://github.com/Giskard-AI/giskar
 
 ### Guardrails
 
-The company main's focus stay Red Teaming but extended more recently to a Blue Teaming product called Guardrails, acting like a security layer at runtime for LLMs in production. It is currently in beta. Here is a [short post](https://www.giskard.ai/knowledge/real-time-guardrails-vs-batch-llm-evaluations) on how it complements evaluations.
+The company's main focus stay Red Teaming but extended more recently to a Blue Teaming product called Guardrails, acting like a security layer at runtime for LLMs in production. It is currently in beta. Here is a [short post](https://www.giskard.ai/knowledge/real-time-guardrails-vs-batch-llm-evaluations) on how it complements evaluations.
 
 ### Phare
 
@@ -145,16 +143,4 @@ Giskard also provide the recognized [Phare benchmark](https://phare.giskard.ai/)
 
 ## Wrapping-up
 
-I hope thie overview of the Giskard Hub has been meaningful to grasp the big picture, and what we are cooking up to keep the product as most relevant in this fast-paced industry.
-
-<!--this sounds poorly written to me, I didn't know how to finish-->
-
-//////
-
-Review note:
-
-- fix all spelling mistake
-- only rephrase too awkward sentences, keep my unpolished style
-- propose some missing parts (explicitly indicated via comments)
-- add emojis from time to time to enhance the readability
-- provide general advice and things I may have missed
+That's the big picture of Giskard Hub 🌁, what it does, how it's built, and where it's going. The pace of the LLM industry makes this kind of platform both genuinely useful and genuinely hard to build. The real challenge isn't technical, it's figuring out the right problems to solve in a space where the ground shifts every few months.
