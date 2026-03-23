@@ -13,7 +13,7 @@ This post is about [Giskard Hub](https://giskard.ai): the main Giskard product.
 
 <img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/v1757161657/lansolo.dev/posts/the-giskard-hub-screens.jpg" alt="Giskard Hub - screens">
 
-As a designer and contributor on the Giskard hub (the main Giskard product) for almost a year now, I thought it was a good moment to step back and reflect on what this platform actually is and does. The LLM security domain was pretty much unknown territory before I dove into it. I took the time to understand
+As a designer and contributor on the [Giskard hub](https://www.giskard.ai/) (the main Giskard product) for almost a year now, I thought it was a good moment to step back and reflect on what this platform actually is and does. The LLM security domain was pretty much unknown territory before I dove into it. I took the time to understand
 the ins and outs involved, and also why it has been critical to have a threat evaluation layer for any llms/agent pushed in production.
 
 I have been involved in a small, dedicated team of developers & researchers, and my role is to bridge the gap between the vision, the UI, and its implementation.
@@ -28,6 +28,8 @@ LLMs have a large attack surface, and this can lead to some serious exposure suc
 
 Giskard then provides a platform for evaluating, testing, and monitoring LLM-based applications (agents, RAG pipelines, chatbots).
 
+Check a [Giskard webinar](https://www.youtube.com/watch?v=qR-j6y4m1ZE) presenting this concept in detail
+
 ### Who is it for?
 
 <img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/v1757161657/lansolo.dev/posts/the-giskard-hub-audience.jpg" alt="Giskard Hub - screens">
@@ -36,6 +38,8 @@ Currently the target audience is AI engineers, ML and security teams willing to 
 
 Our tagline insists on this one thing: "find vulnerabilities in AI agents before users do".
 The Giskard SDK + the Hub provide an infrastructure that addresses it.
+
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/v1757161657/lansolo.dev/posts/the-giskard-hub-architecture-business.jpg" alt="Giskard Hub - business architecture">
 
 The hub gathers 3 main features to adversarially test an agent:
 
@@ -65,8 +69,6 @@ Once that piece is set, the user runs an "evaluation" by picking its dataset and
 
 If this is a failure, a quick analysis is provided by metrics and also classify it into a category. This part is mostly driven by what we call a "LLM-as-a-judge": an internal "Giskard" agent evaluating the quality of outputs from the evaluated agent. They represent an essential piece of the automated annotations in the hub. Here is a relevant [post](https://www.giskard.ai/knowledge/how-to-implement-llm-as-a-judge-to-test-ai-agents-part-1) digging this topic.
 
-<!--illustration/schema for custom checks (list & example)-->
-
 An evaluation config can also be scheduled, this is the catch regression layer. The tool provides trend and comparison metric to monitor how the agent scores over time.
 
 ### The scan
@@ -83,11 +85,11 @@ A large amount of probes are then sent to attack the agent using a multi turn ap
 As for evaluations, a global score is set, with a breakdown by categories.
 The user can investigate every attacks set in details to take action, and eventually send some relevant conversations to feed a dataset.
 
-It gives users immediate feedback on the agent's security posture.
+It gives users immediate feedback on the agent's security posture. Check a [quick overview here](https://vimeo.com/manage/videos/1165952849/1deeb78d14).
 
 ## The hub stack
 
-<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/v1757161657/lansolo.dev/posts/the-giskard-hub-architecture" alt="Giskard Hub - stack">
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/v1757161657/lansolo.dev/posts/the-giskard-hub-architecture   " alt="Giskard Hub - stack">
 
 Currently, the hub is not a SaaS for individuals, it's a B2B on-premise deployed app, or on managed cloud.
 Each product instance has a gated access, along team-level defined users.
@@ -103,6 +105,8 @@ It reflects pragmatic enterprise choices: Next.js and FastAPI for velocity, Post
 
 ## History and evolutions done over the last year
 
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/v1757161657/lansolo.dev/posts/the-giskard-hub-evolutions" alt="Giskard Hub - evolutions">
+
 Originally Giskard released an [open source library](https://github.com/Giskard-AI/giskard-oss), before extending its capacity to a fully featured SDK. This latter provides access to the Hub API, allowing users to drive hub operations from their terminal. When I started, the hub was kind of a bland Shadcn stylized UI, before we gradually customized the UI to align with the [revamped branding](https://www.giskard.ai/knowledge/a-new-look-for-sophia-the-story-behind-giskards-rebranding). The hub has now a distinguishable identity with its singular color palette, font, and some turtle inserts here and there 🐢.
 
 - The first significant feature introduced last year was the scan
@@ -113,6 +117,8 @@ Originally Giskard released an [open source library](https://github.com/Giskard-
 
 ## Where we are heading
 
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/v1757161657/lansolo.dev/posts/the-giskard-hub-heading" alt="Giskard Hub - heading">
+
 The product now has a solid base as a specialized red teaming platform, but we still have a lot of work ahead to solve recurrent pain points and bring some game changer features.
 
 Among them:
@@ -121,21 +127,17 @@ Among them:
 
 Currently, evaluations only support single turn conversations. This limits the possibility to get an accurate assessment based on in-depth conversation where failures can happen on subsequent turns. Our Giskard Checks module will be soon integrated in the hub to bring this deep interaction assessment.
 
-<!--recheck what does /Users/stephane/Documents/stephane/DEV/giskard/giskard-checks (but it should be that concise)-->
-
 ### API based agent
 
 So far the hub covers conversational AI agents only, so what is evaluated are agents text responses. The goal is to let users evaluate their endpoint returning structured, non-conversational schemas.
-
-<!--recheck the whole decided architecture to fine tune a bit the content (but it should be that concise) check provided pdf-->
 
 ### AI assistant
 
 We are a product evaluating LLMs, we use different internal agents to process operations, but we don't provide users a chatbot yet to assist them into their workflow. We addressed this by releasing an internal POC, currently in QA. The capabilities will encompass dataset, evals, scan creations, auto-annotation, personal diagnostic and recommendations... We plan to deploy it in the hub soon.
 
-<!--recheck the current project, but I think it's not worth going into details: /Users/stephane/Documents/stephane/DEV/giskard/csm-assistant-->
-
 ## Other Giskard products (Guardrails, OSS, Phare)
+
+<img src="https://res.cloudinary.com/lansolo99/image/upload/c_fit,dpr_auto,q_auto,w_auto/v1757161657/lansolo.dev/posts/the-giskard-hub-products" alt="Giskard Hub - products">
 
 The Hub doesn't exist in isolation — it's part of a broader ecosystem for responsible AI, aligned with the research philosophy behind the company's core value.
 
