@@ -28,7 +28,9 @@ LLMs have a large attack surface, and this can lead to some serious exposure suc
 
 Giskard then provides a platform for evaluating, testing, and monitoring LLM-based applications (agents, RAG pipelines, chatbots).
 
-Check a [Giskard webinar](https://www.youtube.com/watch?v=qR-j6y4m1ZE) presenting this concept in detail
+Check a Giskard webinar presenting this concept in detail:
+
+<div class="vimeo-embed-wrapper" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:2rem 0"><iframe src="https://www.youtube.com/embed/qR-j6y4m1ZE?si=oeRfaxFy4xi5ICWG" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ### Who is it for?
 
@@ -85,7 +87,9 @@ A large amount of probes are then sent to attack the agent using a multi turn ap
 As for evaluations, a global score is set, with a breakdown by categories.
 The user can investigate every attacks set in details to take action, and eventually send some relevant conversations to feed a dataset.
 
-It gives users immediate feedback on the agent's security posture. Check a [quick overview here](https://vimeo.com/manage/videos/1165952849/1deeb78d14).
+It gives users immediate feedback on the agent's security posture. Check a quick overview:
+
+<div class="vimeo-embed-wrapper" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:2rem 0"><iframe src="https://player.vimeo.com/video/1165952849?h=1deeb78d14" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 
 ## The hub stack
 
