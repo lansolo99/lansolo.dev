@@ -66,6 +66,8 @@ The user can build a dataset in multiple ways:
 - by providing an internal knowledge base that will go under a synthetic generation of tailored conversations
 - by defining a scenario with a persona (user), topics and expected tone
 
+The knowledge base approach is usually the privilegied path: by feeding the agent's own documentation (RAG), the synthetic generation produces relevant domain-specific test cases leading to a higher quality evaluation dataset.
+
 Each generated test case should be configured with their own evaluation metrics, that will target the response quality.
 
 Once that piece is set, the user runs an "evaluation" by picking its dataset and its agent, and gets each test case evaluated against their own checks, giving a global and a per-test case score.
