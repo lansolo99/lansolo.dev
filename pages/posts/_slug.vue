@@ -137,15 +137,12 @@ export default {
 
     const relatedPosts = await $content('posts')
       .only(['title', 'type', 'imgCover', 'tags', 'createdAt', 'path'])
-      .where({ tags: { $containsAny: post.tags } })
-      .sortBy('created', 'desc')
+      .where({ slug: { $ne: params.slug } })
+      .sortBy('createdAt', 'desc')
+      .limit(4)
       .fetch()
 
-    const shuffleResults = (results) => {
-      return results.sort(() => Math.random() - 0.5).slice(0, 4)
-    }
-
-    return { post, relatedPosts: shuffleResults(relatedPosts) }
+    return { post, relatedPosts }
   },
   data() {
     return {
