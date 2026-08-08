@@ -94,3 +94,5 @@ sw.*
 # cypress
 cypress/videos
 cypress/screenshots
+.vercel
+.env*.local
